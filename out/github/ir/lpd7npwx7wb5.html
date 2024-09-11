@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/github/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident with Copilot</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>lpd7npwx7wb5</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>May 13, 13:23</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>May 13, 15:44</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>2h20m51.392s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - May 13, 15:44 </h3>
+            <p> <p>Incident Report: May 13, 2024 (lasting approximately 4 hours)<br /><br />On May 13 at 10:40 AM UTC, GitHub Copilot Chat began returning error responses to 6% of users. The problem was identified, and a status update was provided shortly after. A mitigation strategy was implemented by 14:30 UTC, which mitigated the impact.<br /><br />The root cause of the incident was a combination of issues in the request handling process. Specifically, some requests were malformed, which resulted in being incorrectly routed to the wrong deployment. That deployment wasn’t resilient to the malformed requests and resulted in errors.<br /><br />To mitigate the immediate impact, requests were routed away from the failing deployment. This temporarily reduced the number of errors while the underlying issue was investigated and resolved.<br /><br />To prevent similar incidents in the future, we have enhanced validation checks for incoming requests to ensure proper handling and routing. In addition, we upgraded backend systems to provide more robust error handling and observability.<br /></p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 13, 14:56 </h3>
+            <p> <p>We are applying configuration changes to mitigate impact to Copilot Chat users.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 13, 14:13 </h3>
+            <p> <p>We continue to investigate the root cause of elevated errors in Copilot Chat.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 13, 13:27 </h3>
+            <p> <p>Copilot is experiencing degraded performance. We are continuing to investigate.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 13, 13:24 </h3>
+            <p> <p>We are investigating an increase in exceptions impacting Copilot Chat usage from IDEs.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 13, 13:23 </h3>
+            <p> <p>We are currently investigating this issue.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

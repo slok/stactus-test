@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/github/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident with Actions</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>f7jl0mdd2jr5</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>May 13, 19:51</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>May 13, 20:10</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>19m11.394s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - May 13, 20:10 </h3>
+            <p> <p>On May 13, 2024, between 19:03 UTC and 19:57 UTC, some customers experienced delays in receiving status updates for in-progress GitHub Actions workflow runs. The root cause was identified to be a bug in the logic for checking the state of a configuration which would only manifest under very specific conditions and cause exceptions. These exceptions impacted the backend process for handling workflow run status updates and caused jobs with any annotations to not get updated properly. Jobs without any annotations were not affected. The affected jobs during the incident will get marked as failed after 24 hours, and affected customers will need to manually retry the jobs they want to execute.<br /><br />We resolved the incident by reverting the problematic change. We are enhancing our process for deploying changes and reassessing our monitoring of relevant subsystems to prevent similar issues in the future.<br /></p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 13, 20:10 </h3>
+            <p> <p>We are seeing signs of recovery for actions jobs</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 13, 19:51 </h3>
+            <p> <p>We are investigating reports of degraded performance for Actions</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

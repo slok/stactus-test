@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Ocean status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/digitalocean/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Creation of Load Balancers and Mongo Managed Databases</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>mm3qq4z5q9rf</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul 10, 18:02</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul 10, 20:26</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>2h24m22.263s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul 10, 20:26 </h3>
+            <p> <p>Our Engineering team has completed remediation of the previously stalled Mongo clusters and those clusters are now online.</p>
+
+<p>This incident is now fully resolved. If you have any questions or continue to experience issues, please reach out to Support from within your account.</p>
+
+<p>Thank you for your patience throughout this incident.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul 10, 19:50 </h3>
+            <p> <p>From 16:24 - 18:44 UTC, Load Balancers and Mongo Managed Databases failed to create successfully. Users experienced success messages, but the create processes did not complete as expected.</p>
+
+<p>As of 18:44 UTC, users are able to create Load Balancers and Mongo clusters normally.</p>
+
+<p>As of 19:00 UTC, all stalled Load Balancer creation operations were completed.</p>
+
+<p>Our Engineering team is working to remediate a small number of stalled Mongo cluster creation attempts from the incident impact period. Users may await these remediation efforts, or simply create a new cluster, which will be successful.</p>
+
+<p>We will post a final update once all stalled clusters have been remediated.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul 10, 19:02 </h3>
+            <p> <p>The potential fix has completed deployment and has been confirmed to address the root cause of this incident. Users should now be able to create Load Balancers and Mongo Managed Database. Our Engineering team is monitoring the situation and we will post an update as soon as we confirm the issue is fully resolved.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul 10, 18:14 </h3>
+            <p> <p>After further investigation, our Engineering team has confirmed that only Mongo Managed Database creates are impacted, along with Load Balancers. Managed Kubernetes is not impacted by this incident.
+A potential fix is currently in progress. We will provide another update as soon as possible.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul 10, 18:02 </h3>
+            <p> <p>Our Engineering team is investigating an issue with creation of Load Balancers, Managed Databases, and Managed Kubernetes clusters in all regions, via both the Cloud Control Panel and API. During this time, users may see success messages when initially creating resources, but those requests will not complete. We apologize for the inconvenience and will share an update once we have more information.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/digitalocean/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

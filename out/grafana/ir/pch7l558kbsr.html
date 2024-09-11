@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafana status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/grafana/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Hosted Logs prod-ap-northeast-0 region full read path outage.</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>pch7l558kbsr</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Major</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul  9, 10:26</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul  9, 11:36</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>1h10m41.44s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul  9, 11:36 </h3>
+            <p> <p>The incident is fully resolved now, root cause was determined and mitigated. The particular cell affected had a legacy config present, which caused a panic during the regular rollout. The cell was rolled back as a precaution and the mentioned config is now corrected.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul  9, 10:26 </h3>
+            <p> <p>Cell loki-prod-030 inside prod-ap-northeast-0 region was facing a full read path outage. The outage lasted from ~9:35 UTC to until 10:17 UTC. The fix was applied - we&rsquo;re monitoring.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/grafana/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

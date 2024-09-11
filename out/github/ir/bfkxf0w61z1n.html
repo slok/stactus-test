@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/github/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>We are investigating reports of degraded performance.</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>bfkxf0w61z1n</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>May 14, 18:37</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>May 14, 21:04</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>2h27m27.441s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - May 14, 21:04 </h3>
+            <p> <p>On May 14, 2024 between 18:00 UTC and 20:10 UTC, GitHub Actions performance was degraded and larger hosted runners using <code>linux-x64</code> images (Ubuntu20, Ubuntu22, Ubuntu24-beta) experienced longer than normal job start up times. Approximately 25% of all runs targeting larger hosted runners queued during this time were slow to start, with a median wait time of 1 minute, 55 seconds.<br /><br />The issue was caused by a downstream dependency overloading, which impacted our machine setup process. Each larger hosted runner job is run on a fresh VM, and one of the setup steps is installing the Actions agent. Up to the point of this incident, we would pull the latest agent version from the GitHub release and install it on the VM. However, during this incident the speciific GitHub release for the Linux x64 Actions agent became overloaded, and our agent downloads were severely throttled. This throttling led to timeouts during the download, and caused our hosted runner system to conclude the VMs were failing to start. We need the Actions agent online to start serving jobs, and with the download timing out, our service assumed the runner wasn&rsquo;t starting up successfully. This failure to start up led to those VMs being reset again and again instead of serving jobs. We mitigated the issue by falling back to a cached version of the Actions agent present on our image.<br /><br />We have further refined the fallback system to automatically use the cached agent binaries, and added new functionality to allow for easier agent downloading from other locations. Both of these measures should eliminate future impacts from similar downstream impact.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 14, 20:47 </h3>
+            <p> <p>We are seeing recovery for queue times on Actions Larger Runners and are continuing to monitor full recovery.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 14, 20:09 </h3>
+            <p> <p>We&rsquo;ve applied a mitigation to fix the issues with queuing and running Actions jobs. We are seeing improvements in telemetry and are monitoring for full recovery.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 14, 19:16 </h3>
+            <p> <p>We are continuing to investigate long queue times for Actions Larger Runners</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 14, 18:40 </h3>
+            <p> <p>We are investigating long queue times for Actions Larger Runners</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - May 14, 18:37 </h3>
+            <p> <p>We are currently investigating this issue.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

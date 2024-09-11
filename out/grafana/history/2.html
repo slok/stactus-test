@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafana status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/grafana/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident History</h1>
+        
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/t84yclf9w2b2">Datasource API Server Outage</a></h2>
+            <p>
+                <p>All clusters have been restarted and datasources should be fully operational.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 17, 19:18 - Jul 17, 20:29
+            
+            </small>
+        </div>
+        
+        <div class="box impact-none">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/v2kqfb9306wl">Loki-prod Write and Read Issues</a></h2>
+            <p>
+                <p>Starting at ~21:11 UTC, Loki had a brief outage. Users may have experienced degraded write path performance for approximately 10 minutes, and 2-3 minutes of total write and read outage. This has since been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 16, 21:45 - Jul 16, 21:45
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/vnmq4dzcs2fg">Slow query responses</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 16, 13:34 - Jul 16, 14:08
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/yfjypz7sgwl9">Confluent integration issues in all regions</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 15, 21:31 - Jul 15, 22:28
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/lcbp63d7ds41">Service Disruption in EU-West-0</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 12, 09:41 - Jul 12, 10:41
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/5dkbj3r63cwq">Experiencing issues with new stack creation</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 11, 15:26 - Jul 11, 16:03
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/pch7l558kbsr">Hosted Logs prod-ap-northeast-0 region full read path outage.</a></h2>
+            <p>
+                <p>The incident is fully resolved now, root cause was determined and mitigated. The particular cell affected had a legacy config present, which caused a panic during the regular rollout. The cell was rolled back as a precaution and the mentioned config is now corrected.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul  9, 10:26 - Jul  9, 11:36
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/9mtcm15y3xr8">Synthetic monitoring scripted and multihttp tests not executing (all public probes)</a></h2>
+            <p>
+                <p>Between 10:45 UTC and 11:05 UTC we experienced an outage with scripted and multi-http test executions across all public probe locations.  These two check types were not executing tests, so you may see gaps in the synthetics metrics and logs in that window.   Protocol-level test executions (ping, dns, tcp, http, traceroute) were unaffected.  As of 11:05 UTC the incident is resolved and all check types are executing normally.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul  5, 13:50 - Jul  5, 15:00
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/z80hpdd30nrf">Issues with Library Panels</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun 27, 17:36 - Jul  2, 21:58
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/grafana/ir/4161n9w685bf">Issues in prod-us-east-0 with Alertmanager and Rule Evaluations</a></h2>
+            <p>
+                <p>We continue to observe a continued period of recovery. At this time, we are considering this issue resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun 25, 18:32 - Jun 25, 19:45
+            
+            </small>
+        </div>
+        
+        <div class="row">
+            
+                <div class="block">
+                    <a href="https://slok.github.io/stactus-test/grafana/history/3"> ⮜ Previous </a>
+                </div>
+            
+            
+                <div class="block">
+                    <a href="https://slok.github.io/stactus-test/grafana/history/1"> Next ⮞ </a>
+                </div>
+            
+        </div>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

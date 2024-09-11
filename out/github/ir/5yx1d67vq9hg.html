@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/github/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident with Webhooks and Actions</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>5yx1d67vq9hg</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Major</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul  5, 17:04</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul  5, 20:57</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>3h52m43.971s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul  5, 20:57 </h3>
+            <p> <p>On July 5, 2024, between 16:31 UTC and 18:08 UTC, the Webhooks service was degraded, with customer impact of delays to all webhook delivery. On average, delivery delays were 24 minutes, with a maximum of 71 minutes. This was caused by a configuration change to the Webhooks service, which led to unauthenticated requests sent to the background job cluster. The configuration error was repaired and re-deploying the service solved the issue. However, this created a thundering herd effect which overloaded the background job queue cluster which put its API layer at max capacity, resulting in timeouts for other job clients, which presented as increased latency for API calls.<br /><br />Shortly after resolving the authentication misconfiguration, we had a separate issue in the background job processing service where health probes were failing, leading to reduced capacity in the background job API layer which magnified the effects of the thundering herd. From 18:21 UTC to 21:14 UTC, Actions runs on PRs experienced approximately 2 minutes delay and maximum of 12 minutes delay. A deployment of the background job processing service remediated the issue.<br /><br />To reduce our time to detection, we have streamlined our dashboards and added alerting for this specific runtime behavior. Additionally, we are working to reduce the blast radius of background job incidents through better workload isolation.<br /></p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 20:44 </h3>
+            <p> <p>We are seeing recovery in Actions start times and are observing for any further impact.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 20:32 </h3>
+            <p> <p>We are still seeing about 5% of Actions runs taking longer than 5 minutes to start. We are scaling and shifting resources to encourage recovery of the problem.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 19:58 </h3>
+            <p> <p>We are still seeing about 5% of Actions runs taking longer than 5 minutes to start. We are evaluating mitigations to increase capacity to decrease latency.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 19:19 </h3>
+            <p> <p>We are seeing about 5% of Actions runs not starting within 5 minutes. We are continuing investigation.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 18:40 </h3>
+            <p> <p>We have seen recovery of Actions run delays. Keeping the incident open to monitor for full recovery.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 18:10 </h3>
+            <p> <p>Webhooks is operating normally.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 18:09 </h3>
+            <p> <p>We are seeing delays in Actions runs due to the recovery with webhook deliveries. We expect this to resolve with the recovery of webhooks.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 18:07 </h3>
+            <p> <p>Actions is experiencing degraded performance. We are continuing to investigate.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 17:57 </h3>
+            <p> <p>We are seeing recovery as webhooks are being delivered again. We are burning down our queue of events. No events have been lost. New webhook deliveries will be delayed while this process recovers.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 17:55 </h3>
+            <p> <p>Webhooks is experiencing degraded performance. We are continuing to investigate.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 17:42 </h3>
+            <p> <p>We are reverting a configuration change that is suspected to contribute to the problem with webhook deliveries.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 17:20 </h3>
+            <p> <p>Our telemetry shows that most webhooks are failing to be delivered. We are queueing all undelivered webhooks and are working to remediate the problem.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 17:17 </h3>
+            <p> <p>Webhooks is experiencing degraded availability. We are continuing to investigate.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  5, 17:04 </h3>
+            <p> <p>We are investigating reports of degraded performance for Webhooks</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/github/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident History</h1>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/fnj6l879tbtw">Disruption with some GitHub services</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Aug 12, 14:03 - Aug 12, 14:15
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/1kn4kywmvgz4">[Retroactive] Incident with Pull Requests</a></h2>
+            <p>
+                <p>Beginning at 6:52 PM UTC on August 6, 2024 and lasting until 6:59 PM UTC, some customers of github.com saw errors when navigating to a Pull Request. The error rate peaked at ~5% for logged in users. This was due to a change which was rolled back after alerts fired during the deployment.</p>
+
+<p>We did not status before we completed the rollback, and the incident is currently resolved. We are sorry for the delayed post on githubstatus.com.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Aug  6, 18:30 - Aug  6, 18:30
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/cr44n0knc7xj">Disruption with some GitHub services</a></h2>
+            <p>
+                <p>Beginning at 8:38 PM UTC on July 31, 2024 and lasting until 9:28 PM UTC on July 31, 2024, some customers of github.com saw errors when navigating to the Billing pages and/or when updating their payment method. These errors were caused due to a degradation in one of our partner services. A fix was deployed by the partner services and the Billing pages are back to being functional. <br /><br />For improved detection of such issues in future, we will work with the partner service to identify levers we can use to get an earlier indication of issues.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 31, 20:38 - Jul 31, 21:21
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/dy0rbtrxtwlh">Disruption in service with some Redis clusters</a></h2>
+            <p>
+                <p>On July 31, 2024, between 07:05 UTC and 09:01 UTC the Actions service experienced degradation, preventing it from processing API requests and executing jobs, in particular Pages builds. On average, 2% of jobs run during the incident window were affected. This was due to some nodes in one of our partner services experiencing connectivity issues in the East US2 region. We mitigated the incident by failing over the impacted service and re-routing the service’s traffic out of that region.<br /><br />We are working to improve monitoring and processes of failover to reduce our time to detection and mitigation of issues like this one in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 31, 07:59 - Jul 31, 09:20
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/s4bvfmfm297p">Incident with Codespaces</a></h2>
+            <p>
+                <p>On July 31st, 2024, between 00:31 UTC and 03:37 UTC the Codespaces service was degraded and connecting through non-web flows such as VS Code or the GitHub CLI were unavailable. Using Codespaces via the web portal was not impacted. This was due to a code change resulting in authentication failures from the Codespaces public API.<br /><br />We mitigated the incident by reverting the change upon discovering the cause of the issue.<br /><br />We are working to improve testing, monitoring, and rollout of new features to reduce our time to detection and mitigation of issues like this one in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 31, 00:52 - Jul 31, 03:37
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/y0gqch2dhw5l">Actions runs using large hosted runners delayed for some customers</a></h2>
+            <p>
+                <p>On July 30th, 2024, between 13:25 UTC and 18:15 UTC, customers using Larger Hosted Runners may have experienced extended queue times for jobs that depended on a Runner with VNet Injection enabled in a virtual network within the East US 2 region. Runners without VNet Injection or those with VNet Injection in other regions were not affected. The issue was caused due to an outage in a third party provider blocking a large percentage of VM allocations in the East US 2 region. Once the underlying issue with the third party provider was resolved, job queue times went back to normal. We are exploring the addition of support for customers to define VNet Injection Runners with VNets across multiple regions to minimize the impact of outages in a single region.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 30, 18:19 - Jul 30, 22:10
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/h2mghb83nt00">Incident with Codespaces</a></h2>
+            <p>
+                <p>On July 30th, 2024, between 12:15 UTC and 14:22 UTC the Codespaces service was degraded in the UK South and West Europe regions. During this time, approximately 75% of attempts to create or resume Codespaces in these regions were failing.<br /><br />We mitigated the incident by resolving networking stability issues in these regions.<br /><br />We are working to improve network resiliency to reduce our time to detection and mitigation of issues like this one in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 30, 13:36 - Jul 30, 14:22
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/q1yjht6mt3zn">Linking internal teams to external IDP groups was broken for some users between 15:17-20:44 UTC</a></h2>
+            <p>
+                <p>Between July 24th, 2024 at 15:17 UTC and July 25th, 2024 at 21:04 UTC, the external identities service was degraded and prevented customers from linking teams to external groups on the create/edit team page. Team creation and team edits would appear to function as normal, but the selected group would not be linked to the team after form submission. This was due to a bug in the Primer experimental SelectPanel component that was mistakenly rolled out to customers via a feature flag.<br /><br />We mitigated the incident by scaling the feature flag back down to 0% of actors.<br /><br />We are making improvements to our release process and test coverage to avoid similar incidents in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 25, 21:04 - Jul 25, 21:05
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/n2969465tx0b">Events are delayed across GitHub</a></h2>
+            <p>
+                <p>On July 25th, 2024, between 15:30 and 19:10 UTC, the Audit Log service experienced degraded write performance. During this period, Audit Log reads remained unaffected, but customers would have encountered delays in the availability of their current audit log data. There was no data loss as a result of this incident.<br /><br />The issue was isolated to a single partition within the Audit Log datastore. Upon restarting the primary partition, we observed an immediate recovery and a subsequent increase in successful writes. The backlog of log messages was fully processed by approximately 00:40 UTC on July 26th.<br /><br />We are working with our datastore team to ensure mitigation is in place to prevent future impact. Additionally, we will investigate whether there are any actions we can take on our end to reduce the impact and time to mitigate in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 25, 18:44 - Jul 25, 19:20
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/github/ir/4s161kygs873">Disruption with GitHub Copilot Chat</a></h2>
+            <p>
+                <p>On July 23, 2024, between 21:40 UTC and 22:00 UTC, Copilot Chat experienced errors and service degradation. During this time, the global error rate peaked at 20% of Chat requests.<br /><br />This was due to a faulty deployment in a service provider that caused server errors from a single region. Traffic was routed away from this region at 22:00 UTC which restored functionality while the upstream service provider rolled back their change. The rollback was completed at 22:38 UTC.<br /><br />We are working to improve our ability to respond more quickly to similar issues through faster regional redirection and working with our upstream provider on improved monitoring.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 23, 21:40 - Jul 23, 22:38
+            
+            </small>
+        </div>
+        
+        <div class="row">
+            
+                <div class="block">
+                    <a href="https://slok.github.io/stactus-test/github/history/2"> ⮜ Previous </a>
+                </div>
+            
+            
+                <div class="block">
+                    <a href="https://slok.github.io/stactus-test/github/history/0"> Next ⮞ </a>
+                </div>
+            
+        </div>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

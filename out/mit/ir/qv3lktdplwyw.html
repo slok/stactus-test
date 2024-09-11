@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIT status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/mit/static/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Spectrum Protect (TSM) issue with oc11-bk-ent-1</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>qv3lktdplwyw</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Aug 13, 09:49</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Aug 24, 16:29</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>270h39m24.371s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Aug 24, 16:29 </h3>
+            <p> <p>Users who have not yet performed the steps to truest the new certificate should still do so.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Aug 14, 12:45 </h3>
+            <p> <p>All server-side work is complete, but owners of machines that back up to oc11-bk-ent-1 must take the steps outlined yesterday, if they have not already done so.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Aug 13, 16:27 </h3>
+            <p> <p>This issue was caused by an SSL certificate internal to Spectrum Protect, that expired this morning.  The certificate has been updated on the server, but the clients still need to be updated to trust the new certificate.  Unfortunately, Spectrum Protect does not provide a complete way to centrally communicate out to the clients about the new certificate.  At this point owners of nodes that backup to oc11-bk-ent-1 must remove the old server certificate, in order to allow the new one to be installed on the client.  To do this</p>
+
+<ol>
+<li>Find the folder that contains the dsmcert.idx, dsmcert.kdb, and dsmcert.sth files. This is probably /opt/tivoli/tsm/client/ba/bin on Linux servers,  C:\Program Files\Tivoli\TSM\baclient on windows servers, and &lsquo;/Library/Application Support/tivoli/tsm/client/ba/bin&rsquo; on OSX servers.  However, it is possible it may be in another location.</li>
+<li>Save a copy of dsmcert.idx, dsmcert.kdb, and dsmcert.sth in an alternate location, and remove them from their original location</li>
+<li>Restart the TSM scheduler service
+You can verify that things are working properly by looking at the end of the dsmsched.log file, or starting the client manually and confirming that you can connect.
+NOTE: We currently believe that this does not apply to version 6 and earlier clients, because they are so old that they do not use SSL encryption, and are not affected by this certificate.  They also have not been supported for years (only version 8 clients are currently supported).</li>
+</ol>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Aug 13, 09:49 </h3>
+            <p> <p>We are investigating an issue with the Spectrum Protect (formerly known as TSM) backup server oc11-bk-ent-1 that results in connection failures with an SSL error.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/mit/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>
