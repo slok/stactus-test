@@ -9,7 +9,7 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
@@ -25,8 +25,8 @@
         </li>
     </ul>
     <ul>
-        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
-        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
     </ul>
 </nav>
 
@@ -37,7 +37,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/5dvz23w3gl38" class="incident-title-minor"> Disruption with GitHub services</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/5dvz23w3gl38" class="incident-title-minor"> Disruption with GitHub services</a></h4>
                 </header>
                 <p>On July 02, 2024, between 18:21 UTC and 19:24 UTC the code search service was degraded and returned elevated 500 HTTP status responses. On average, the error rate was 38% of code search requests. This was due to a bad deployment causing some user&rsquo;s rate limit calculations to error while processing code search requests. This impacted approximately 2,000 users.<br />We mitigated the incident by rolling back the bad deployment along with resetting rate limits for all users.<br />We have identified and implemented updates in the testing of rate limit calculations to prevent this problem from happening again, and clarified deployment processes for verification before a full production rollout to minimize impact in the future.</p>
 
@@ -52,7 +52,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/4dq0ww5d0q7j" class="incident-title-minor"> Incident with Git Operations</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/4dq0ww5d0q7j" class="incident-title-minor"> Incident with Git Operations</a></h4>
                 </header>
                 <p>At approximately 19:20 UTC on July 1st, 2024, one of GitHub’s peering links to a public cloud provider began experiencing 5 - 20% packet loss. This resulted in intermittent network timeouts running Git operations for customers who run their own environments with that specific provider.<br /><br />Investigation pointed to an issue with the physical link. At 01:14 UTC we rerouted traffic away from the problematic link to other connections to resolve the incident. <br /></p>
 
@@ -67,7 +67,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/9vwllhs2w1kj" class="incident-title-minor"> Delays in changes to organization membership</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/9vwllhs2w1kj" class="incident-title-minor"> Delays in changes to organization membership</a></h4>
                 </header>
                 <p>On June 28th, 2024, at 16:06 UTC, a backend update by GitHub triggered a significant number of long-running Organization membership update jobs in our job processing system. The job queue depth rose as these update jobs consumed most of our job worker capacity. This resulted in delays for other jobs across services such as Pull Requests and PR-related Actions workflows. We mitigated the impact to Pull Requests and Actions at 19:32 UTC by pausing all Organization membership update jobs. We deployed a code change at 22:30 UTC to skip over the jobs queued by the backend change and re-enabled Organization membership update jobs. We restored the Organization membership update functionality at 22:52 UTC, including all membership changes queued during the incident.<br /><br />During the incident, about 15% of Action workflow runs experienced a delay of more than five minutes. In addition, Pull Requests had delays in determining merge eligibility and starting associated Action workflows for the duration of the incident. Organization membership updates saw delays for upwards of five hours.<br /><br />To prevent a similar event in the future from impacting our users, we are working to: improve our job management system to better manage our job worker capacity; add more precise monitoring for job delays; and strengthen our testing practices to prevent future recurrences.</p>
 
@@ -82,7 +82,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/y0frtmhd9n2z" class="incident-title-minor"> Incident with Codespaces</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/y0frtmhd9n2z" class="incident-title-minor"> Incident with Codespaces</a></h4>
                 </header>
                 <p>On June 27th, 2024, between 22:38 UTC and 23:44 UTC some Codespaces customers in the West US region were unable to create and/or resume their Codespaces. This was due to a configuration change that affected customers with a large number of Codespace secrets defined.<br /><br />We mitigated the incident by reverting the change.<br /><br />We are working to improve monitoring and testing processes to reduce our time to detection and mitigation of issues like this one in the future.</p>
 
@@ -97,7 +97,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/538zgs80s3zg" class="incident-title-major"> Disruption with GitHub services</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/538zgs80s3zg" class="incident-title-major"> Disruption with GitHub services</a></h4>
                 </header>
                 <p>Between June 27th, 2024 at 20:39 UTC and 21:37 UTC the Migrations service was unable to process migrations. This was due to a invalid infrastructure credential. <br /><br />We mitigated the issue by updating the credential and deploying the service. <br /><br />Mechanisms and automation will be implemented to detect and prevent this issue again in the future.</p>
 
@@ -112,7 +112,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/nzc328r69wrv" class="incident-title-minor"> Incident with Copilot Pull Request Summaries</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/nzc328r69wrv" class="incident-title-minor"> Incident with Copilot Pull Request Summaries</a></h4>
                 </header>
                 <p>Between June 18th, 2024 at 09:34 PM UTC and June 19th, 2024 at 12:53 PM the Copilot Pull Request Summaries Service was unavailable. This was due to an internal change in access approach from the Copilot Pull Request service to the Copilot API.<br /><br />We mitigated the incident by reverting the change in access which immediately resolved the errors.<br /><br />We are working to improve our monitoring in this area and reduce our time to detection to more quickly address issues like this one in the future.<br /></p>
 
@@ -127,7 +127,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/k1mlxlmdhqqp" class="incident-title-minor"> We are investigating degraded performance for GitHub Enterprise Importer migrations</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/k1mlxlmdhqqp" class="incident-title-minor"> We are investigating degraded performance for GitHub Enterprise Importer migrations</a></h4>
                 </header>
                 <p>Starting on June 18th from 4:59pm UTC to 6:06pm UTC, customer migrations were unavailable and failing. This impacted all in-progress migration during that time. This issue was due to an incorrect configuration on our Database cluster. We mitigated the issue by remediating the database configuration and are working with stakeholders to ensure safeguards are in place to prevent the issue going forward.</p>
 
@@ -142,7 +142,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/lfrlwdg67fn8" class="incident-title-minor"> Incident with Actions</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/lfrlwdg67fn8" class="incident-title-minor"> Incident with Actions</a></h4>
                 </header>
                 <p>On June 11th, 2024 between 20:13 UTC and 21:39 UTC, the GitHub Actions service was degraded. A security-related change applied by one of our third-party providers prevented new customers from onboarding to GitHub Actions and caused an average 28% of Actions jobs to fail.<br /><br />We mitigated the incident by working with the third-party provider to revert the change and are working with their engineering team to fully understand the root cause. Additionally, we are improving communication between GitHub and our service providers to reduce the time needed to resolve similar issues in the future.</p>
 
@@ -157,7 +157,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/fr6wzzpg0bsv" class="incident-title-minor"> Incident with Packages</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/fr6wzzpg0bsv" class="incident-title-minor"> Incident with Packages</a></h4>
                 </header>
                 <p>On June 6, 2024 between 03:29 and 04:19 UTC, the service responsible for the Maven package registry was degraded. This affected GitHub customers who were trying to upload packages to the Maven package registry.<br /><br />We observed increased database pressure due to bulk operations in progress, and at 04:19 UTC, the Maven upload issues resolved when those bulk operations finished. We&rsquo;re continuing to assess any additional compounding factors.<br /><br />We are working on improving our thresholds for existing alerts to reduce our time to detection and mitigation of issues like this one in the future.<br /></p>
 
@@ -172,7 +172,7 @@
             
             <article>
                 <header>
-                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/9zxft4pnrhbt" class="incident-title-major"> Incident with Issues</a></h4>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/9zxft4pnrhbt" class="incident-title-major"> Incident with Issues</a></h4>
                 </header>
                 <p>On June 5, 2024, between 17:05 UTC and 19:27 UTC, the GitHub Issues service was degraded. During that time, no events related to projects were displayed on issue timelines. These events indicate when an issue was added to or removed from a project and when their status changed within a project. The data couldn’t be loaded due to a misconfiguration of the service backing these events. This happened after a scheduled secret rotation when the wrongly configured service continued using the old secrets which had expired. <br /><br />We mitigated the incident by remediating the service configuration and have started simplifying the configuration to avoid similar misconfigurations in the future.</p>
 
@@ -187,11 +187,11 @@
             
             <section>
                 
-                    <a href="http://127.0.0.1:8080/simple/github/history/4" role="button"> ⮜ Previous </a>
+                    <a href="https://slok.github.io/stactus-test/simple/github/history/4" role="button"> ⮜ Previous </a>
                 
                 
                     <span class="move-right">
-                        <a href="http://127.0.0.1:8080/simple/github/history/2" role="button"> Next ⮞ </a>
+                        <a href="https://slok.github.io/stactus-test/simple/github/history/2" role="button"> Next ⮞ </a>
                     </span>
                 
             </section>
