@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIT status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/mit/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>MIT status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/mit/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/mit/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Spectrum Protect (TSM) issue with oc11-bk-ent-1</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 270h39m24.371s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>Users who have not yet performed the steps to truest the new certificate should still do so.</p>
+
+            <footer>
+                <cite>Aug 24, 16:29</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>All server-side work is complete, but owners of machines that back up to oc11-bk-ent-1 must take the steps outlined yesterday, if they have not already done so.</p>
+
+            <footer>
+                <cite>Aug 14, 12:45</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>This issue was caused by an SSL certificate internal to Spectrum Protect, that expired this morning.  The certificate has been updated on the server, but the clients still need to be updated to trust the new certificate.  Unfortunately, Spectrum Protect does not provide a complete way to centrally communicate out to the clients about the new certificate.  At this point owners of nodes that backup to oc11-bk-ent-1 must remove the old server certificate, in order to allow the new one to be installed on the client.  To do this</p>
+
+<ol>
+<li>Find the folder that contains the dsmcert.idx, dsmcert.kdb, and dsmcert.sth files. This is probably /opt/tivoli/tsm/client/ba/bin on Linux servers,  C:\Program Files\Tivoli\TSM\baclient on windows servers, and &lsquo;/Library/Application Support/tivoli/tsm/client/ba/bin&rsquo; on OSX servers.  However, it is possible it may be in another location.</li>
+<li>Save a copy of dsmcert.idx, dsmcert.kdb, and dsmcert.sth in an alternate location, and remove them from their original location</li>
+<li>Restart the TSM scheduler service
+You can verify that things are working properly by looking at the end of the dsmsched.log file, or starting the client manually and confirming that you can connect.
+NOTE: We currently believe that this does not apply to version 6 and earlier clients, because they are so old that they do not use SSL encryption, and are not affected by this certificate.  They also have not been supported for years (only version 8 clients are currently supported).</li>
+</ol>
+
+            <footer>
+                <cite>Aug 13, 16:27</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating an issue with the Spectrum Protect (formerly known as TSM) backup server oc11-bk-ent-1 that results in connection failures with an SSL error.</p>
+
+            <footer>
+                <cite>Aug 13, 09:49</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

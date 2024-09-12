@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body>
+    <body style="width:960px; margin:0 auto;">
+        <header class="container-fluid">
+            
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+        </header>
+        <main class="container-fluid">
+            <br />
+            <h1>Incident History</h1>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/g8g6c6s72836" class="incident-title-minor"> Incident with Copilot</a></h4>
+                </header>
+                <p>On May 30th, 2024, between 03:37 PM UTC and 05:14 PM UTC Copilot chat conversations on github.com saw degraded availability, where chat requests referencing files from a repository failed. This was due to an expired security certificate, which required communication to an internal service. Overall, the error rate was 40% on average. Other Copilot chat experiences were unaffected during this time.<br /><br />The incident was mitigated by rotating the certificate in question.<br /><br />To prevent future incidents, we are working to reduce our time to detect and have removed certificate-based dependencies between these internal systems in the process.<br /></p>
+
+                <footer>
+                    <small>
+                        
+                            May 30, 17:14 - May 30, 17:22 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/k8nz2ljtvzv4" class="incident-title-minor"> Incident with Codespaces</a></h4>
+                </header>
+                <p>On 2024-05-28 between 18:30 and 21:30 UTC, the Codespaces service was degraded. Users with dev container configurations that depended on the DockerHub container registry were unable to create new codespaces unless they provided their own DockerHub registry credentials. We observed a rise of at most 6% of creations entering recovery mode due to this incident.<br /><br />The GitHub Codespaces team worked directly with Docker to mitigate and has engaged with Docker to prevent similar issues in the future.</p>
+
+                <footer>
+                    <small>
+                        
+                            May 28, 20:17 - May 28, 21:24 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/tn6bvw0pttjr" class="incident-title-minor"> Incident with Codespaces</a></h4>
+                </header>
+                <p>On May 23, 2024 between 15:31 and 16:02 the Codespaces service reported a degraded experience in codespaces across all regions. Upon further investigation this was found to be an error reporting issue and did not have user facing impact. The new error reporting that was implemented began raising on existing non-user facing errors that are handled further in the flow, at the controller level, which do not cause user impact. We are working to improve our reporting roll out process to reduce issues like this in the future which includes updating monitors and dashboards to exclude this class of error. We are also reclassifying and correcting internal API responses to better represent when errors are user facing for more accurate reporting.</p>
+
+                <footer>
+                    <small>
+                        
+                            May 23, 15:31 - May 23, 16:02 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/nj47vccwm2zj" class="incident-title-minor"> Incident with Actions</a></h4>
+                </header>
+                <p>On May 21, 2024, between 11:40 UTC and 19:06 UTC various services experienced elevated latency due to a configuration change in an upstream cloud provider.<br /><br />GitHub Copilot Chat experienced P50 latency of up to 2.5s and P95 latency of up to 6s. GitHub Actions was degraded with 20 - 60 minute delays for workflow run updates. GitHub Enterprise Importer customers experienced longer migration run times due to GitHub Actions delays. Additionally, billing related metrics for budget notifications and UI reporting were delayed leading to outdated billing details. No data was lost and systems caught up after the incident. <br /><br />At 12:31 UTC, we detected increased latency to cloud hosts. At 14:09 UTC, non-critical traffic was paused, which did not result in restoration of service. At 14:27 UTC, we identified high CPU load within a network gateway cluster caused by a scheduled operating system upgrade that resulted in unintended, uneven distribution of traffic within the cluster. We initiated deployment of additional hosts at 16:35 UTC. Rebalancing completed by 17:58 UTC with system recovery observed at 18:03 UTC and completion at 19:06 UTC.<br /><br />We have identified gaps in our monitoring and alerting for load thresholds. We have prioritized these fixes to improve time to detection and mitigation of this class of issues.</p>
+
+                <footer>
+                    <small>
+                        
+                            May 21, 12:45 - May 21, 19:06 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/915nn7rmqth9" class="incident-title-minor"> We are investigating reports of degraded performance.</a></h4>
+                </header>
+                <p>Between May 19th 3:40AM UTC and May 20th 5:40PM UTC the service responsible for rendering Jupyter notebooks was degraded. During this time customers were unable to render Jupyter Notebooks.<br /><br />This occurred due to an issue with a Redis dependency which was mitigated by restarting. An issue with our monitoring led to a delay in our response. We are working to improve the quality and accuracy of our monitors to reduce the time to detection.</p>
+
+                <footer>
+                    <small>
+                        
+                            May 20, 16:47 - May 20, 17:05 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/2bglpcjvg7xb" class="incident-title-minor"> Incident with Actions</a></h4>
+                </header>
+                <p>On May 16, 2024, between 4:10 UTC and 5:02 UTC customers experienced various delays in background jobs, primarily UI updates for Actions. This issue was due to degradation in our background job service affecting 22.4% of total jobs.  Across all affected services, the average job delay was 2m 22s.  Actions jobs themselves were unaffected, this issue affected the timeliness of UI updates, with an average delay of 11m 40s and a maximum of 20m 14s.<br /><br />This incident was due to a performance problem on a single processing node, where Actions UI updates were being processed.  Additionally, a misconfigured monitor did not alert immediately, resulting in a 25m late detection time and a 37m total increase in time to mitigate.   <br /><br />We mitigated the incident by removing the problem node from the cluster and service was restored.  No data was lost, and all jobs executed successfully.<br /><br />To reduce our time to detection and mitigation of issues like this one in the future, we have repaired our misconfigured monitor and added additional monitoring to this service. <br /></p>
+
+                <footer>
+                    <small>
+                        
+                            May 16, 04:43 - May 16, 05:15 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/bfkxf0w61z1n" class="incident-title-minor"> We are investigating reports of degraded performance.</a></h4>
+                </header>
+                <p>On May 14, 2024 between 18:00 UTC and 20:10 UTC, GitHub Actions performance was degraded and larger hosted runners using <code>linux-x64</code> images (Ubuntu20, Ubuntu22, Ubuntu24-beta) experienced longer than normal job start up times. Approximately 25% of all runs targeting larger hosted runners queued during this time were slow to start, with a median wait time of 1 minute, 55 seconds.<br /><br />The issue was caused by a downstream dependency overloading, which impacted our machine setup process. Each larger hosted runner job is run on a fresh VM, and one of the setup steps is installing the Actions agent. Up to the point of this incident, we would pull the latest agent version from the GitHub release and install it on the VM. However, during this incident the speciific GitHub release for the Linux x64 Actions agent became overloaded, and our agent downloads were severely throttled. This throttling led to timeouts during the download, and caused our hosted runner system to conclude the VMs were failing to start. We need the Actions agent online to start serving jobs, and with the download timing out, our service assumed the runner wasn&rsquo;t starting up successfully. This failure to start up led to those VMs being reset again and again instead of serving jobs. We mitigated the issue by falling back to a cached version of the Actions agent present on our image.<br /><br />We have further refined the fallback system to automatically use the cached agent binaries, and added new functionality to allow for easier agent downloading from other locations. Both of these measures should eliminate future impacts from similar downstream impact.</p>
+
+                <footer>
+                    <small>
+                        
+                            May 14, 18:37 - May 14, 21:04 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/f7jl0mdd2jr5" class="incident-title-minor"> Incident with Actions</a></h4>
+                </header>
+                <p>On May 13, 2024, between 19:03 UTC and 19:57 UTC, some customers experienced delays in receiving status updates for in-progress GitHub Actions workflow runs. The root cause was identified to be a bug in the logic for checking the state of a configuration which would only manifest under very specific conditions and cause exceptions. These exceptions impacted the backend process for handling workflow run status updates and caused jobs with any annotations to not get updated properly. Jobs without any annotations were not affected. The affected jobs during the incident will get marked as failed after 24 hours, and affected customers will need to manually retry the jobs they want to execute.<br /><br />We resolved the incident by reverting the problematic change. We are enhancing our process for deploying changes and reassessing our monitoring of relevant subsystems to prevent similar issues in the future.<br /></p>
+
+                <footer>
+                    <small>
+                        
+                            May 13, 19:51 - May 13, 20:10 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/lpd7npwx7wb5" class="incident-title-minor"> Incident with Copilot</a></h4>
+                </header>
+                <p>Incident Report: May 13, 2024 (lasting approximately 4 hours)<br /><br />On May 13 at 10:40 AM UTC, GitHub Copilot Chat began returning error responses to 6% of users. The problem was identified, and a status update was provided shortly after. A mitigation strategy was implemented by 14:30 UTC, which mitigated the impact.<br /><br />The root cause of the incident was a combination of issues in the request handling process. Specifically, some requests were malformed, which resulted in being incorrectly routed to the wrong deployment. That deployment wasn’t resilient to the malformed requests and resulted in errors.<br /><br />To mitigate the immediate impact, requests were routed away from the failing deployment. This temporarily reduced the number of errors while the underlying issue was investigated and resolved.<br /><br />To prevent similar incidents in the future, we have enhanced validation checks for incoming requests to ensure proper handling and routing. In addition, we upgraded backend systems to provide more robust error handling and observability.<br /></p>
+
+                <footer>
+                    <small>
+                        
+                            May 13, 13:23 - May 13, 15:44 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/github/ir/tsrh60nkbchl" class="incident-title-minor"> Incident with Issues, API Requests and Pull Requests</a></h4>
+                </header>
+                <p>Starting on May 7th, 2024 at 14:00 UTC, our elasticsearch cluster that powers Issues and Pull Requests became unresponsive correlating to a spike in usage.  This affected GitHub customers who were trying to search issues and pull requests.<br /><br />We mitigated this incident by adding additional cluster members which increased the resources available to the cluster.  We are working to add additional safeguards to our endpoints.  We are also continuing to investigate the root cause of the instability and if the index needs to be re-sharded for future risk mitigation.</p>
+
+                <footer>
+                    <small>
+                        
+                            May  7, 14:23 - May  7, 15:55 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <section>
+                
+                
+                    <span class="move-right">
+                        <a href="http://127.0.0.1:8080/simple/github/history/3" role="button"> Next ⮞ </a>
+                    </span>
+                
+            </section>
+        </main>
+    </body>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

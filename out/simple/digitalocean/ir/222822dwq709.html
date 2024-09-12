@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Ocean status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/digitalocean/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Digital Ocean status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/digitalocean/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/digitalocean/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Global Impact to Events, Cloud Control Panel, and API</h1>
+        <br />
+        
+        <article class="incident-ongoing-minor">
+            <i class="ph-bold ph-warning-circle"></i> <strong>Incident ongoing</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <h3 id="incident-summary"><strong>Incident Summary</strong></h3>
+
+<p>On August 05, 2024 at 16:30 UTC, DigitalOcean experienced a disruption to internal service discovery. Customers experienced full disruption of creates, event processing, and management of other DigitalOcean products globally. Due to an error in a replication configuration that propagated globally, internal services were unable to correctly discover other services they depended on. This did not affect the availability of existing customer resources.</p>
+
+<h3 id="incident-details"><strong>Incident Details</strong></h3>
+
+<p><strong>Root Cause</strong>: An incorrect replication configuration was deployed against the datastore which powers the internal service discovery service at DigitalOcean. The incorrect configuration specified a new datacenter with zero keys as 100% ownership of all keys in the datastore. This had an immediate global impact against the data storage layer and disrupted the quorum of datastore nodes across all regions. Clients of the service were unable to read/write to the datastore during this time, which had a cascading effect.‌</p>
+
+<p><strong>Impact</strong>:</p>
+
+<p>The first observable impact was a complete disruption to the I/O layer of the backing datastore.</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdU0ECDjKRvdaKFCHqMyxYzFgFPwuYW_vbTLkcqmh4-YHquKP77AjozHffhv0xPnUNrYXtRV0rPwUYKEtb4n0Dozo_bvHFHbIY986AIirTvtuyDRh_7Z0TYjnUEjd9p1NWB83mr9SDE2Lhz6Fh6eRB_O-LY?key=ADgogSsNR7W3UpxAWFv39Q" alt="" />
+<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXhrWQUmlgO4kI7yfvDmzeVQNT0oCdDLBi53_P2TYzm8Zk0zZ0btTlKOz4zCPUvMH13byX4GTGUODvnCICI_UQGGNK5uN_YRSHE9RZ0YbQVCV4MZSKBRA1C-heSuzPN800iamOSr8XG0EYCnfK-6Y79mKE?key=ADgogSsNR7W3UpxAWFv39Q" alt="" /></p>
+
+<p>These events are consumed by a wide variety of backing services that compose the DigitalOcean Cloud platform. This incident impacted:</p>
+
+<ul>
+<li>Droplet Creates</li>
+<li>Droplet Updates</li>
+<li>Network Creates</li>
+<li>Login / Authentication services</li>
+<li>Block Storage Volumes Snapshot creation</li>
+<li>Spaces/CDN Creates</li>
+<li>Spaces Updates</li>
+<li>Managed Kubernetes cluster creates</li>
+<li>Managed Databases creates</li>
+</ul>
+
+<p>Other services across DigitalOcean, outside of the eventing flow, also rely on service discovery to talk to each other, so customers may have seen additional impact when attempting to manage assorted services through the Cloud Control Panel or via the API.</p>
+
+<p><strong>Response</strong>: After gathering diagnostic information and determining the root cause, an updated / correct replication configuration was deployed. Some regions ingested the new replication configuration and started to recover. Teams identified additional regions that took longer to ingest the updated configuration and manually invoked the change directly on the nodes, and then ran local repairs on the data to ensure alignment before moving to the next region.</p>
+
+<p>Engineering teams cleaned up any remaining failed events and processed pending events that had not yet timed out. At the conclusion of that cleanup effort, the incident was declared resolved, and the cloud platform stabilized.</p>
+
+<h3 id="timeline-of-events-utc"><strong>Timeline of Events (UTC)</strong></h3>
+
+<p>Aug 05 16:30 - Rollout of the new datastore cluster begins.</p>
+
+<p>Aug 05 16:35 - First report of service discovery unavailability is raised internally.</p>
+
+<p>Aug 05 16:42 - Lack of quorum and datastore ownership is identified as the blocking issue.</p>
+
+<p>Aug 05 17:00 - The replication configuration change, adding the new datacenter, is identified as the root cause behind the ownership change.</p>
+
+<p>Aug 05 17:16 - The replication configuration change is reverted, and run against the region that had become the datastore owner. Some events start to fail faster at this point, changing the error from a distinct timeout to a failure to find endpoints.</p>
+
+<p>Aug 05 18:25 - Regions that have not detected or applied the reverted configuration are identified, and engineers start manually applying the configuration and running repairs on the datastore for those regions.</p>
+
+<p>Aug 05 19:10 - Remaining failure events resolve, and the platform stabilizes.</p>
+
+<h3 id="remediation-actions"><strong>Remediation Actions</strong></h3>
+
+<p>The replication configuration deployment happened outside of a normal maintenance window. Moving forward, these types of extension maintenances will be performed inside a declared maintenance window, with any potential for customer impact communicated via a maintenance notice posted on the status page.</p>
+
+<p>The process documentation for this type of deployment will be updated to reflect the current requirements and clearly outline the steps and expectations for each stage of a new deployment. Additionally, the manual processes that occurred will be automated to help reduce the potential for human error.</p>
+
+<p>Multiple teams are also evaluating if our current topology of the internal datastore is appropriate, and if there are any regionalizations or multi-layered approaches DigitalOcean can take to help ensure our internal service discovery remains as available as possible.</p>
+
+            <footer>
+                <cite>Aug  8, 13:31</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>Our engineering team has resolved the issue impacting the management of multiple services via the Cloud Control Panel and the API, including event processing. All services should now be functioning normally. If you continue to experience problems, please open a ticket with our support team. We apologize for any inconvenience.</p>
+
+            <footer>
+                <cite>Aug  5, 19:46</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>Our Engineering teams have identified a remediation strategy and are working to roll it out to all regions. We are starting to see services recover as a result of this fix being deployed.</p>
+
+<p>Customers may begin to see some management functionality for services return and we will continue to provide updates as we work to return full functionality.</p>
+
+            <footer>
+                <cite>Aug  5, 19:20</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>Our Engineering teams have now identified the cause of the issue impacting multiple services. They continue to work on resolving the impact to customers.</p>
+
+<p>During this time, users may experience errors when attempting to manage services through the UI or the API, including accessing Droplet information or the processing of Droplet events. Existing customer resources, such as Droplets, remain online and accessible.</p>
+
+<p>We apologize for the inconvenience and will share an update once we have more information.</p>
+
+            <footer>
+                <cite>Aug  5, 17:39</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Multiple Engineering teams are continuing to investigate the issue. Customers may also encounter errors when managing other services and using the API at this time.</p>
+
+<p>We will post another update soon.</p>
+
+            <footer>
+                <cite>Aug  5, 17:11</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>As of 16:30 UTC, Our Engineering team is investigating an issue with processing of events in all regions. During this time users may experience failed events on Droplets. We apologize for the inconvenience and will share an update once we have more information.</p>
+
+            <footer>
+                <cite>Aug  5, 17:05</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

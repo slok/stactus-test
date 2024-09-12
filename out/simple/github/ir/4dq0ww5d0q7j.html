@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Incident with Git Operations</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 2h14m51.905s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>At approximately 19:20 UTC on July 1st, 2024, one of GitHub’s peering links to a public cloud provider began experiencing 5 - 20% packet loss. This resulted in intermittent network timeouts running Git operations for customers who run their own environments with that specific provider.<br /><br />Investigation pointed to an issue with the physical link. At 01:14 UTC we rerouted traffic away from the problematic link to other connections to resolve the incident. <br /></p>
+
+            <footer>
+                <cite>Jul  2, 01:14</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>As a result of rerouting traffic, we have seen overall network link health return to normal.</p>
+
+            <footer>
+                <cite>Jul  2, 01:14</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating connection issues with one of our network links. We are working to reroute traffic.</p>
+
+            <footer>
+                <cite>Jul  2, 00:52</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating intermittent network connection issues. These issues appear to be limited to customers hosted on AWS that are connecting to GitHub&rsquo;s network.</p>
+
+            <footer>
+                <cite>Jul  2, 00:15</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We&rsquo;re investigating reports of intermittent timeouts and connection errors for git clone operations.</p>
+
+            <footer>
+                <cite>Jul  1, 23:32</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating reports of degraded performance for Git Operations</p>
+
+            <footer>
+                <cite>Jul  1, 22:59</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

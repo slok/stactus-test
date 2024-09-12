@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/github/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident History</h1>
+        
+        <div class="box impact-minor">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/9rrqvvf23fhc">Incident with Codespaces</a></h2>
+            <p>
+                <p>On July 18, 2024, from 22:37 UTC to 04:47 UTC, one of our provider&rsquo;s services experienced degradation, causing errors in Codespaces, particularly when starting the VSCode server and installing extensions. The error rate reached nearly 100%, resulting in a global outage of Codespaces. During this time, users worldwide were unable to connect to VSCode. However, other clients that do not rely on the VSCode server, such as GitHub CLI, remained functional.<br /><br />We are actively working to enhance our detection and mitigation processes to improve our response time to similar issues in the future. Additionally, we are exploring ways to operate Codespaces in a more degraded state when one of our providers encounters issues, to prevent a complete outage.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 19, 02:10 - Jul 19, 04:47
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/m70hk23gx3nx">Issues enabling actions and running jobs on GitHub</a></h2>
+            <p>
+                <p>Beginning on July 18, 2024 at 22:38 UTC, network issues within an upstream provider led to degraded experiences across Actions, Copilot, and Pages services.<br /><br />Up to 50% of Actions workflow jobs were stuck in the queuing state, including Pages deployments.  Users were also not able to enable Actions or register self-hosted runners. This was caused by an unreachable backend resource in the Central US region. That resource is configured for geo-replication, but the replication configuration prevented resiliency when one region was unavailable. Updating the replication configuration mitigated the impact by allowing successful requests while one region was unavailable. By July 19 00:12 UTC, users saw some improvement in Actions jobs and full recovery of Pages. Standard hosted runners and self-hosted Actions workflows were healthy by 2:10 UTC and large hosted runners fully recovered at 2:38.<br /><br />Copilot requests were also impacted with up to 2% of Copilot Chat requests and 0.5% of Copilot Completions requests resulting in errors. Chat requests were routed to other regions after 20 minutes while Completions requests took 45 minutes to reroute. <br /><br />We have identified improvements to detection to reduce the time to engage all impacted on-call teams and improvements to our replication configuration and failover workflows to be more resilient to unhealthy dependencies and reduce our time to failover and mitigate customer impact.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 18, 22:47 - Jul 19, 02:38
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/lzyq3tjy07yq">Incident with Codespaces</a></h2>
+            <p>
+                <p>On July 17th, 2024 between 17:56 and 18:13 UTC the Codespaces service was degraded and 5% of codespaces were failing to start after creation. After analyzing the failing codespaces, we realized that all of them had reached the 1 hour timeout allocated for starting. Further, we realized that the root cause of the timeouts was the <a href="https://status.githubapp.com/incidents/1886?viewTimeOption=UTC">larger incident earlier in the day due to updating github’s network hardware</a>.<br />We realized this incident was already mitigated by the mitigation of the earlier incident.<br />We are working to see if we can improve our incident response process to better understand the connection between incidents in the future and avoid unnecessary incident noise for customers.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 17, 17:56 - Jul 17, 18:13
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/88003ngctf1z">Incident with multiple GitHub services</a></h2>
+            <p>
+                <p>On July 17, 2024, between 16:15:31 UTC and 17:06:53 UTC, various GitHub services were degraded including Login, the GraphQL API, Issues, Pages and Packages. On average, the error rate was 0.3% for requests to github.com and the API, and 3.0% of requests for Packages. This incident was triggered by two unrelated events:<br /><br />- A planned testing event of an internal feature caused heavy loads on our databases, disrupting services across GitHub.<br />- A network configuration change deployed to support capacity expansion in a GitHub data center. <br /><br />We partially resolved the incident by aborting the testing event at 16:17 UTC and fully resolved the incident by rolling back the network configuration changes at 16:49 UTC. <br /><br />We have paused all planned capacity expansion activity within GitHub data centers until we have stabilized the root cause of this incident. In addition, we are reexamining our load testing practices so they can be done in a safer environment and making architectural changes to the feature that caused issues.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 17, 16:21 - Jul 17, 17:06
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/p55k2jdgsrgc">Disruption with some GitHub services</a></h2>
+            <p>
+                <p>On July 16th, 2024, between 00:30 UTC and 03:07 UTC, Copilot Chat was degraded and rejected all requests. The error rate was close to 100% during this time period and customers would have received errors when attempting to use Copilot Chat. <br /><br />This was triggered during routine maintenance from a service provider, when GitHub services were disconnected and overwhelmed the dependent service during reconnections. <br /><br />To mitigate the issue in the future, we are working to improve our reconnection and circuit-breaking logic to dependent services to recover from this kind of event seamlessly, without overwhelming the other service.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 16, 00:53 - Jul 16, 03:07
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/3483v9fw5pm3">Incident with Copilot</a></h2>
+            <p>
+                <p>On July 13, 2024 between 00:01 and 19:27 UTC the Copilot service was degraded. During this time period, Copilot code completions error rate peaked at 1.16% and Copilot Chat error rate peaked at 63%. Between 01:00 and 02:00 UTC we were able to reroute traffic for Chat to bring error rates below 6%. During the time of impact customers would have seen delayed responses, errors, or timeouts during requests. GitHub code scanning autofix jobs were also delayed during this incident. <br /><br />A resource cleanup job was scheduled by <a href="https://azure.status.microsoft/en-us/status/history?trackingid=4L44-3F0">Azure OpenAI (AOAI) service early July 13th</a> targeting a resource group thought to only contain unused resources. This resource group unintentionally contained critical, still in use, resources that were then removed. The cleanup job was halted before removing all resources in the resource group. Enough resources remained that GitHub was able to mitigate while resources were reconstructed.<br /><br />We are working with AOAI to ensure mitigation is in place to prevent future impact. In addition, we will improve traffic rerouting processes to reduce time to mitigate in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 13, 00:18 - Jul 13, 19:27
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/9lmrb0ch7cnn">Incident with Copilot</a></h2>
+            <p>
+                <p>On July 11, 2024, between 10:20 UTC and 14:00 UTC Copilot Chat was degraded and experienced intermittent timeouts. This only impacted requests routed to one of our service region providers. The error rate peaked at 10% for all requests and 9% of users. This was due to host upgrades in an upstream service provider. While this was a planned event, processes and tooling was not in place to anticipate and mitigate this downtime. <br /><br /><br />We are working to improve our processes and tooling for future planned events and escalation paths with our upstream providers.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 11, 13:02 - Jul 11, 15:21
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/qqw9rrs21xmn">Incident with Issues and Pages</a></h2>
+            <p>
+                <p>On July 8th, 2024, between 18:18 UTC and 19:11 UTC, various services relying on static assets were degraded, including user uploaded content on github.com, access to docs.github.com and Pages sites, and downloads of Release assets and Packages. <br /><br />The outage primarily affected users in the vicinity of New York City, USA, due to a local CDN disruption. <br /><br />Service was restored without our intervention.<br /><br />We are working to improve our external monitoring, which failed to detect the issue and will be evaluating a backup mechanism to keep critical services available, such as being able to load assets on GitHub.com, in the event of an outage with our CDN.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul  8, 19:01 - Jul  8, 19:45
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/5yx1d67vq9hg">Incident with Webhooks and Actions</a></h2>
+            <p>
+                <p>On July 5, 2024, between 16:31 UTC and 18:08 UTC, the Webhooks service was degraded, with customer impact of delays to all webhook delivery. On average, delivery delays were 24 minutes, with a maximum of 71 minutes. This was caused by a configuration change to the Webhooks service, which led to unauthenticated requests sent to the background job cluster. The configuration error was repaired and re-deploying the service solved the issue. However, this created a thundering herd effect which overloaded the background job queue cluster which put its API layer at max capacity, resulting in timeouts for other job clients, which presented as increased latency for API calls.<br /><br />Shortly after resolving the authentication misconfiguration, we had a separate issue in the background job processing service where health probes were failing, leading to reduced capacity in the background job API layer which magnified the effects of the thundering herd. From 18:21 UTC to 21:14 UTC, Actions runs on PRs experienced approximately 2 minutes delay and maximum of 12 minutes delay. A deployment of the background job processing service remediated the issue.<br /><br />To reduce our time to detection, we have streamlined our dashboards and added alerting for this specific runtime behavior. Additionally, we are working to reduce the blast radius of background job incidents through better workload isolation.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul  5, 17:04 - Jul  5, 20:57
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="http://127.0.0.1:8080/base/github/ir/8532wfbvwqgr">Disruption with GitHub Docs</a></h2>
+            <p>
+                <p>On July 3, 2024, between 1:34 PM UTC and 4:42 PM UTC the GitHub documentation was degraded and showed a 500 on non-cached pages. On average, the error rate was 2-5% and peaked at 5% of requests to the service. This was due to an observability misconfiguration. We mitigated the incident by updating the observability configuration and redeploying. We are working to reduce our time to detection and mitigation of issues like this one in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul  3, 15:24 - Jul  3, 16:40
+            
+            </small>
+        </div>
+        
+        <div class="row">
+            
+                <div class="block">
+                    <a href="http://127.0.0.1:8080/base/github/history/3"> ⮜ Previous </a>
+                </div>
+            
+            
+                <div class="block">
+                    <a href="http://127.0.0.1:8080/base/github/history/1"> Next ⮞ </a>
+                </div>
+            
+        </div>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

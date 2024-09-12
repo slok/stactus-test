@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafana status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/grafana/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body>
+    <body style="width:960px; margin:0 auto;">
+        <header class="container-fluid">
+            
+<nav>
+    <ul>
+        <li>
+            <h2>Grafana status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/grafana/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/grafana/index">Status</a></li>
+    </ul>
+</nav>
+
+        </header>
+        <main class="container-fluid">
+            <br />
+            <h1>Incident History</h1>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/04rn13pm31tk" class="incident-title-minor"> Synthetic monitoring connectivity issue in Toronto probe</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 25, 18:27 - Jun 25, 18:52 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/1d7yxccx4817" class="incident-title-minor"> Span and Service Graph Metrics delayed in AWS Singapore (prod-ap-southeast-1)</a></h4>
+                </header>
+                <p>We continue to observe a continued period of recovery. At this time, we are considering this issue resolved. No further updates.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 24, 22:55 - Jun 24, 22:59 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/jpymdjx29s2k" class="incident-title-none"> Synthetic monitoring connectivity issue between AWS US West (us-west-0) region and Singapore probe</a></h4>
+                </header>
+                <p>Today between 07:45 UTC and 08:50 UTC,  the Singapore probe experienced a regional networking issue and lost connectivity with the AWS US West region.  During this time Singapore was unable to publish metric and log results from synthetic test executions to AWS US West (us-west-0).  Synthetic tests targeting that region also saw elevated error rates.  We haven’t observed any connectivity issues since 08:50AM UTC consider this incident resolved. If you continue to experience problems, please open a Support ticket for assistance.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 19, 12:00 - Jun 19, 12:00 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/p8kfy4zzh60h" class="incident-title-major"> Tempo Instability in Prod-us-central-0</a></h4>
+                </header>
+                <p>We continue to observe a continued period of recovery. At this time, we are considering this issue resolved. No further updates.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 18, 20:42 - Jun 21, 03:00 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/1cngpj6dv9lh" class="incident-title-critical"> Pyroscope is unavailable in Azure US Central</a></h4>
+                </header>
+                <p>As of 8:10 UTC, we have observed marked improvement with the availability of Pyroscope. Customers should be able to access Pyroscope in the Azure US Central cluster now.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 13, 07:42 - Jun 13, 08:12 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/x05mbqs5r48y" class="incident-title-major"> Increased Timeouts for Queries</a></h4>
+                </header>
+                <p>This incident has been resolved. All queries should perform as expected.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 11, 21:06 - Jun 14, 22:15 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/l6sqgkvjh9c3" class="incident-title-minor"> Increased Timeouts for Queries</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 11, 16:16 - Jun 11, 16:43 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/vswjcgcv619p" class="incident-title-none"> Some Rule Alert Evaluation Failures</a></h4>
+                </header>
+                <p>From approximately 13:32 UTC to 14:14 UTC, there was a partial read outage of Loki-managed recording rules. Customers in the prod-us-west-0 region may have experienced gaps in recording rules and alerts configured with Loki.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun  7, 15:05 - Jun  7, 15:05 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/xj73pfj03tz4" class="incident-title-minor"> cortex-prod-13 query frontend crashlooping</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun  5, 22:34 - Jun  5, 22:34 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/ssgk8wslxkjx" class="incident-title-minor"> Some Grafana Cloud Instances Intermittently Unavailable</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun  3, 20:26 - Jun 11, 17:56 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <section>
+                
+                    <a href="http://127.0.0.1:8080/simple/grafana/history/4" role="button"> ⮜ Previous </a>
+                
+                
+                    <span class="move-right">
+                        <a href="http://127.0.0.1:8080/simple/grafana/history/2" role="button"> Next ⮞ </a>
+                    </span>
+                
+            </section>
+        </main>
+    </body>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

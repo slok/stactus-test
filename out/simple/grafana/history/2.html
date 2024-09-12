@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafana status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/grafana/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body>
+    <body style="width:960px; margin:0 auto;">
+        <header class="container-fluid">
+            
+<nav>
+    <ul>
+        <li>
+            <h2>Grafana status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/grafana/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/grafana/index">Status</a></li>
+    </ul>
+</nav>
+
+        </header>
+        <main class="container-fluid">
+            <br />
+            <h1>Incident History</h1>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/t84yclf9w2b2" class="incident-title-major"> Datasource API Server Outage</a></h4>
+                </header>
+                <p>All clusters have been restarted and datasources should be fully operational.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul 17, 19:18 - Jul 17, 20:29 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/v2kqfb9306wl" class="incident-title-none"> Loki-prod Write and Read Issues</a></h4>
+                </header>
+                <p>Starting at ~21:11 UTC, Loki had a brief outage. Users may have experienced degraded write path performance for approximately 10 minutes, and 2-3 minutes of total write and read outage. This has since been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul 16, 21:45 - Jul 16, 21:45 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/vnmq4dzcs2fg" class="incident-title-minor"> Slow query responses</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul 16, 13:34 - Jul 16, 14:08 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/yfjypz7sgwl9" class="incident-title-major"> Confluent integration issues in all regions</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul 15, 21:31 - Jul 15, 22:28 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/lcbp63d7ds41" class="incident-title-minor"> Service Disruption in EU-West-0</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul 12, 09:41 - Jul 12, 10:41 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/5dkbj3r63cwq" class="incident-title-minor"> Experiencing issues with new stack creation</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul 11, 15:26 - Jul 11, 16:03 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/pch7l558kbsr" class="incident-title-major"> Hosted Logs prod-ap-northeast-0 region full read path outage.</a></h4>
+                </header>
+                <p>The incident is fully resolved now, root cause was determined and mitigated. The particular cell affected had a legacy config present, which caused a panic during the regular rollout. The cell was rolled back as a precaution and the mentioned config is now corrected.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul  9, 10:26 - Jul  9, 11:36 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/9mtcm15y3xr8" class="incident-title-minor"> Synthetic monitoring scripted and multihttp tests not executing (all public probes)</a></h4>
+                </header>
+                <p>Between 10:45 UTC and 11:05 UTC we experienced an outage with scripted and multi-http test executions across all public probe locations.  These two check types were not executing tests, so you may see gaps in the synthetics metrics and logs in that window.   Protocol-level test executions (ping, dns, tcp, http, traceroute) were unaffected.  As of 11:05 UTC the incident is resolved and all check types are executing normally.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jul  5, 13:50 - Jul  5, 15:00 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/z80hpdd30nrf" class="incident-title-minor"> Issues with Library Panels</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 27, 17:36 - Jul  2, 21:58 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="http://127.0.0.1:8080/simple/grafana/ir/4161n9w685bf" class="incident-title-major"> Issues in prod-us-east-0 with Alertmanager and Rule Evaluations</a></h4>
+                </header>
+                <p>We continue to observe a continued period of recovery. At this time, we are considering this issue resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            Jun 25, 18:32 - Jun 25, 19:45 <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <section>
+                
+                    <a href="http://127.0.0.1:8080/simple/grafana/history/3" role="button"> ⮜ Previous </a>
+                
+                
+                    <span class="move-right">
+                        <a href="http://127.0.0.1:8080/simple/grafana/history/1" role="button"> Next ⮞ </a>
+                    </span>
+                
+            </section>
+        </main>
+    </body>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

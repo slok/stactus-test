@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-major">Incident with Copilot</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 19h8m40.477s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>On July 13, 2024 between 00:01 and 19:27 UTC the Copilot service was degraded. During this time period, Copilot code completions error rate peaked at 1.16% and Copilot Chat error rate peaked at 63%. Between 01:00 and 02:00 UTC we were able to reroute traffic for Chat to bring error rates below 6%. During the time of impact customers would have seen delayed responses, errors, or timeouts during requests. GitHub code scanning autofix jobs were also delayed during this incident. <br /><br />A resource cleanup job was scheduled by <a href="https://azure.status.microsoft/en-us/status/history?trackingid=4L44-3F0">Azure OpenAI (AOAI) service early July 13th</a> targeting a resource group thought to only contain unused resources. This resource group unintentionally contained critical, still in use, resources that were then removed. The cleanup job was halted before removing all resources in the resource group. Enough resources remained that GitHub was able to mitigate while resources were reconstructed.<br /><br />We are working with AOAI to ensure mitigation is in place to prevent future impact. In addition, we will improve traffic rerouting processes to reduce time to mitigate in the future.</p>
+
+            <footer>
+                <cite>Jul 13, 19:27</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Copilot is operating normally.</p>
+
+            <footer>
+                <cite>Jul 13, 19:26</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Our upstream provider continues to recover and we expect services to return to normal as more progress is made. We will provide another update by 20:00 UTC.</p>
+
+            <footer>
+                <cite>Jul 13, 18:01</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Our upstream provider is making good progress recovering and we are validating that services are nearing normal operations. We will provide another update by 18:00 UTC.</p>
+
+            <footer>
+                <cite>Jul 13, 16:09</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Our upstream provider is gradually recovering the service. We will provide another update at 23:00 UTC.</p>
+
+            <footer>
+                <cite>Jul 13, 11:18</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to wait on our upstream provider to see full recovery. We will provide another update at 11:00 UTC</p>
+
+            <footer>
+                <cite>Jul 13, 03:50</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>The error rate for Copilot chat requests remains steady at less than 10%. We are continuing to investigate with our upstream provider.</p>
+
+            <footer>
+                <cite>Jul 13, 03:20</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Copilot is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Jul 13, 02:20</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have applied several mitigations to Copilot chat, reducing errors to less than 10% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p>
+
+            <footer>
+                <cite>Jul 13, 02:19</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Copilot chat is experiencing degraded performance, impacting up to 60% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p>
+
+            <footer>
+                <cite>Jul 13, 01:32</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Copilot chat is currently experiencing degraded performance, impacting up to 60% of all chat requests. We are investigating the issue.</p>
+
+            <footer>
+                <cite>Jul 13, 00:49</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Copilot is experiencing degraded availability. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Jul 13, 00:29</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Copilot API chat experiencing significant failures to backend services</p>
+
+            <footer>
+                <cite>Jul 13, 00:18</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating reports of degraded performance for Copilot</p>
+
+            <footer>
+                <cite>Jul 13, 00:18</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

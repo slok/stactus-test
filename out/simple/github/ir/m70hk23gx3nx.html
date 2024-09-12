@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Issues enabling actions and running jobs on GitHub</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 3h50m45.467s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>Beginning on July 18, 2024 at 22:38 UTC, network issues within an upstream provider led to degraded experiences across Actions, Copilot, and Pages services.<br /><br />Up to 50% of Actions workflow jobs were stuck in the queuing state, including Pages deployments.  Users were also not able to enable Actions or register self-hosted runners. This was caused by an unreachable backend resource in the Central US region. That resource is configured for geo-replication, but the replication configuration prevented resiliency when one region was unavailable. Updating the replication configuration mitigated the impact by allowing successful requests while one region was unavailable. By July 19 00:12 UTC, users saw some improvement in Actions jobs and full recovery of Pages. Standard hosted runners and self-hosted Actions workflows were healthy by 2:10 UTC and large hosted runners fully recovered at 2:38.<br /><br />Copilot requests were also impacted with up to 2% of Copilot Chat requests and 0.5% of Copilot Completions requests resulting in errors. Chat requests were routed to other regions after 20 minutes while Completions requests took 45 minutes to reroute. <br /><br />We have identified improvements to detection to reduce the time to engage all impacted on-call teams and improvements to our replication configuration and failover workflows to be more resilient to unhealthy dependencies and reduce our time to failover and mitigate customer impact.</p>
+
+            <footer>
+                <cite>Jul 19, 02:38</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Actions is operating normally.</p>
+
+            <footer>
+                <cite>Jul 19, 02:38</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have continued to apply mitigations to work around the outage. Customers may still experience run start delays for larger runners.</p>
+
+            <footer>
+                <cite>Jul 19, 02:25</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We&rsquo;ve applied a mitigation to work around the outage. Customers may still experience run start delays.</p>
+
+            <footer>
+                <cite>Jul 19, 01:50</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are making progress failing over to a different region to mitigate an outage.</p>
+
+            <footer>
+                <cite>Jul 19, 01:04</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We continue to mitigate an outage by failing over to a different region.</p>
+
+            <footer>
+                <cite>Jul 19, 00:30</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Pages is operating normally.</p>
+
+            <footer>
+                <cite>Jul 19, 00:24</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are working to mitigate an outage by failing over to a different region.</p>
+
+            <footer>
+                <cite>Jul 18, 23:57</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Pages is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Jul 18, 23:23</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Some actions customers may experience delays or failures in their runs. We continuing to investigate.</p>
+
+            <footer>
+                <cite>Jul 18, 23:22</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating reports of degraded performance for Actions</p>
+
+            <footer>
+                <cite>Jul 18, 22:47</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

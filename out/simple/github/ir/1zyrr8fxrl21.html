@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Disruption with some GitHub services</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 49m6.213s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>On August 28th, 2024, starting at 20:43 UTC, some customers accessing GitHub from North America experienced degraded access to GitHub services. The error was intermittent and manifested as timeouts when requests tried to reach endpoints. This was due to a degraded route internal to one of our transit providers. We identified the unhealthy provider path and drained it at 23:26 UTC, rerouting traffic through other providers and promptly restoring normal traffic operations.</p>
+
+            <footer>
+                <cite>Aug 27, 23:26</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are no longer seeing any traffic going through the affected routes and this issue should be resolved.</p>
+
+            <footer>
+                <cite>Aug 27, 23:25</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>All traffic should be rerouted by now; and we have seen a complete drain from the affected provider. We are performing final validations that networking traffic is back to normal.</p>
+
+            <footer>
+                <cite>Aug 27, 23:20</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have drained connections that would be running through the affected routes and are waiting for caches to expire in order to validate that issues are resolved.</p>
+
+            <footer>
+                <cite>Aug 27, 23:03</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have identified some potential connectivity issues among public Internet transit routes and are attempting to reroute.</p>
+
+            <footer>
+                <cite>Aug 27, 22:50</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Git Operations is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Aug 27, 22:46</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Issues is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Aug 27, 22:45</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are experiencing some issues related to TLS/SSL encrypted connections and are currently investigating.</p>
+
+            <footer>
+                <cite>Aug 27, 22:38</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are currently investigating this issue.</p>
+
+            <footer>
+                <cite>Aug 27, 22:37</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datadog status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/datadog/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container-fluid">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Datadog status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/datadog/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/datadog/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container-fluid">
+        <br />
+        <!-- Status -->
+        
+        <section class="grid">
+            <div></div>
+            <article class="operational-box">
+                <i class="ph-bold ph-check"></i> <strong>All systems operational</strong>
+            </article>
+            <div></div>
+        </section>
+        
+
+        <br />
+        <section>
+            <h3>Current status</h3>
+            <!-- Make 2 columns -->
+            
+            <div class="grid">
+                
+                <article>
+                    APM
+
+                    
+                        <span data-tooltip="Application Performance Monitoring (services and traces)"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Agent Repository
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Application Security Management
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Application Vulnerability Management
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Audit Trail
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    CI Visibility
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Cloud Cost Management
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Cloud SIEM
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Cloud Security Management
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Data Jobs Monitoring
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Data Streams Monitoring
+
+                    
+                        <span data-tooltip="APM / Data Streams Monitoring"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Database Monitoring
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Incident Management
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Log Management
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Metrics and Infra Monitoring
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Mobile Application
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Monitors
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    NDM
+
+                    
+                        <span data-tooltip="Network Device Monitoring"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    NPM
+
+                    
+                        <span data-tooltip="Network Performance Monitoring"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Observability Pipelines
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Profiling
+
+                    
+                        <span data-tooltip="Continuous Profiler"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    RUM
+
+                    
+                        <span data-tooltip="Real User Monitoring"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Sensitive Data Scanner
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Serverless
+
+                    
+                        <span data-tooltip="Serverless Workload Monitoring"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Synthetics
+
+                    
+                        <span data-tooltip="Synthetic Monitoring"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Universal Service Monitoring
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Web Application
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Workflow Automation
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    www.datadoghq.com
+
+                    
+                        <span data-tooltip="Our public site, hosting our documentation for using Datadog."><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

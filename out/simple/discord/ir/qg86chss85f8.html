@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/discord/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Discord status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/discord/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/discord/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Issue starting sessions, loading guilds</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 34m24.784s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>This incident has been resolved.</p>
+
+<p>We are reviewing the updated rate limiting that triggered the initial session start issues, as well as the scaling targets for the internal service which limited guild loading during initial recovery.</p>
+
+            <footer>
+                <cite>Mar  5, 08:27</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We are hands off and are monitoring the recovery of multiple systems</p>
+
+            <footer>
+                <cite>Mar  5, 08:22</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We are scaling up an internal service which is delaying the loading of guilds. Session starting should no longer be impacted, but you may see some unavailable guilds while we process the influx of guild load requests.</p>
+
+            <footer>
+                <cite>Mar  5, 08:18</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We have identified the internal rate-limit and are temporarily bypassing it to allow pending sessions to start</p>
+
+            <footer>
+                <cite>Mar  5, 08:07</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating this issue</p>
+
+            <footer>
+                <cite>Mar  5, 07:53</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Ocean status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/digitalocean/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Managed Databases Control Plane</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>yqjv7c5yn7lw</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jun 14, 17:27</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jun 15, 02:56</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>9h28m19.385s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jun 15, 02:56 </h3>
+            <p> <p>Our Engineering team has confirmed that this incident has been fully resolved.</p>
+
+<p>We appreciate your patience throughout this process and if you continue to experience problems, please open a ticket with our support team for further review.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 15, 00:11 </h3>
+            <p> <p>Our Engineering team has implemented a fix to fully resolve the issue with our Managed Databases services. At this time, users should no longer face issues creating, resizing, forking, or updating trusted sources for PostgreSQL, MySQL, Redis, and Kafka clusters, in any region, as well as Mongo clusters in NYC regions.</p>
+
+<p>We are monitoring the situation closely and will post an update as soon as we confirm the issue is fully resolved.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 14, 22:48 </h3>
+            <p> <p>Our Engineering team has been able to partially mitigate impact from this incident. Creating, resizing, forking, and updates to trusted sources of PostgreSQL, MySQL, Redis, and Kafka clusters, in all regions, is now working as expected. Operations previously attempted on clusters, such as firewall rule attempts, will need to be resubmitted or have a relevant event (i.e. k8s node changes, tag events, etc.) occur from now on. Users should start to see recovery and be able to initiate new operations normally.</p>
+
+<p>Operations for Mongo clusters remain affected at this time.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 14, 19:22 </h3>
+            <p> <p>Our Engineering team continues work to address the root cause of this issue and remediate customer impact.</p>
+
+<p>We apologize for the continued interruption to the Managed Databases Control Plane and will provide another update as soon as we have more information.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 14, 17:39 </h3>
+            <p> <p>During the course of investigation, our Engineering team has identified additional operations are impacted by this incident.</p>
+
+<p>Users may experience errors with creating, resizing, or updating trusted sources for PostgreSQL, MySQL, Redis, and Kafka clusters, in all regions, as well as Mongo clusters in NYC regions.</p>
+
+<p>Due to updates to trusted sources being impacted, connections to Database clusters from newly added trusted sources will fail. This includes new Managed Kubernetes nodes, Droplets, and Apps using Databases.</p>
+
+<p>Our team is working to deploy a fix and we will provide another update soon.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 14, 17:27 </h3>
+            <p> <p>Our Engineering team is investigating an issue impacting new Managed Database creations. During this time, users may receive failures while creating new Managed Database clusters across all regions. We apologize for the inconvenience and will share an update once we have more information.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/digitalocean/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

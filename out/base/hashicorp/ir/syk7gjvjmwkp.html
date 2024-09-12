@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashicorp status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/hashicorp/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Investigating an incident affecting HVD Azure cluster creation and updates</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>syk7gjvjmwkp</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Major</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul  9, 17:38</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul  9, 20:02</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>2h24m8.046s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul  9, 20:02 </h3>
+            <p> <p>Azure cluster creation and update is now working normally once again. Please delete and re-create any clusters left in &ldquo;failed&rdquo; state after they failed to deploy, and retry any cluster updates that failed in the last 6 h 30 min.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul  9, 19:36 </h3>
+            <p> <p>The credentials have been rotated, we are now monitoring the system to ensure everything is back to normal.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul  9, 18:31 </h3>
+            <p> <p>We&rsquo;ve identified the issue to be an expired credential and are looking into renewing it. Until then HVD cluster creation and updates on Azure will continue failing.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  9, 17:38 </h3>
+            <p> <p>Our engineering team is investigating an issue with HCP Vault Dedicated. During this time, users may experience that creating HCP Vault  Dedicated clusters on Azure as well as any attempted update. We will share another update as soon as we have more information.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/hashicorp/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

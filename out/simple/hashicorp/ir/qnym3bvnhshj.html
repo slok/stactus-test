@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashicorp status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/hashicorp/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Hashicorp status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/hashicorp/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/hashicorp/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">TFC Degredation and partial VCS outage</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 36m46.918s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>Terraform Cloud systems have returned to normal operations.</p>
+
+<p>Customers may note that some VCS connected resources (Workspaces, Policy Sets, Registry Modules) have failed to ingest into Terraform Cloud, and may need to be retried now that the incident has passed.</p>
+
+            <footer>
+                <cite>Mar  8, 17:39</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We&rsquo;ve identified the issue: a routine database migration caused elevated application errors. It has completed, and Terraform Cloud appears to have recovered. We&rsquo;re monitoring the situation.</p>
+
+            <footer>
+                <cite>Mar  8, 17:23</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Our engineering team is investigating an issue with elevated 500 errors in Terraform Cloud, particularly for VCS integrated resources.</p>
+
+<p>During this time, users may experience the following: 500 errors for requests on VCS integrated resources (workspaces, modules, policy sets) and failure to ingest those resources when triggered from webhooks.</p>
+
+<p>We will share another update in 30 minutes.</p>
+
+            <footer>
+                <cite>Mar  8, 17:03</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

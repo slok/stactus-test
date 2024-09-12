@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/github/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Disruption in service with some Redis clusters</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>dy0rbtrxtwlh</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul 31, 07:59</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul 31, 09:20</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>1h20m21.325s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul 31, 09:20 </h3>
+            <p> <p>On July 31, 2024, between 07:05 UTC and 09:01 UTC the Actions service experienced degradation, preventing it from processing API requests and executing jobs, in particular Pages builds. On average, 2% of jobs run during the incident window were affected. This was due to some nodes in one of our partner services experiencing connectivity issues in the East US2 region. We mitigated the incident by failing over the impacted service and re-routing the service’s traffic out of that region.<br /><br />We are working to improve monitoring and processes of failover to reduce our time to detection and mitigation of issues like this one in the future.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul 31, 09:20 </h3>
+            <p> <p>Actions is operating normally.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul 31, 09:13 </h3>
+            <p> <p>We are continuing to see improvements in queuing and running Actions jobs and are monitoring for full recovery.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul 31, 08:28 </h3>
+            <p> <p>We&rsquo;ve applied a mitigation to fix the issues with queuing and running Actions jobs. We are seeing improvements in telemetry and are monitoring for full recovery.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul 31, 08:07 </h3>
+            <p> <p>Actions is experiencing degraded performance. We are continuing to investigate.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul 31, 08:02 </h3>
+            <p> <p>We are investigating reports of degraded performance in some Redis clusters.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul 31, 07:59 </h3>
+            <p> <p>We are currently investigating this issue.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

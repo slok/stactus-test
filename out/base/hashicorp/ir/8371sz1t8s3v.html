@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashicorp status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/hashicorp/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>HCP Vault Secrets unable to create new secrets</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>8371sz1t8s3v</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Major</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul 30, 23:16</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul 31, 19:12</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>19h55m16.361s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul 31, 19:12 </h3>
+            <p> <p>Our Engineering team has fully resolved the issue causing errors for secret writes and increased latency for secret reads in HCP Vault Secrets. The issue was related to the AWS CloudWatch log service degradation which has been resolved as well.</p>
+
+<p>HCP Vault Secrets should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul 31, 01:37 </h3>
+            <p> <p>This issue is caused by the ongoing AWS incident, which is leading to degradation of CloudWatch log service.</p>
+
+<p>We have successfully deployed a fix to address this issue. As a result, the errors related to creating new secrets as well as the latency issues have both been resolved.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jul 30, 23:16 </h3>
+            <p> <p>HCP Vault Secrets is failing to write secrets, reading secrets is experiencing higher than usual latency. The issue has been identified and engineers are working to solve the problem.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/hashicorp/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

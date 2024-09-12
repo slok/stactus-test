@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashicorp status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/hashicorp/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>TFC Degredation and partial VCS outage</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>qnym3bvnhshj</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Mar  8, 17:03</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Mar  8, 17:39</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>36m46.918s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Mar  8, 17:39 </h3>
+            <p> <p>Terraform Cloud systems have returned to normal operations.</p>
+
+<p>Customers may note that some VCS connected resources (Workspaces, Policy Sets, Registry Modules) have failed to ingest into Terraform Cloud, and may need to be retried now that the incident has passed.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Mar  8, 17:23 </h3>
+            <p> <p>We&rsquo;ve identified the issue: a routine database migration caused elevated application errors. It has completed, and Terraform Cloud appears to have recovered. We&rsquo;re monitoring the situation.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Mar  8, 17:03 </h3>
+            <p> <p>Our engineering team is investigating an issue with elevated 500 errors in Terraform Cloud, particularly for VCS integrated resources.</p>
+
+<p>During this time, users may experience the following: 500 errors for requests on VCS integrated resources (workspaces, modules, policy sets) and failure to ingest those resources when triggered from webhooks.</p>
+
+<p>We will share another update in 30 minutes.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/hashicorp/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

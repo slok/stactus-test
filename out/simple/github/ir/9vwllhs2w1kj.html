@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Delays in changes to organization membership</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 5h17m33.409s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>On June 28th, 2024, at 16:06 UTC, a backend update by GitHub triggered a significant number of long-running Organization membership update jobs in our job processing system. The job queue depth rose as these update jobs consumed most of our job worker capacity. This resulted in delays for other jobs across services such as Pull Requests and PR-related Actions workflows. We mitigated the impact to Pull Requests and Actions at 19:32 UTC by pausing all Organization membership update jobs. We deployed a code change at 22:30 UTC to skip over the jobs queued by the backend change and re-enabled Organization membership update jobs. We restored the Organization membership update functionality at 22:52 UTC, including all membership changes queued during the incident.<br /><br />During the incident, about 15% of Action workflow runs experienced a delay of more than five minutes. In addition, Pull Requests had delays in determining merge eligibility and starting associated Action workflows for the duration of the incident. Organization membership updates saw delays for upwards of five hours.<br /><br />To prevent a similar event in the future from impacting our users, we are working to: improve our job management system to better manage our job worker capacity; add more precise monitoring for job delays; and strengthen our testing practices to prevent future recurrences.</p>
+
+            <footer>
+                <cite>Jun 28, 22:51</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to work to mitigate delays in organization membership changes.</p>
+
+            <footer>
+                <cite>Jun 28, 22:18</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are still actively working to mitigate delays in organization membership changes.</p>
+
+            <footer>
+                <cite>Jun 28, 21:45</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are actively working to mitigate delays in organization membership changes. Actions and Pull Requests are both functioning normally now.</p>
+
+            <footer>
+                <cite>Jun 28, 20:46</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Actions is operating normally.</p>
+
+            <footer>
+                <cite>Jun 28, 20:00</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Pull Requests is operating normally.</p>
+
+            <footer>
+                <cite>Jun 28, 19:59</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to apply mitigations and are seeing improvement in creating pull request merge commits and Actions runs for pull request events. Applying changes to organization members remains delayed.</p>
+
+            <footer>
+                <cite>Jun 28, 19:51</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to work on mitigating delays creating pull request merge commits, Actions runs for pull request events, and changes to organization members.</p>
+
+            <footer>
+                <cite>Jun 28, 19:03</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Actions runs triggered by pull requests are experiencing start delays. We have engaged the appropriate teams and are investigating the issue.</p>
+
+            <footer>
+                <cite>Jun 28, 17:59</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Pull Requests is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Jun 28, 17:58</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating reports of degraded performance for Actions</p>
+
+            <footer>
+                <cite>Jun 28, 17:34</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

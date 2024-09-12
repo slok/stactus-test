@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/github/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Delays in changes to organization membership</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>9vwllhs2w1kj</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jun 28, 17:34</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jun 28, 22:51</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>5h17m33.409s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jun 28, 22:51 </h3>
+            <p> <p>On June 28th, 2024, at 16:06 UTC, a backend update by GitHub triggered a significant number of long-running Organization membership update jobs in our job processing system. The job queue depth rose as these update jobs consumed most of our job worker capacity. This resulted in delays for other jobs across services such as Pull Requests and PR-related Actions workflows. We mitigated the impact to Pull Requests and Actions at 19:32 UTC by pausing all Organization membership update jobs. We deployed a code change at 22:30 UTC to skip over the jobs queued by the backend change and re-enabled Organization membership update jobs. We restored the Organization membership update functionality at 22:52 UTC, including all membership changes queued during the incident.<br /><br />During the incident, about 15% of Action workflow runs experienced a delay of more than five minutes. In addition, Pull Requests had delays in determining merge eligibility and starting associated Action workflows for the duration of the incident. Organization membership updates saw delays for upwards of five hours.<br /><br />To prevent a similar event in the future from impacting our users, we are working to: improve our job management system to better manage our job worker capacity; add more precise monitoring for job delays; and strengthen our testing practices to prevent future recurrences.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 22:18 </h3>
+            <p> <p>We are continuing to work to mitigate delays in organization membership changes.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 21:45 </h3>
+            <p> <p>We are still actively working to mitigate delays in organization membership changes.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 20:46 </h3>
+            <p> <p>We are actively working to mitigate delays in organization membership changes. Actions and Pull Requests are both functioning normally now.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 20:00 </h3>
+            <p> <p>Actions is operating normally.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 19:59 </h3>
+            <p> <p>Pull Requests is operating normally.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 19:51 </h3>
+            <p> <p>We are continuing to apply mitigations and are seeing improvement in creating pull request merge commits and Actions runs for pull request events. Applying changes to organization members remains delayed.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 19:03 </h3>
+            <p> <p>We are continuing to work on mitigating delays creating pull request merge commits, Actions runs for pull request events, and changes to organization members.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 17:59 </h3>
+            <p> <p>Actions runs triggered by pull requests are experiencing start delays. We have engaged the appropriate teams and are investigating the issue.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 17:58 </h3>
+            <p> <p>Pull Requests is experiencing degraded performance. We are continuing to investigate.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 28, 17:34 </h3>
+            <p> <p>We are investigating reports of degraded performance for Actions</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

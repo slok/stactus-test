@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafana status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/grafana/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Synthetic monitoring scripted and multihttp tests not executing (all public probes)</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>9mtcm15y3xr8</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul  5, 13:50</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul  5, 15:00</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>1h9m42.836s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul  5, 13:50 </h3>
+            <p> <p>Between 10:45 UTC and 11:05 UTC we experienced an outage with scripted and multi-http test executions across all public probe locations.  These two check types were not executing tests, so you may see gaps in the synthetics metrics and logs in that window.   Protocol-level test executions (ping, dns, tcp, http, traceroute) were unaffected.  As of 11:05 UTC the incident is resolved and all check types are executing normally.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/grafana/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

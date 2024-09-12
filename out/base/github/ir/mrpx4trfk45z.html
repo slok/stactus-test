@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/github/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident with starting Action Workflows</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>mrpx4trfk45z</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Aug 15, 13:35</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Aug 15, 13:59</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>24m9.211s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Aug 15, 13:59 </h3>
+            <p> <p>On August 15, 2024, between 13:14 UTC and 13:43 UTC, the Actions service was degraded and resulted in failures to start new workflow runs for customers of github.com. On average, 10% of Actions workflow runs failed to start with the failure rate peaking at 15%. This was due to an infrastructure change that enabled a network proxy for requests between the Actions service and an internal API which caused requests to fail.<br /><br />We mitigated the incident by rolling back the change. We are working to improve our monitoring and deployment practices to reduce our time to detection and mitigation of issues like this one in the future.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Aug 15, 13:45 </h3>
+            <p> <p>Approximately 10-15% of customers may be experiencing problems executing new GitHub Actions runs. The problem is currently being investigated by our teams.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Aug 15, 13:35 </h3>
+            <p> <p>We are investigating reports of degraded performance for Actions</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

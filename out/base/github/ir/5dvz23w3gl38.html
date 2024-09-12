@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="http://127.0.0.1:8080/base/github/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Disruption with GitHub services</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>5dvz23w3gl38</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jul  2, 18:45</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jul  2, 19:24</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>39m26.137s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jul  2, 19:24 </h3>
+            <p> <p>On July 02, 2024, between 18:21 UTC and 19:24 UTC the code search service was degraded and returned elevated 500 HTTP status responses. On average, the error rate was 38% of code search requests. This was due to a bad deployment causing some user&rsquo;s rate limit calculations to error while processing code search requests. This impacted approximately 2,000 users.<br />We mitigated the incident by rolling back the bad deployment along with resetting rate limits for all users.<br />We have identified and implemented updates in the testing of rate limit calculations to prevent this problem from happening again, and clarified deployment processes for verification before a full production rollout to minimize impact in the future.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  2, 19:24 </h3>
+            <p> <p>API Requests is operating normally.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  2, 19:22 </h3>
+            <p> <p>The fix has been rolled out and our telemetry indicates that the errors with code search have resolved.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  2, 19:18 </h3>
+            <p> <p>An issue with faulty data in an in-memory storage causes around one third of code search requests to fail. The team has identified the issue and is working on rolling out a fix.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  2, 18:47 </h3>
+            <p> <p>API Requests is experiencing degraded performance. We are continuing to investigate.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jul  2, 18:45 </h3>
+            <p> <p>We are currently investigating this issue.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="http://127.0.0.1:8080/base/github/index">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Incident with multiple GitHub services</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 45m27.661s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>On July 17, 2024, between 16:15:31 UTC and 17:06:53 UTC, various GitHub services were degraded including Login, the GraphQL API, Issues, Pages and Packages. On average, the error rate was 0.3% for requests to github.com and the API, and 3.0% of requests for Packages. This incident was triggered by two unrelated events:<br /><br />- A planned testing event of an internal feature caused heavy loads on our databases, disrupting services across GitHub.<br />- A network configuration change deployed to support capacity expansion in a GitHub data center. <br /><br />We partially resolved the incident by aborting the testing event at 16:17 UTC and fully resolved the incident by rolling back the network configuration changes at 16:49 UTC. <br /><br />We have paused all planned capacity expansion activity within GitHub data centers until we have stabilized the root cause of this incident. In addition, we are reexamining our load testing practices so they can be done in a safer environment and making architectural changes to the feature that caused issues.<br /></p>
+
+            <footer>
+                <cite>Jul 17, 17:06</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Git Operations is operating normally.</p>
+
+            <footer>
+                <cite>Jul 17, 17:06</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Pages is operating normally.</p>
+
+            <footer>
+                <cite>Jul 17, 17:06</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Packages is operating normally.</p>
+
+            <footer>
+                <cite>Jul 17, 17:06</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We&rsquo;re continuing to investigate reports of issues with multiple services. We will continue to keep users updated on progress.</p>
+
+            <footer>
+                <cite>Jul 17, 16:47</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Packages is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Jul 17, 16:47</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Issues is operating normally.</p>
+
+            <footer>
+                <cite>Jul 17, 16:46</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Pages is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Jul 17, 16:30</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Issues is experiencing degraded performance. We are continuing to investigate.</p>
+
+            <footer>
+                <cite>Jul 17, 16:28</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating reports of issues with service(s): Git, Actions, Rules and Permissions, SSH authentication, and Authorization.. We will continue to keep users updated on progress towards mitigation.</p>
+
+            <footer>
+                <cite>Jul 17, 16:24</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating reports of degraded performance for Git Operations</p>
+
+            <footer>
+                <cite>Jul 17, 16:21</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

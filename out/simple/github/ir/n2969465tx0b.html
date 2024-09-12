@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Events are delayed across GitHub</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 35m59.036s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>On July 25th, 2024, between 15:30 and 19:10 UTC, the Audit Log service experienced degraded write performance. During this period, Audit Log reads remained unaffected, but customers would have encountered delays in the availability of their current audit log data. There was no data loss as a result of this incident.<br /><br />The issue was isolated to a single partition within the Audit Log datastore. Upon restarting the primary partition, we observed an immediate recovery and a subsequent increase in successful writes. The backlog of log messages was fully processed by approximately 00:40 UTC on July 26th.<br /><br />We are working with our datastore team to ensure mitigation is in place to prevent future impact. Additionally, we will investigate whether there are any actions we can take on our end to reduce the impact and time to mitigate in the future.</p>
+
+            <footer>
+                <cite>Jul 25, 19:20</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have applied a fix and are seeing recovery. (Point of clarification: Impact was constrained to Audit Log Events, not all categories of events.)</p>
+
+            <footer>
+                <cite>Jul 25, 19:16</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are currently investigating this issue.</p>
+
+            <footer>
+                <cite>Jul 25, 18:44</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

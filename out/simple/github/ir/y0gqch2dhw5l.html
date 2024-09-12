@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/simple/github/static/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Github status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="http://127.0.0.1:8080/simple/github/history/0">History</a></li>
+        <li><a href="http://127.0.0.1:8080/simple/github/index">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Actions runs using large hosted runners delayed for some customers</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 3h51m10.483s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>On July 30th, 2024, between 13:25 UTC and 18:15 UTC, customers using Larger Hosted Runners may have experienced extended queue times for jobs that depended on a Runner with VNet Injection enabled in a virtual network within the East US 2 region. Runners without VNet Injection or those with VNet Injection in other regions were not affected. The issue was caused due to an outage in a third party provider blocking a large percentage of VM allocations in the East US 2 region. Once the underlying issue with the third party provider was resolved, job queue times went back to normal. We are exploring the addition of support for customers to define VNet Injection Runners with VNets across multiple regions to minimize the impact of outages in a single region.</p>
+
+            <footer>
+                <cite>Jul 30, 22:10</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>The mitigation for larger hosted runners has continued to be stable and all job delays are less than 5 minutes. We will be resolving this incident.</p>
+
+            <footer>
+                <cite>Jul 30, 22:09</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to hold this incident open while the team ensures that mitigation put in place is stable.</p>
+
+            <footer>
+                <cite>Jul 30, 21:44</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Larger hosted runners job starts are stable and starting within expected timeframes. We are monitoring job start times in preparation to resolve this incident. No enqueued larger hosted runner jobs were dropped during this incident.</p>
+
+            <footer>
+                <cite>Jul 30, 21:00</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Over the past 30 minutes, all larger hosted runner jobs have started in less than 5 minutes. We are continuing to investigate delays in larger hosted runner job starts</p>
+
+            <footer>
+                <cite>Jul 30, 20:17</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are still investigating delays in customer’s larger hosted runner job starts. Nearly all jobs are starting under 5 minutes. Only 1 customer larger hosted runner job was delayed by more than 5 minutes in the past 30 minutes.</p>
+
+            <footer>
+                <cite>Jul 30, 19:40</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are seeing improvements to the job start times for larger hosted runners for customers. In the last 30 minutes no customer jobs are delayed more than 5 minutes. We will continue monitoring for full recovery.</p>
+
+            <footer>
+                <cite>Jul 30, 19:04</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are seeing run delays for larger hosted runners for a limited number of customers. We are deploying mitigations to address these delays.</p>
+
+            <footer>
+                <cite>Jul 30, 18:23</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are currently investigating this issue.</p>
+
+            <footer>
+                <cite>Jul 30, 18:19</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>
