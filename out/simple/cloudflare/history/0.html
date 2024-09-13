@@ -9,8 +9,17 @@
     <title>Cloudflare status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/cloudflare/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/cloudflare/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/cloudflare/static/main.js"></script>
 </head>
 
 
@@ -26,7 +35,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/cloudflare/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/cloudflare/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/cloudflare/">Status</a></li>
     </ul>
 </nav>
 
@@ -37,6 +46,22 @@
             
             <article>
                 <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/cloudflare/ir/dxx6vzmypw56" class="incident-title-minor"> Network Performance Issues in Seattle</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726201742</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726206690</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
                     <h4><a href="https://slok.github.io/stactus-test/simple/cloudflare/ir/l6f9nspyfc09" class="incident-title-minor"> Cloudflare Dashboard and Cloudflare API service issues</a></h4>
                 </header>
                 <p>This incident has been resolved.</p>
@@ -44,7 +69,8 @@
                 <footer>
                     <small>
                         
-                            Sep 12, 16:51 - Sep 12, 17:11 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726159907</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726161095</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -59,7 +85,8 @@
                 <footer>
                     <small>
                         
-                            Sep 12, 14:49 - Sep 12, 15:13 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726152586</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726154013</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -74,7 +101,8 @@
                 <footer>
                     <small>
                         
-                            Sep 12, 13:56 - Sep 12, 15:35 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726149364</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726155313</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -89,7 +117,8 @@
                 <footer>
                     <small>
                         
-                            Sep 12, 11:26 - Sep 12, 12:47 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726140403</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726145278</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -104,7 +133,8 @@
                 <footer>
                     <small>
                         
-                            Sep 12, 10:01 - Sep 12, 10:36 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726135295</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726137389</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -123,7 +153,8 @@
                 <footer>
                     <small>
                         
-                            Sep 11, 23:57 - Sep 11, 23:57 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726099020</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726099020</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -138,7 +169,8 @@
                 <footer>
                     <small>
                         
-                            Sep 11, 22:00 - Sep 11, 22:18 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726092022</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726093093</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -153,7 +185,8 @@
                 <footer>
                     <small>
                         
-                            Sep 11, 19:04 - Sep 11, 22:34 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726081481</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726094083</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -168,22 +201,8 @@
                 <footer>
                     <small>
                         
-                            Sep 11, 16:00 - Sep 11, 16:00 <mark class="resolved">Resolved</mark>
-                        
-                    </small>
-                </footer>
-            </article>
-            
-            <article>
-                <header>
-                    <h4><a href="https://slok.github.io/stactus-test/simple/cloudflare/ir/s4mgt5xp9w0j" class="incident-title-minor"> Cloudflare Dashboard service issues in Japan region</a></h4>
-                </header>
-                <p>This incident has been resolved.</p>
-
-                <footer>
-                    <small>
-                        
-                            Sep 11, 10:11 - Sep 11, 11:03 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1726070400</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726070400</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>

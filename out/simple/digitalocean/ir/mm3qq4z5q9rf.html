@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -50,7 +59,7 @@
 <p>Thank you for your patience throughout this incident.</p>
 
             <footer>
-                <cite>Jul 10, 20:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720643184</cite>
             </footer>
         </blockquote>
         <hr />
@@ -68,7 +77,7 @@
 <p>We will post a final update once all stalled clusters have been remediated.</p>
 
             <footer>
-                <cite>Jul 10, 19:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720641042</cite>
             </footer>
         </blockquote>
         <hr />
@@ -78,7 +87,7 @@
             <p>The potential fix has completed deployment and has been confirmed to address the root cause of this incident. Users should now be able to create Load Balancers and Mongo Managed Database. Our Engineering team is monitoring the situation and we will post an update as soon as we confirm the issue is fully resolved.</p>
 
             <footer>
-                <cite>Jul 10, 19:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720638172</cite>
             </footer>
         </blockquote>
         <hr />
@@ -89,7 +98,7 @@
 A potential fix is currently in progress. We will provide another update as soon as possible.</p>
 
             <footer>
-                <cite>Jul 10, 18:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720635295</cite>
             </footer>
         </blockquote>
         <hr />
@@ -99,7 +108,7 @@ A potential fix is currently in progress. We will provide another update as soon
             <p>Our Engineering team is investigating an issue with creation of Load Balancers, Managed Databases, and Managed Kubernetes clusters in all regions, via both the Cloud Control Panel and API. During this time, users may see success messages when initially creating resources, but those requests will not complete. We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Jul 10, 18:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720634522</cite>
             </footer>
         </blockquote>
         <hr />

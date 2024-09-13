@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -55,7 +64,7 @@ link:<a href="https://status.digitalocean.com/incidents/np0zw6m04jm1" target="_b
 <p>If you continue to experience problems, please open a ticket with our support team. We apologize for any inconvenience.</p>
 
             <footer>
-                <cite>Aug 28, 23:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724888721</cite>
             </footer>
         </blockquote>
         <hr />
@@ -67,7 +76,7 @@ link:<a href="https://status.digitalocean.com/incidents/np0zw6m04jm1" target="_b
 <p>Our Engineering team continues to investigate the root cause of the issue and work on a full fix, and users may still experience errors until a full fix is in place. We will post a further update when more information is available.</p>
 
             <footer>
-                <cite>Aug 28, 16:05</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724861108</cite>
             </footer>
         </blockquote>
         <hr />
@@ -77,7 +86,7 @@ link:<a href="https://status.digitalocean.com/incidents/np0zw6m04jm1" target="_b
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Aug 28, 15:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724858480</cite>
             </footer>
         </blockquote>
         <hr />
@@ -87,7 +96,7 @@ link:<a href="https://status.digitalocean.com/incidents/np0zw6m04jm1" target="_b
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Aug 28, 15:17</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724858275</cite>
             </footer>
         </blockquote>
         <hr />
@@ -101,7 +110,7 @@ link:<a href="https://status.digitalocean.com/incidents/np0zw6m04jm1" target="_b
 <p>We apologize for any inconvenience, and we&rsquo;ll share more information as soon as it&rsquo;s available.</p>
 
             <footer>
-                <cite>Aug 28, 15:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724857562</cite>
             </footer>
         </blockquote>
         <hr />

@@ -9,8 +9,17 @@
     <title>Grafana status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/grafana/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/grafana/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/grafana/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/grafana/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>There were no observed instances of this issue today. We&rsquo;re considering the incident resolved. Please contact our Support team if you believe you&rsquo;re impacted by this incident.</p>
 
             <footer>
-                <cite>Jul 22, 21:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721684784</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
 <p>We will provide another status update if there are any changes.</p>
 
             <footer>
-                <cite>Jul 20, 00:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721435113</cite>
             </footer>
         </blockquote>
         <hr />
@@ -70,7 +79,7 @@
 <p>We will continue to investigate and provide updates as more information becomes available.</p>
 
             <footer>
-                <cite>Jul 19, 23:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721431124</cite>
             </footer>
         </blockquote>
         <hr />
@@ -85,7 +94,7 @@ us-central-5/loki-prod3</p>
 <p>We will continue to investigate and provide updates as more information becomes available.</p>
 
             <footer>
-                <cite>Jul 19, 22:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721428249</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@ us-central-5/loki-prod3</p>
 We will continue to investigate and provide updates as more information becomes available.</p>
 
             <footer>
-                <cite>Jul 19, 22:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721426786</cite>
             </footer>
         </blockquote>
         <hr />

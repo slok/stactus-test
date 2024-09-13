@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Azure cluster creation and update is now working normally once again. Please delete and re-create any clusters left in &ldquo;failed&rdquo; state after they failed to deploy, and retry any cluster updates that failed in the last 6 h 30 min.</p>
 
             <footer>
-                <cite>Jul  9, 20:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720555349</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>The credentials have been rotated, we are now monitoring the system to ensure everything is back to normal.</p>
 
             <footer>
-                <cite>Jul  9, 19:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720553804</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We&rsquo;ve identified the issue to be an expired credential and are looking into renewing it. Until then HVD cluster creation and updates on Azure will continue failing.</p>
 
             <footer>
-                <cite>Jul  9, 18:31</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720549869</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Our engineering team is investigating an issue with HCP Vault Dedicated. During this time, users may experience that creating HCP Vault  Dedicated clusters on Azure as well as any attempted update. We will share another update as soon as we have more information.</p>
 
             <footer>
-                <cite>Jul  9, 17:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720546701</cite>
             </footer>
         </blockquote>
         <hr />

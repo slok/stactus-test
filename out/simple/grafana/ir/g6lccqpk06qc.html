@@ -9,8 +9,17 @@
     <title>Grafana status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/grafana/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/grafana/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/grafana/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/grafana/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Engineering has released a fix and as of 10:30 UTC, customers should no longer experience hosted services issues. At this time, we are considering this issue resolved. No further updates.</p>
 
             <footer>
-                <cite>Jul 19, 17:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721411189</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>As of 4:45 UTC, we have observed marked improvement with Prometheus, Loki, and Tempo components. We are continuing to monitor for signs of improvement in other components as this fix rolls out across our cloud service provider&rsquo;s services.</p>
 
             <footer>
-                <cite>Jul 19, 04:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721364584</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Our cloud service provider has identified the cause of the outage and are applying mitigations. We expect to see signs of improvement as this fix rolls out across their services.</p>
 
             <footer>
-                <cite>Jul 19, 02:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721355769</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are currently investigating issues with hosted services in us-central2.</p>
 
             <footer>
-                <cite>Jul 18, 23:13</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721344389</cite>
             </footer>
         </blockquote>
         <hr />

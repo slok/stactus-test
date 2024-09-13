@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 16th, 2024, between 00:30 UTC and 03:07 UTC, Copilot Chat was degraded and rejected all requests. The error rate was close to 100% during this time period and customers would have received errors when attempting to use Copilot Chat. <br /><br />This was triggered during routine maintenance from a service provider, when GitHub services were disconnected and overwhelmed the dependent service during reconnections. <br /><br />To mitigate the issue in the future, we are working to improve our reconnection and circuit-breaking logic to dependent services to recover from this kind of event seamlessly, without overwhelming the other service.<br /></p>
 
             <footer>
-                <cite>Jul 16, 03:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721099268</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Copilot chat is error rates are improving and we are continuing to monitor system health.</p>
 
             <footer>
-                <cite>Jul 16, 02:56</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721098575</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Copilot chat is experiencing elevated error rates. We have identified the root cause and are working on remediation.</p>
 
             <footer>
-                <cite>Jul 16, 02:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721095825</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Copilot chat is experiencing elevated error rates and we are currently investigating the issue.</p>
 
             <footer>
-                <cite>Jul 16, 01:35</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721093707</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Jul 16, 00:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721091188</cite>
             </footer>
         </blockquote>
         <hr />

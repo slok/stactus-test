@@ -9,8 +9,17 @@
     <title>Discord status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/discord/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/discord/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/discord/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/discord/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/discord/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/discord/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Impact is over since 1:05pm PST.</p>
 
             <footer>
-                <cite>Apr 30, 13:43</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1714509794</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We&rsquo;ve identified the problematic service and are working to add more replicas to improve session start success.</p>
 
             <footer>
-                <cite>Apr 30, 12:23</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1714505023</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Session start success rate has recovered, we are continuing to monitor.</p>
 
             <footer>
-                <cite>Apr 30, 12:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1714504556</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are investigating an issue where starting a session may fail.</p>
 
             <footer>
-                <cite>Apr 30, 12:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1714503690</cite>
             </footer>
         </blockquote>
         <hr />

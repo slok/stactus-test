@@ -9,8 +9,17 @@
     <title>MIT status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mit/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/mit/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/mit/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mit/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>HID and Apple have implemented a fix to resolve this issue. MIT Mobile ID provisioning has been re-enabled</p>
 
             <footer>
-                <cite>Jan  2, 10:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1704210101</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>HID and Apple have implemented a fix to correct this issue. MIT Mobile ID provisioning has been re-enabled. IS&amp;T is monitoring the resolution to make sure there is no further impact.</p>
 
             <footer>
-                <cite>Dec 26, 11:58</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1703609903</cite>
             </footer>
         </blockquote>
         <hr />
@@ -73,7 +82,7 @@ If you’ve provisioned a new mobile ID since December 18, 2023, and are experie
 <p>IS&amp;T will provide more updates as soon as they become available.</p>
 
             <footer>
-                <cite>Dec 21, 14:12</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1703185977</cite>
             </footer>
         </blockquote>
         <hr />

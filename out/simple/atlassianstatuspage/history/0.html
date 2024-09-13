@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlassian Statuspage status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/atlassianstatuspage/static/main.js"></script>
+</head>
+
+
+<body>
+    <body style="width:960px; margin:0 auto;">
+        <header class="container-fluid">
+            
+<nav>
+    <ul>
+        <li>
+            <h2>Atlassian Statuspage status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/">Status</a></li>
+    </ul>
+</nav>
+
+        </header>
+        <main class="container-fluid">
+            <br />
+            <h1>Incident History</h1>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/5vm2shyqxl43" class="incident-title-none"> Errors on the Statuspage JSM plugin</a></h4>
+                </header>
+                <p>This issue has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1719544193</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1719549452</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/w8znyp4189h1" class="incident-title-minor"> Error responses across multiple Cloud products</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1717457181</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1717460040</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/3s2rf0nphzpx" class="incident-title-major"> Statuspage API is facing intermittent issues</a></h4>
+                </header>
+                <p>This issue has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1710316817</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1710325621</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/19ywwgjgcmy1" class="incident-title-minor"> Statuspage product provisioning failing intermittently</a></h4>
+                </header>
+                <p>We have identified and fixed the issue and now Statuspage provisioning is working for our customers.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1707158168</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1707166835</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/d00jdtzqv0sb" class="incident-title-major"> Intermittent issues in incidents shown in Status embed frame</a></h4>
+                </header>
+                <p>There was an intermittent error with status embed page where cached responses were incorrectly being shown to a few customers. This is resolved as of now.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1700239046</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1700241926</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/cjk3z1vlfv55" class="incident-title-major"> Intermittent errors while accessing public Statuspages</a></h4>
+                </header>
+                <h3 id="summary"><strong>SUMMARY</strong></h3>
+
+<p>From 06:00 UTC to 07:45 UTC on October 28, 2023, Atlassian customers using Statuspage had intermittent issues with all Statuspage functionality. The event occurred due to a database performance issue during a <a href="https://metastatuspage.com/incidents/s21b66328h9j" target="_blank">scheduled database maintenance</a>. This impacted customers in all regions. The incident was detected within one minute by monitoring the upgrade process and mitigated by rolling back to a known good snapshot which put Statuspage systems into a known good state. The total time to resolution was about one hour and 45 minutes.</p>
+
+<h3 id="impact"><strong>IMPACT</strong></h3>
+
+<p>The overall impact was between 06:00 UTC and 07:45 UTC October 28, 2023. This incident affected Statuspage customers from all regions and caused intermittent backend errors on all Statuspage activity including viewing pages, adding subscribers, and creating/updating events. We performed a rollback operation during recovery to return to a known good state.</p>
+
+<h3 id="root-cause"><strong>ROOT CAUSE</strong></h3>
+
+<p>The issue was caused by database performance issues after a routine database maintenance and upgrade. As a result, our backends returned intermittent errors to several user requests.</p>
+
+<h3 id="remedial-actions-plan-next-steps"><strong>REMEDIAL ACTIONS PLAN &amp; NEXT STEPS</strong></h3>
+
+<p>We take the utmost care to provide a highly reliable service. We will pursue several preventive measures to ensure that this situation does not occur in the future, including:</p>
+
+<ul>
+<li>Fixing the cause of the performance issues before future upgrades; and</li>
+<li>Improving our testing process for database upgrades to catch potential performance issues.</li>
+</ul>
+
+<p>We apologize to customers whose services were impacted during this incident; we are taking immediate steps to improve the platform’s performance and availability.</p>
+
+<p>Thanks,</p>
+
+<p>Atlassian Customer Support</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1698478584</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1698480068</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/vk7b8qt8kctm" class="incident-title-none"> Elevated Server Errors on Public Pages</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1695063016</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1695064790</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/k2jclw1n5jb4" class="incident-title-major"> Atlassian Account login issues</a></h4>
+                </header>
+                <h3 id="summary"><strong>SUMMARY</strong></h3>
+
+<p>On Sep 13, 2023, between 12:00 PM UTC and 03: 30 PM UTC, some Atlassian users were unable to sign in to their accounts and use multiple Atlassian cloud products. The event was triggered by a misconfiguration of rate limits in an internal service which caused a cascading failure in sign-in and signup-related APIs. The incident was quickly detected by multiple automated monitoring systems. The incident was mitigated on Sep 13, 2023, 03: 30 PM UTC by the rollback of a feature and additional scaling of services which put Atlassian systems into a known good state. The total time to resolution was about 3 hours &amp; 30 minutes.</p>
+
+<p>‌</p>
+
+<h3 id="impact"><strong>IMPACT</strong></h3>
+
+<p>The overall impact was between Sep 13, 2023, 12:00 PM UTC and Sep 13, 2023, 03: 30 PM UTC on multiple products. The Incident caused intermittent service disruption across all regions. Some users were unable to sign in for sessions. Other scenarios that temporarily failed were new user signups, profile retrieval, and password reset. During the incident we had a peak of 90% requests failing across authentication, user profile retrieval, and password reset use cases.</p>
+
+<p>‌</p>
+
+<h3 id="root-cause"><strong>ROOT CAUSE</strong></h3>
+
+<p>The issue was caused due to a misconfiguration of a rate limit in an internal core service. As a result, some sign-in requests over the limit received HTTP 429 errors. However, retry behavior for requests caused a multiplication of load which led to higher service degradation. As many internal services depend on each other, the call graph complexity led to a longer time to detect the actual faulty service.</p>
+
+<p>‌</p>
+
+<h3 id="remedial-actions-plan-next-steps"><strong>REMEDIAL ACTIONS PLAN &amp; NEXT STEPS</strong></h3>
+
+<p>We are continuously improving our system&rsquo;s resiliency.</p>
+
+<p>We are prioritizing the following improvement actions to avoid repeating this type of incident:</p>
+
+<ul>
+<li>Audit and improve service rate limits and client retry and backoff behavior.</li>
+<li>Improve scale and load test automation for complex service interactions.</li>
+<li>Audit cross-service dependencies and minimize them where possible related to sign-in flows.</li>
+</ul>
+
+<p>‌</p>
+
+<p>Due to the unavailability of sign-in, some customers were unable to create support tickets. We are making additional process improvements to:</p>
+
+<ul>
+<li>Enable our unauthenticated support contact form and notify users that it should be used when standard channels are not available. </li>
+<li>Create status page notifications more quickly and ensure that for severe incidents, notifications to all subscribers are enabled.</li>
+</ul>
+
+<p>‌</p>
+
+<p>We apologize to users who were impacted during this incident; we are taking immediate steps to improve the platform’s reliability and availability.</p>
+
+<p>Thanks,</p>
+
+<p>Atlassian Customer Support</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1694614613</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1694633875</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/5jx26q4t0zmv" class="incident-title-minor"> Intermittent errors during login for some customers</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1693371800</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1693376170</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/ir/q1rslpclnfrm" class="incident-title-minor"> Intermittent errors during login for some customers</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1688635129</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1688650019</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <section>
+                
+                    <a href="https://slok.github.io/stactus-test/simple/atlassianstatuspage/history/1" role="button"> ⮜ Previous </a>
+                
+                
+            </section>
+        </main>
+    </body>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

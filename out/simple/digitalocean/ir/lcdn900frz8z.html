@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -50,7 +59,7 @@
 <p>If you continue to experience any issues, please reach out to the Support team from within your account.</p>
 
             <footer>
-                <cite>Jun 17, 19:37</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718653056</cite>
             </footer>
         </blockquote>
         <hr />
@@ -60,7 +69,7 @@
             <p>Our Engineering team has identified and implemented a fix for an issue impacting Spaces SGP1 region. We are now monitoring the situation closely and will post an update as soon as the issue is fully resolved. Thank you for your patience!</p>
 
             <footer>
-                <cite>Jun 17, 19:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718651231</cite>
             </footer>
         </blockquote>
         <hr />
@@ -70,7 +79,7 @@
             <p>Our Engineering team is investigating an issue with spaces in SGP1 region. During this time, users may experience 503 errors while accessing bucket operations. We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Jun 17, 18:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718650142</cite>
             </footer>
         </blockquote>
         <hr />

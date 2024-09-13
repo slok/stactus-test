@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -47,7 +56,7 @@
 If you continue to experience problems, please open a ticket with our support team. We apologize for any inconvenience.</p>
 
             <footer>
-                <cite>Jul 16, 11:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721130483</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@ If you continue to experience problems, please open a ticket with our support te
 We will post an update as soon as the issue is fully resolved.</p>
 
             <footer>
-                <cite>Jul 16, 11:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721128546</cite>
             </footer>
         </blockquote>
         <hr />
@@ -68,7 +77,7 @@ We will post an update as soon as the issue is fully resolved.</p>
             <p>Our Engineering team continues to monitor the issue with processing payments via PayPal on our platform. The impact is mitigated and users should not see any issues when trying to use PayPal. We will post another update once we confirm the full resolution. We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Jul 16, 11:12</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721128340</cite>
             </footer>
         </blockquote>
         <hr />
@@ -78,7 +87,7 @@ We will post an update as soon as the issue is fully resolved.</p>
             <p>Our Engineering team has identified the cause of the issue with processing payments via PayPal on our platform, and has implemented a fix. We are currently monitoring the situation and will post an update as soon as the issue is fully resolved.</p>
 
             <footer>
-                <cite>Jul 16, 10:34</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721126084</cite>
             </footer>
         </blockquote>
         <hr />
@@ -88,7 +97,7 @@ We will post an update as soon as the issue is fully resolved.</p>
             <p>Our Engineering team is investigating an issue with payments using PayPal. During this time, users may experience timeouts/failures when trying to use PayPal. We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Jul 16, 10:08</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721124493</cite>
             </footer>
         </blockquote>
         <hr />

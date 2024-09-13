@@ -9,8 +9,17 @@
     <title>MIT status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mit/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/mit/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/mit/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mit/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Cisco has identified the issue and corrected the problem. Access to the MIT Webex portal has been restored.</p>
 
             <footer>
-                <cite>Nov  3, 08:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1699016122</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>The MIT Webex portal mit.webex.com is currently inaccessible. IS&amp;T is currently working with the vendor (Cisco) to resolve the issue. Meetings and most other functions can still be accessed using the Webex app.</p>
 
             <footer>
-                <cite>Oct 31, 16:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1698783913</cite>
             </footer>
         </blockquote>
         <hr />

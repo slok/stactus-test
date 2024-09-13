@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -26,7 +35,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -45,7 +54,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Jan 22, 15:31 - Jan 22, 16:31 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1705955480</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1705959094</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -60,7 +70,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Jan 22, 14:04 - Jan 22, 15:38 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1705950257</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1705955882</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -75,7 +86,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Jan  4, 11:37 - Jan  4, 12:19 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1704386260</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1704388799</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -90,7 +102,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Dec 22, 19:08 - Dec 22, 19:57 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1703290097</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1703293050</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -105,7 +118,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Oct 27, 12:14 - Oct 27, 13:14 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1698423244</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1698426840</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -120,7 +134,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Oct 24, 13:11 - Oct 24, 13:38 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1698167494</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1698169122</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -135,7 +150,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Oct  3, 13:30 - Oct  4, 11:44 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1696354248</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1696434296</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -150,7 +166,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Sep 25, 22:56 - Sep 26, 00:25 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1695696990</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1695702318</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -165,7 +182,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Sep 25, 17:14 - Sep 25, 17:55 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1695676488</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1695678920</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -180,7 +198,8 @@ All logs after this date are being processed as normal.</p>
                 <footer>
                     <small>
                         
-                            Sep 22, 11:48 - Sep 22, 12:07 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1695397702</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1695398851</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>

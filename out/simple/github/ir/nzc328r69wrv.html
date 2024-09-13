@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Between June 18th, 2024 at 09:34 PM UTC and June 19th, 2024 at 12:53 PM the Copilot Pull Request Summaries Service was unavailable. This was due to an internal change in access approach from the Copilot Pull Request service to the Copilot API.<br /><br />We mitigated the incident by reverting the change in access which immediately resolved the errors.<br /><br />We are working to improve our monitoring in this area and reduce our time to detection to more quickly address issues like this one in the future.<br /></p>
 
             <footer>
-                <cite>Jun 19, 12:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718801613</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are deploying a fix now and expect recovery within the hour.</p>
 
             <footer>
-                <cite>Jun 19, 12:31</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718800279</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We’ve identified an issue with Copilot pull request summaries that has caused errors when attempting to generate summaries since yesterday (June 18, 2024) at around 21:00 UTC. <br /><br />We have identified a fix, and we expect the issue to be resolved within two hours.</p>
 
             <footer>
-                <cite>Jun 19, 11:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718798377</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are investigating reports of degraded performance for Copilot</p>
 
             <footer>
-                <cite>Jun 19, 11:58</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718798297</cite>
             </footer>
         </blockquote>
         <hr />

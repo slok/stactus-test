@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubiquiti status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/ubiquiti/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/ubiquiti/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container-fluid">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Ubiquiti status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/ubiquiti/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/ubiquiti/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container-fluid">
+        <br />
+        <!-- Status -->
+        
+        <section class="grid">
+            <div></div>
+            <article class="operational-box">
+                <i class="ph-bold ph-check"></i> <strong>All systems operational</strong>
+            </article>
+            <div></div>
+        </section>
+        
+
+        <br />
+        <section>
+            <h3>Current status</h3>
+            <!-- Make 2 columns -->
+            
+            <div class="grid">
+                
+                <article>
+                    AmpliFi Remote Access / AmpliFi Cloud Production API
+
+                    
+                        <span data-tooltip="Production facing AmpliFi cloud API endpoint
+https://cloud.amplifi.com
+https://client.amplifi.com
+https://device.amplifi.com"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Community / Community
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Official UniFi Hosting
+
+                    
+                        <span data-tooltip="Official UniFi Hosting instances and the UniFi Hosting API."><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Online Support / Help Center
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Online Support / Live Chat
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Speedtest / Speedtest Service
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Teleport VPN Service
+
+                    
+                        <span data-tooltip="UniFi Network Teleport VPN feature"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    UI Account Management / Account Service
+
+                    
+                        <span data-tooltip="Ubiquiti Cloud Account API"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    UI Account Management / SSO Service
+
+                    
+                        <span data-tooltip="Ubiquiti Cloud SSO API"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    UISP Cloud Console / UISP Cloud
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    UniFi Design Center
+
+                    
+                        <span data-tooltip="UniFi Deployment Planning Portal"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    UniFi Mobility Cloud
+
+                    
+                        <span data-tooltip="Mobility portal for cloud application"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    UniFi Remote Access / Remote Access Service
+
+                    
+                        <span data-tooltip="Remote Access Service"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    UniFi Remote Access / unifi.ui.com
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    UniFi Talk / UniFi Talk
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

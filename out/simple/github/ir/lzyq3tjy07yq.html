@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 17th, 2024 between 17:56 and 18:13 UTC the Codespaces service was degraded and 5% of codespaces were failing to start after creation. After analyzing the failing codespaces, we realized that all of them had reached the 1 hour timeout allocated for starting. Further, we realized that the root cause of the timeouts was the <a href="https://status.githubapp.com/incidents/1886?viewTimeOption=UTC">larger incident earlier in the day due to updating github’s network hardware</a>.<br />We realized this incident was already mitigated by the mitigation of the earlier incident.<br />We are working to see if we can improve our incident response process to better understand the connection between incidents in the future and avoid unnecessary incident noise for customers.<br /></p>
 
             <footer>
-                <cite>Jul 17, 18:13</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721239991</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are investigating reports of degraded performance for Codespaces</p>
 
             <footer>
-                <cite>Jul 17, 17:56</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721239006</cite>
             </footer>
         </blockquote>
         <hr />

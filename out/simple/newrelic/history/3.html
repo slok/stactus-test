@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Relic status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/newrelic/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/newrelic/static/main.js"></script>
+</head>
+
+
+<body>
+    <body style="width:960px; margin:0 auto;">
+        <header class="container-fluid">
+            
+<nav>
+    <ul>
+        <li>
+            <h2>New Relic status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/newrelic/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/newrelic/">Status</a></li>
+    </ul>
+</nav>
+
+        </header>
+        <main class="container-fluid">
+            <br />
+            <h1>Incident History</h1>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/bh9kdyrlfc1t" class="incident-title-major"> Alert Delays in US Region</a></h4>
+                </header>
+                <p>Between approximately 14:30 UTC on August 26th and 03:59 UTC on August 27th, some customers in the US region may have experienced missing, delayed, or false alert notifications.</p>
+
+<p>We investigated and resolved this interruption. Impacted services have returned to normal operation.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1693063889</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1693111591</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/f5wl47864cgg" class="incident-title-minor"> Alert Irregularities in US Region</a></h4>
+                </header>
+                <p>Between 16:51 UTC and 17:21 UTC on August 18th, some customers in the US region may have experienced delayed or missing alert notifications for all data sources. To prevent our customers from receiving a high volume of false-positive alert notifications during this interruption, alerts were temporarily suppressed for applicable customers between 16:58 UTC and 17:21 UTC.</p>
+
+<p>We have investigated and resolved this service interruption and impacted services have returned to normal operations.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1692377993</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1692381422</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/smdzw6d3sgwz" class="incident-title-minor"> Alert Delays in the US Region</a></h4>
+                </header>
+                <p>Between 17:15 UTC and 17:55 UTC on August 17th, some customers in the US region may have experienced delayed or missing alert notifications.</p>
+
+<p>We have investigated and resolved this service interruption and impacted services have returned to normal operations.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1692294540</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1692295552</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/0qhrx0jbsdmx" class="incident-title-major"> Alert Delays for the US Region</a></h4>
+                </header>
+                <p>Between 02:21 UTC and 03:47 UTC on August 17th, some customers in the US region may have experienced delay or dropped alerts for alert notifications, and possible delays in distributed trace data. To prevent our customers from receiving a high volume of false-positive alert notifications during this interruption, alerts were temporarily suppressed for applicable customers between 02:55 UTC and 03:49UTC.</p>
+
+<p>We have investigated and resolved this service interruption and impacted services have returned to normal operations.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1692241727</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1692245697</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/66jd7k7vspck" class="incident-title-minor"> Synthetics Delays in US Region</a></h4>
+                </header>
+                <p>Between 15:05 UTC and 16:55 UTC on August 11th, some customers in the US region may have experienced delays for synthetics checks results and delayed or missing synthetics-related alert notifications.</p>
+
+<p>We have investigated and resolved this service interruption and impacted services have returned to normal operations.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1691771188</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1691774622</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/388dp3xxcvkm" class="incident-title-none"> Data Ingest US Region</a></h4>
+                </header>
+                <p>Between 10:29 UTC and 11:30 UTC on August 11th, 2023, some customers in the US region may have experienced 503 errors when sending data to New Relic. We resolved an issue with data ingest and impacted services have returned to normal operation. Alert notifications during these times may be missing or delayed.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1691752158</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1691754528</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/v3hbw4lmxp46" class="incident-title-none"> Alerts & AI Irregularities in US Region</a></h4>
+                </header>
+                <p>Between 22:30 UTC and 23:20 UTC on August 10th, some customers in the US region may have experienced latency for incident and issue creation and delayed or missing alert notifications.</p>
+
+<p>We have investigated and resolved this service interruption and impacted services have returned to normal operation.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1691708988</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1691710105</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/rfk5ng13djz6" class="incident-title-minor"> Login and UI Irregularities in US and EU Regions</a></h4>
+                </header>
+                <p>Between 18:28 UTC and 19:00 UTC on August 8th, some customers in the US and EU regions may have encountered errors when attempting to log in to the New Relic platform or load some pages in the UI.
+ 
+We have investigated and resolved this issue and the above services have returned to normal operation.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1691519931</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1691522252</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/pth6y2shr034" class="incident-title-minor"> Delayed Alerts in US Region</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1691312550</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1691315323</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/newrelic/ir/3z8kf406tf8l" class="incident-title-none"> New Relic Support Portal Login Irregularities</a></h4>
+                </header>
+                <p>Between 21:53 UTC and 23:13 UTC on August 4th, some customers in the US and EU regions may have experienced errors when attempting to log in to the New Relic Support Portal (support.newrelic.com).</p>
+
+<p>We have investigated and resolved this service interruption and impacted services have returned to normal operation.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1691189963</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1691191897</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <section>
+                
+                    <a href="https://slok.github.io/stactus-test/simple/newrelic/history/4" role="button"> ⮜ Previous </a>
+                
+                
+                    <span class="move-right">
+                        <a href="https://slok.github.io/stactus-test/simple/newrelic/history/2" role="button"> Next ⮞ </a>
+                    </span>
+                
+            </section>
+        </main>
+    </body>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

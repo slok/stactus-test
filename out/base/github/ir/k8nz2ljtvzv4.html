@@ -28,12 +28,12 @@
                 </tr>
                 <tr>
                     <td><strong>Started</strong></td>
-                    <td>May 28, 20:17</td>
+                    <td>May 28, 22:17</td>
                 </tr>
                 <tr>
                     <td><strong>End</strong></td>
                     
-                    <td>May 28, 21:24</td>
+                    <td>May 28, 23:24</td>
                     
                 </tr>
                 
@@ -47,50 +47,50 @@
         <h2> Timeline </h2>
          
         <div class="box detail">
-            <h3> Investigating - May 28, 21:24 </h3>
+            <h3> Investigating - May 28, 23:24 </h3>
             <p> <p>On 2024-05-28 between 18:30 and 21:30 UTC, the Codespaces service was degraded. Users with dev container configurations that depended on the DockerHub container registry were unable to create new codespaces unless they provided their own DockerHub registry credentials. We observed a rise of at most 6% of creations entering recovery mode due to this incident.<br /><br />The GitHub Codespaces team worked directly with Docker to mitigate and has engaged with Docker to prevent similar issues in the future.</p>
  </p>
         </div>
          
         <div class="box detail">
-            <h3> Resolved - May 28, 21:24 </h3>
+            <h3> Resolved - May 28, 23:24 </h3>
             <p> <p>This incident has been resolved.</p>
  </p>
         </div>
          
         <div class="box detail">
-            <h3> Investigating - May 28, 21:19 </h3>
+            <h3> Investigating - May 28, 23:19 </h3>
             <p> <p>A fix has been applied and we are seeing some recovery. We will continue to monitor for a bit before marking this issue resolved.</p>
  </p>
         </div>
          
         <div class="box detail">
-            <h3> Investigating - May 28, 20:53 </h3>
+            <h3> Investigating - May 28, 22:53 </h3>
             <p> <p>We are still investigating root cause and remediation options. In the meantime, here is a workaround to be able to pull images from DockerHub:<br /><br />1. Make a free DockerHub account at <a href="https://hub.docker.com" target="_blank">https://hub.docker.com</a> (or use an existing account if you have one).<br />2. Create a DockerHub secret/PAT from <a href="https://hub.docker.com/settings/security" target="_blank">https://hub.docker.com/settings/security</a> (Read permission should be sufficient).<br />3. Go to <a href="https://github.com/settings/codespaces" target="_blank">https://github.com/settings/codespaces</a><br /><br />Add three Codespace secrets:<br /><br />- DOCKERHUB_CONTAINER_REGISTRY_PASSWORD (equal to the DockerHub PAT you created)<br />- DOCKERHUB_CONTAINER_REGISTRY_SERVER (equal to <a href="https://index.docker.io/v1/" target="_blank">https://index.docker.io/v1/</a>)<br />- DOCKERHUB_CONTAINER_REGISTRY_USER (equal to your DockerHub username)<br /><br />4. Make sure these secrets are set as visible to the target repo.<br />5. Create/rebuild your Codespace<br /><br />Steps above are distilled from the official docs: <a href="https://docs.github.com/en/codespaces/reference/allowing-your-codespace-to-access-a-private-registry#example-secrets" target="_blank">https://docs.github.com/en/codespaces/reference/allowing-your-codespace-to-access-a-private-registry#example-secrets</a></p>
  </p>
         </div>
          
         <div class="box detail">
-            <h3> Investigating - May 28, 20:53 </h3>
+            <h3> Investigating - May 28, 22:53 </h3>
             <p> <p><i>Duplicate update, same as above</i></p>
  </p>
         </div>
          
         <div class="box detail">
-            <h3> Investigating - May 28, 20:23 </h3>
+            <h3> Investigating - May 28, 22:23 </h3>
             <p> <p>Some Codespaces are currently failing to be properly created for images hosted by DockerHub. Other registries should be unaffected. We are investigating root cause and will report back shortly.</p>
  </p>
         </div>
          
         <div class="box detail">
-            <h3> Investigating - May 28, 20:17 </h3>
+            <h3> Investigating - May 28, 22:17 </h3>
             <p> <p>We are investigating reports of degraded performance for Codespaces</p>
  </p>
         </div>
         
 
         <section>
-            <a href="https://slok.github.io/stactus-test/base/github/index">Status</a>
+            <a href="https://slok.github.io/stactus-test/base/github/">Status</a>
         </section>
     </div>
     

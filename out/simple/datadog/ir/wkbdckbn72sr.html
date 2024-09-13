@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Our metrics system has recovered and all historical metrics are now queryable.</p>
 
             <footer>
-                <cite>May 13, 17:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715637311</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>The system continues to recover. Data is available, but some results may be slow or incomplete until full recovery. Our teams continue to monitor the incident.</p>
 
             <footer>
-                <cite>May 13, 17:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715635094</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>A fix has been implemented. While the system continues to recover, data will be available but some results may be slow or incomplete until full recovery is complete.</p>
 
             <footer>
-                <cite>May 13, 16:17</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715631430</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are continuing to work on a fix for this issue.</p>
 
             <footer>
-                <cite>May 13, 15:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715629205</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are continuing to work on a fix for this issue.</p>
 
             <footer>
-                <cite>May 13, 14:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715625686</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>The issue has been identified and a fix is being implemented.</p>
 
             <footer>
-                <cite>May 13, 14:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715624052</cite>
             </footer>
         </blockquote>
         <hr />
@@ -107,7 +116,7 @@
 Queries for recent data are not affected by this incident.</p>
 
             <footer>
-                <cite>May 13, 13:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715623184</cite>
             </footer>
         </blockquote>
         <hr />

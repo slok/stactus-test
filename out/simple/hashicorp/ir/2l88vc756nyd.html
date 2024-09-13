@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>HCP Emergency Maintenance is now complete.</p>
 
             <footer>
-                <cite>Mar 28, 00:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1711585108</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>HCP Boundary Maintenance is still ongoing and is expected to complete in 1 hour 00:30 UTC. During this time, HCP Boundary sessions may disconnect unexpectedly, but reconnecting will be possible. We will continue to post updates as necessary throughout the maintenance period.</p>
 
             <footer>
-                <cite>Mar 27, 23:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1711582176</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>HCP Boundary will undergo emergency maintenance on 27, March, 2024 beginning at 20:30 UTC . We expect this maintenance to be complete within three hours. During this time, HCP Boundary sessions may disconnect unexpectedly, but reconnecting will be possible. We will post updates as necessary throughout the maintenance period.</p>
 
             <footer>
-                <cite>Mar 27, 20:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1711571439</cite>
             </footer>
         </blockquote>
         <hr />

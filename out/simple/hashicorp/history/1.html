@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -26,7 +35,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,8 @@
                 <footer>
                     <small>
                         
-                            Jul 30, 23:16 - Jul 31, 19:12 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1722381404</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1722453121</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -61,7 +71,8 @@
                 <footer>
                     <small>
                         
-                            Jul 26, 22:14 - Jul 27, 00:00 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1722032052</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1722038452</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -80,7 +91,8 @@
                 <footer>
                     <small>
                         
-                            Jul 23, 11:58 - Jul 23, 17:15 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1721735927</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1721754928</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -101,7 +113,8 @@
                 <footer>
                     <small>
                         
-                            Jul 22, 18:56 - Aug 14, 21:41 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1721674605</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1723671681</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -116,7 +129,8 @@
                 <footer>
                     <small>
                         
-                            Jul 20, 15:32 - Jul 20, 20:59 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1721489530</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1721509150</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -131,7 +145,8 @@
                 <footer>
                     <small>
                         
-                            Jul 19, 15:37 - Jul 19, 16:30 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1721403460</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1721406658</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -146,7 +161,8 @@
                 <footer>
                     <small>
                         
-                            Jul 18, 23:08 - Jul 19, 04:26 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1721344096</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1721363211</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -163,7 +179,8 @@
                 <footer>
                     <small>
                         
-                            Jul 17, 14:55 - Jul 17, 16:22 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1721228100</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1721233344</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -180,7 +197,8 @@
                 <footer>
                     <small>
                         
-                            Jul 16, 14:07 - Jul 16, 15:15 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1721138840</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1721142921</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -195,7 +213,8 @@
                 <footer>
                     <small>
                         
-                            Jul  9, 17:38 - Jul  9, 20:02 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1720546701</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1720555349</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>

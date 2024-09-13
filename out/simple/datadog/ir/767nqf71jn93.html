@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Sep 11, 22:13</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694484811</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Users may still be experiencing some issues with graphs not loading in the web application.  We will provide another update once the issue is fully resolved.</p>
 
             <footer>
-                <cite>Sep 11, 21:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694481413</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Users may still be experiencing some issues with graphs not loading in the web application.  We will provide another update once the issue is fully resolved.</p>
 
             <footer>
-                <cite>Sep 11, 20:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694477265</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Users may still be experiencing some issues with graphs not loading in the web application.  We will provide another update once the issue is fully resolved.</p>
 
             <footer>
-                <cite>Sep 11, 19:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694473286</cite>
             </footer>
         </blockquote>
         <hr />
@@ -88,7 +97,7 @@
 <p>Users may still be experiencing some issues with graphs not loading in the web application.  We will provide another update once the issue is fully resolved.</p>
 
             <footer>
-                <cite>Sep 11, 17:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694469561</cite>
             </footer>
         </blockquote>
         <hr />
@@ -98,7 +107,7 @@
             <p>We have deployed a fix and we are monitoring the results. We will provide another update once the issue is fully resolved.</p>
 
             <footer>
-                <cite>Sep 11, 17:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694467810</cite>
             </footer>
         </blockquote>
         <hr />
@@ -108,7 +117,7 @@
             <p>We are continuing to investigate the issue.</p>
 
             <footer>
-                <cite>Sep 11, 16:42</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694464945</cite>
             </footer>
         </blockquote>
         <hr />
@@ -118,7 +127,7 @@
             <p>We are continuing to investigate the issue.</p>
 
             <footer>
-                <cite>Sep 11, 15:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694461019</cite>
             </footer>
         </blockquote>
         <hr />
@@ -132,7 +141,7 @@
 <p>Please note that data ingest is not affected by this incident.</p>
 
             <footer>
-                <cite>Sep 11, 14:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694458026</cite>
             </footer>
         </blockquote>
         <hr />

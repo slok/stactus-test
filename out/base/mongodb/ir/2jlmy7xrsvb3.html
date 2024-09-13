@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MongoDB status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/base/mongodb/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Atlas operations and Cloud Manager metrics collection delayed</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>2jlmy7xrsvb3</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Critical</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jan 17, 09:33</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jan 18, 15:08</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>29h34m59.879s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Update - Feb  8, 19:18 </h3>
+            <p> <p>On 1/9/24, a new version of the &ldquo;Atlas Proxy&rdquo; was released. One of the Atlas Proxies&rsquo;s responsibilities is syncing cluster configurations to the Atlas Shared and Atlas Serverless tiers. The new version updated this syncing protocol, but contained a bug where under certain circumstances it would sync cluster configuration much too frequently.</p>
+
+<p>On 1/17/24 at 08:00 UTC, this bug was triggered across the fleet, immediately overloading both the Atlas Control Plane application servers that handle requests from the Atlas Data Plane and the database clusters for those application servers.</p>
+
+<p>At 13:30 UTC, the Atlas Proxies were identified as the root cause of the increased load, and they were throttled. This stopped Shared/Serverless tier cluster changes from propagating with the intention of taking load off the system so Atlas Dedicated operations could proceed as normal. Unfortunately, the backlog of Atlas Dedicated changes overloaded numerous other internal services.</p>
+
+<p>An additional consequence of the Atlas Proxy throttling was that ongoing OS security patching caused some servers to reboot during the incident, and after the reboot, the Proxies were not able to initialize correctly due to being throttled. This left a set of Shared and Serverless Tier customers unable to connect to their clusters.</p>
+
+<p>Over the next few hours, internal systems continued to be repaired. The specific bug in the Atlas Proxy was identified, and a plan to roll it back was established. By 17:00 UTC, Atlas Dedicated user driven changes were being processed with only small delays. By 23:30 UTC, all internal systems were operating normally, the Atlas Proxy was rolled back/unthrottled, and there were no longer any delays in processing Atlas cluster changes.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Resolved - Jan 18, 15:08 </h3>
+            <p> <p>This incident has been resolved.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jan 18, 01:05 </h3>
+            <p> <p>We are continuing to monitor for any further issues.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jan 18, 01:04 </h3>
+            <p> <p>The system has recovered and we are continuing to monitor.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 18, 00:56 </h3>
+            <p> <p>The system is largely recovered, but we are monitoring closely.  Issues experienced by some customers connecting to Atlas Shared Tier or Atlas Serverless clusters were resolved around 23:00 UTC.</p>
+
+<p>Connections to Atlas Dedicated clusters and performance of Atlas Dedicated clusters are not and have not been impacted.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 18, 00:20 </h3>
+            <p> <p>The system is starting to recover.</p>
+
+<ul>
+<li>Issues connecting to Atlas Shared Tier and Atlas Serverless Clusters should be resolved.</li>
+<li>Metrics for some Atlas Serverless Clusters may still be delayed</li>
+<li>Creation of new Atlas clusters is experiencing a delay due to a delay in DNS propagation</li>
+<li>User-initiated requests for changes to Atlas clusters are processing in a timely manner with the exception of changes that require new DNS entries (e.g. adding a new node)</li>
+</ul>
+
+<p>Connections to Atlas Dedicated clusters and performance of Atlas Dedicated clusters are not and have not been impacted.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 18, 00:13 </h3>
+            <p> <p>We are continuing to investigate this issue.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 21:46 </h3>
+            <p> <p>We are continuing to see delays in metrics for Atlas Shared Tier and Atlas Serverless clusters.  Additionally all modifications for the Atlas Clusters are delayed including creation of new clusters/instances, ip access list, and user changes.  We have also identified an issue with connections to some Atlas Shared Tier and Atlas Serverless clusters.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 18:20 </h3>
+            <p> <p>We are continuing to delays in metrics for Atlas Shared Tier and Atlas Serverless clusters.  Additionally all modifications for the Atlas Shared Tier clusters and Atlas Serverless instances are delayed including creation of new clusters/instances, ip access list, and user changes. For Atlas Dedicated clusters, user requested changes to Atlas clusters (modifying the Network Access list, adding an additional node in a replica set, adding a new Database User, etc.) are being processed in a timely manner.  However, scheduled actions such as snapshots are experiencing delays. The delay for scheduled actions is currently decreasing.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 16:02 </h3>
+            <p> <p>Metrics for Atlas Shared Tier and Atlas Serverless clusters are still experiencing delays. User requested changes to Atlas clusters (modifying the Network Access list, adding an additional node in a replica set, adding a new Database User, etc.) are being processed in a timely manner.  However, scheduled actions such as snapshots are experiencing delays.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 14:33 </h3>
+            <p> <p>We have partially remediated the issue.  However, metrics for Atlas Shared Tier and Atlas Serverless clusters are still experiencing delays. Changes to Atlas clusters (including IP Access List modifications, topology and tier changes, or the creation of new clusters) may still be experiencing some delays.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 13:07 </h3>
+            <p> <p>We are continuing to investigate this issue.  No root cause or remediation has been reached at this time.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 12:03 </h3>
+            <p> <p>We are continuing to investigate this issue.  No root cause or remediation has been reached at this time.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 10:07 </h3>
+            <p> <p>Atlas clusters may show as Degraded due to the delayed metrics data - however, there is no impact to the clusters themselves.  (This is a false positive.)  There may be a delay processing requested changes to Atlas clusters.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jan 17, 09:33 </h3>
+            <p> <p>We are investigating an issue delaying the processing of metrics points for Atlas and Cloud Manager.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/base/mongodb/">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

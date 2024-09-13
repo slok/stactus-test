@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -48,7 +57,7 @@
 <p>If you continue to experience any issues, please open a ticket with our support team.</p>
 
             <footer>
-                <cite>Jul  8, 06:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720421113</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
             <p>The engineers have made a change to the public signing key and have confirmed that dynamic provider credentials is working again. We will be monitoring this further to ensure the fix is successful for everyone.</p>
 
             <footer>
-                <cite>Jul  8, 06:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720419414</cite>
             </footer>
         </blockquote>
         <hr />
@@ -68,7 +77,7 @@
             <p>The engineers have continued their investigation of the issue and have identified a change to the public signing key that occurred prior to the elevated error rates.</p>
 
             <footer>
-                <cite>Jul  8, 06:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720418683</cite>
             </footer>
         </blockquote>
         <hr />
@@ -78,7 +87,7 @@
             <p>Our engineering team are investigating an increase of errors related to dynamic credential provisioning for AWS.</p>
 
             <footer>
-                <cite>Jul  8, 02:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720406876</cite>
             </footer>
         </blockquote>
         <hr />

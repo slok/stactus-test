@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Relic status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/newrelic/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/newrelic/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>New Relic status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/newrelic/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/newrelic/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-minor">Alerts Irregularities in US Region</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 1h57m2.636s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>Between 20:15 UTC and 22:10 UTC on July 13th, some customers in the US region may have experienced delayed time-to-glass and delayed or missing alert notifications for the following data types: metric timeslice, mobile trace, browser trace, synthetics, Lambda errors, and AWS X-Ray traces. Impacted customers may have experienced drops in ingested data for mobile and browser data types.</p>
+
+<p>We have investigated and resolved this service interruption and impacted services have returned to normal operation.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1689287824</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We have identified and corrected an issue with our data streaming platform which caused some customers in the US region to experience delayed or missing alert notification related to the following data types: metric timeslice, mobile trace, browser trace, synthetics, Lambda errors, and AWS X-Ray traces. Customers may see recovery of affected services at this time. We are continuing to monitor these services to ensure a complete recovery.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1689284619</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Some customers in the US region may experience delayed or missing alert notifications related to metric timeslice, mobile trace, browser trace, and synthetics data. Some customers may also experience data drops for Lambda error data. We are continuing to investigate this issue and will provide updates as they become available.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1689283085</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>Some customers in the US region may experience delayed or missing alert notifications related to metric timeslice, mobile trace, browser trace, and synthetics data. We are investigating this issue and will provide updates as they become available.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1689281041</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are investigating a potential service interruption that may impact some customers. Please continue to monitor this page for updates.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1689280802</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

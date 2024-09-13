@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Aug  2, 01:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690955133</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Distribution metrics lag has been resolved. As a result of the issue, some users may see gaps for distribution metrics on graphs. Monitors evaluation is now re-enabled for monitors based on this data.</p>
 
             <footer>
-                <cite>Aug  1, 23:08</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690945733</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We continue to make progress on processing the lag on distribution metrics and are monitoring any further issues.</p>
 
             <footer>
-                <cite>Aug  1, 20:43</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690937023</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We continue to process the lag on distribution metrics</p>
 
             <footer>
-                <cite>Aug  1, 18:57</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690930642</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>A fix has been implemented and we are monitoring the results.</p>
 
             <footer>
-                <cite>Aug  1, 17:42</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690926157</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>The issue has been identified and a fix is being implemented.</p>
 
             <footer>
-                <cite>Aug  1, 17:37</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690925853</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Aug  1, 17:37</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690925828</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Aug  1, 17:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690924051</cite>
             </footer>
         </blockquote>
         <hr />
@@ -129,7 +138,7 @@ RUM/Synthetics/Logs/Processes measures that depend on distribution metrics will 
 To prevent spurious alerts, we have temporarily disabled monitors based on this data.</p>
 
             <footer>
-                <cite>Aug  1, 17:05</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1690923929</cite>
             </footer>
         </blockquote>
         <hr />

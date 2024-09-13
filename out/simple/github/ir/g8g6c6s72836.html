@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On May 30th, 2024, between 03:37 PM UTC and 05:14 PM UTC Copilot chat conversations on github.com saw degraded availability, where chat requests referencing files from a repository failed. This was due to an expired security certificate, which required communication to an internal service. Overall, the error rate was 40% on average. Other Copilot chat experiences were unaffected during this time.<br /><br />The incident was mitigated by rotating the certificate in question.<br /><br />To prevent future incidents, we are working to reduce our time to detect and have removed certificate-based dependencies between these internal systems in the process.<br /></p>
 
             <footer>
-                <cite>May 30, 17:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717089775</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Copilot is operating normally.</p>
 
             <footer>
-                <cite>May 30, 17:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717089775</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We have rolled out mitigation and fixes appear to be stable. This incident has been resolved.</p>
 
             <footer>
-                <cite>May 30, 17:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717089757</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Copilot is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>May 30, 17:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717089292</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>Our CoPilot API is currently experiencing back-end connectivity issues and we are actively engaged in mitigation steps.</p>
 
             <footer>
-                <cite>May 30, 17:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717089267</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>May 30, 17:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717089245</cite>
             </footer>
         </blockquote>
         <hr />

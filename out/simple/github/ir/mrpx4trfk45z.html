@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On August 15, 2024, between 13:14 UTC and 13:43 UTC, the Actions service was degraded and resulted in failures to start new workflow runs for customers of github.com. On average, 10% of Actions workflow runs failed to start with the failure rate peaking at 15%. This was due to an infrastructure change that enabled a network proxy for requests between the Actions service and an internal API which caused requests to fail.<br /><br />We mitigated the incident by rolling back the change. We are working to improve our monitoring and deployment practices to reduce our time to detection and mitigation of issues like this one in the future.</p>
 
             <footer>
-                <cite>Aug 15, 13:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723730389</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Approximately 10-15% of customers may be experiencing problems executing new GitHub Actions runs. The problem is currently being investigated by our teams.</p>
 
             <footer>
-                <cite>Aug 15, 13:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723729530</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are investigating reports of degraded performance for Actions</p>
 
             <footer>
-                <cite>Aug 15, 13:35</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723728940</cite>
             </footer>
         </blockquote>
         <hr />

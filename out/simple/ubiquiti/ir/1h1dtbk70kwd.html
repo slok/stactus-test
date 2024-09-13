@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubiquiti status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/ubiquiti/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/ubiquiti/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Ubiquiti status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/ubiquiti/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/ubiquiti/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-major">UniFi Protect Mobile - Push Notification Partial Outage</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 14h5m5.782s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>Push notification service has been restored.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1607146898</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>Update: Issue opening UniFi Protect app has been restored.
+We are still investigating the issue with some users not receiving push notifications on mobile, and will continue to post updates to status.ui.com until this is resolved. Thank you for your patience.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1607125725</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>An incident has been identified with UniFi Protect users who may be unable to launch Protect mobile app. Our teams are investigating the issue and will provide periodic updates on status.ui.com. We apologize for any inconvenience and are working to restore service as quickly as possible.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1607120355</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have identified an issue delivering push notifications for a subset of Protect customers running controller versions 1.13.0 - 1.15.0. Currently, email notifications are not being impacted.
+Our teams are investigating the issue and will provide periodic updates on status.ui.com. We apologize for any inconvenience and are working to restore service as quickly as possible.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1607096193</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

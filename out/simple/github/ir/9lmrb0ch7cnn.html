@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 11, 2024, between 10:20 UTC and 14:00 UTC Copilot Chat was degraded and experienced intermittent timeouts. This only impacted requests routed to one of our service region providers. The error rate peaked at 10% for all requests and 9% of users. This was due to host upgrades in an upstream service provider. While this was a planned event, processes and tooling was not in place to anticipate and mitigate this downtime. <br /><br /><br />We are working to improve our processes and tooling for future planned events and escalation paths with our upstream providers.<br /></p>
 
             <footer>
-                <cite>Jul 11, 15:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720711277</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Copilot is operating normally.</p>
 
             <footer>
-                <cite>Jul 11, 15:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720711276</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We have mitigated the intermittent timeout errors impacting Copilot’s Chat functionality and expect the incident to be resolved shortly.</p>
 
             <footer>
-                <cite>Jul 11, 15:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720711189</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. The timeout errors we are seeing has reduced back to healthy levels for the last 60 minutes but we are monitoring closely.</p>
 
             <footer>
-                <cite>Jul 11, 15:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720710282</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. We will provide further updates as we continue resolving the issue.</p>
 
             <footer>
-                <cite>Jul 11, 14:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720707263</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We continue to investigate the cause of intermittent timeouts impacting Copilot’s Chat functionality. This is impacting a small fraction of customers. We will provide further updates as we continue resolving the issue.</p>
 
             <footer>
-                <cite>Jul 11, 13:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720704727</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>Copilot&rsquo;s Chat functionality is experiencing intermittent timeouts, we are investigating the issue.</p>
 
             <footer>
-                <cite>Jul 11, 13:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720702937</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are investigating reports of degraded performance for Copilot</p>
 
             <footer>
-                <cite>Jul 11, 13:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720702930</cite>
             </footer>
         </blockquote>
         <hr />

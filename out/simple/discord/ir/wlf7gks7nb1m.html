@@ -9,8 +9,17 @@
     <title>Discord status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/discord/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/discord/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/discord/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/discord/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/discord/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/discord/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Aug 27, 18:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724807494</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>All services back to normal except the activities shelf which has been temporarily disabled</p>
 
             <footer>
-                <cite>Aug 27, 15:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724796096</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Service back to normal, monitoring</p>
 
             <footer>
-                <cite>Aug 27, 14:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724794618</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We&rsquo;ve deployed mitigations and are seeing recovery</p>
 
             <footer>
-                <cite>Aug 27, 13:57</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724792265</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>A fix has been identified and is being implemented</p>
 
             <footer>
-                <cite>Aug 27, 13:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724791630</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>Currently, apps are down and message sends and other API endpoints have degraded performance</p>
 
             <footer>
-                <cite>Aug 27, 13:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724791134</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We are actively investigating database performance issues</p>
 
             <footer>
-                <cite>Aug 27, 13:33</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724790831</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Aug 27, 13:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724789735</cite>
             </footer>
         </blockquote>
         <hr />

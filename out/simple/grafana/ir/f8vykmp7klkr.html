@@ -9,8 +9,17 @@
     <title>Grafana status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/grafana/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/grafana/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/grafana/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/grafana/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Engineering has released a fix and as of 16:07 UTC, customers should no longer experience read/write path degradation on us-central2 cloud metrics and traces. At this time, we are considering this issue resolved. No further updates.</p>
 
             <footer>
-                <cite>Jul 19, 17:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721411314</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>A fix has been implemented and we are currently monitoring the results.</p>
 
             <footer>
-                <cite>Jul 19, 15:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721401638</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Jul 19, 10:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721386099</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Jul 19, 10:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721386018</cite>
             </footer>
         </blockquote>
         <hr />
@@ -87,7 +96,7 @@
 We&rsquo;re currently investigating the issue.</p>
 
             <footer>
-                <cite>Jul 19, 09:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721380000</cite>
             </footer>
         </blockquote>
         <hr />

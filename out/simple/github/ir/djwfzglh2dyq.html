@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On August 29th, 2024, from 16:56 UTC to 21:42 UTC, we observed an elevated rate of traffic on our public edge, which triggered GitHub’s rate limiting protections. This resulted in <0.1% of users being identified as false-positives, which they experienced as intermittent connection timeouts. At 20:59 UTC the engineering team improved the system to remediate the false-positive identification of user traffic, and return to normal traffic operations.</p>
 
             <footer>
-                <cite>Aug 29, 21:54</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724968487</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>The connectivity issues have been resolved and we are back to normal.</p>
 
             <footer>
-                <cite>Aug 29, 21:54</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724968475</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We have implemented a potential fix and are continuing to monitor for success.</p>
 
             <footer>
-                <cite>Aug 29, 21:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724967956</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We have isolated the symptom of the connectivity issues and are working to trace down the cause.</p>
 
             <footer>
-                <cite>Aug 29, 21:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724966732</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>While we have seen a reduction in reports of users having connectivity issues to GitHub.com, we are still investigating the issue.</p>
 
             <footer>
-                <cite>Aug 29, 20:43</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724964205</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We are continuing to investigate issues with customers reporting temporary issues accessing GitHub.com</p>
 
             <footer>
-                <cite>Aug 29, 20:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724962051</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We are getting reports of users who aren&rsquo;t able to access GitHub.com and are investigating.</p>
 
             <footer>
-                <cite>Aug 29, 19:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724959779</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Aug 29, 19:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724959749</cite>
             </footer>
         </blockquote>
         <hr />

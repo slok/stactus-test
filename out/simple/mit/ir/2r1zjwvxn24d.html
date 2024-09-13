@@ -9,8 +9,17 @@
     <title>MIT status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mit/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/mit/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/mit/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mit/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>The issue was identified and resolved. Details can be found here: <a href="https://status.zoom.us/incidents/j8jmzp10p36m" target="_blank">https://status.zoom.us/incidents/j8jmzp10p36m</a></p>
 
             <footer>
-                <cite>May 20, 14:51</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716231067</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
 <p>More details can be found here: <a href="https://status.zoom.us/incidents/j8jmzp10p36m" target="_blank">https://status.zoom.us/incidents/j8jmzp10p36m</a></p>
 
             <footer>
-                <cite>May 20, 14:17</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716229071</cite>
             </footer>
         </blockquote>
         <hr />

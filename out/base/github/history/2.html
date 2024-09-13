@@ -17,6 +17,21 @@
         <h1>Incident History</h1>
         
         <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/github/ir/4s161kygs873">Disruption with GitHub Copilot Chat</a></h2>
+            <p>
+                <p>On July 23, 2024, between 21:40 UTC and 22:00 UTC, Copilot Chat experienced errors and service degradation. During this time, the global error rate peaked at 20% of Chat requests.<br /><br />This was due to a faulty deployment in a service provider that caused server errors from a single region. Traffic was routed away from this region at 22:00 UTC which restored functionality while the upstream service provider rolled back their change. The rollback was completed at 22:38 UTC.<br /><br />We are working to improve our ability to respond more quickly to similar issues through faster regional redirection and working with our upstream provider on improved monitoring.<br /></p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 23, 23:40 - Jul 24, 00:38
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
             <h2><a href="https://slok.github.io/stactus-test/base/github/ir/9rrqvvf23fhc">Incident with Codespaces</a></h2>
             <p>
                 <p>On July 18, 2024, from 22:37 UTC to 04:47 UTC, one of our provider&rsquo;s services experienced degradation, causing errors in Codespaces, particularly when starting the VSCode server and installing extensions. The error rate reached nearly 100%, resulting in a global outage of Codespaces. During this time, users worldwide were unable to connect to VSCode. However, other clients that do not rely on the VSCode server, such as GitHub CLI, remained functional.<br /><br />We are actively working to enhance our detection and mitigation processes to improve our response time to similar issues in the future. Additionally, we are exploring ways to operate Codespaces in a more degraded state when one of our providers encounters issues, to prevent a complete outage.</p>
@@ -26,7 +41,7 @@
             <br>
             <small>
             
-                Jul 19, 02:10 - Jul 19, 04:47
+                Jul 19, 04:10 - Jul 19, 06:47
             
             </small>
         </div>
@@ -41,7 +56,7 @@
             <br>
             <small>
             
-                Jul 18, 22:47 - Jul 19, 02:38
+                Jul 19, 00:47 - Jul 19, 04:38
             
             </small>
         </div>
@@ -56,7 +71,7 @@
             <br>
             <small>
             
-                Jul 17, 17:56 - Jul 17, 18:13
+                Jul 17, 19:56 - Jul 17, 20:13
             
             </small>
         </div>
@@ -71,7 +86,7 @@
             <br>
             <small>
             
-                Jul 17, 16:21 - Jul 17, 17:06
+                Jul 17, 18:21 - Jul 17, 19:06
             
             </small>
         </div>
@@ -86,7 +101,7 @@
             <br>
             <small>
             
-                Jul 16, 00:53 - Jul 16, 03:07
+                Jul 16, 02:53 - Jul 16, 05:07
             
             </small>
         </div>
@@ -101,7 +116,7 @@
             <br>
             <small>
             
-                Jul 13, 00:18 - Jul 13, 19:27
+                Jul 13, 02:18 - Jul 13, 21:27
             
             </small>
         </div>
@@ -116,7 +131,7 @@
             <br>
             <small>
             
-                Jul 11, 13:02 - Jul 11, 15:21
+                Jul 11, 15:02 - Jul 11, 17:21
             
             </small>
         </div>
@@ -131,7 +146,7 @@
             <br>
             <small>
             
-                Jul  8, 19:01 - Jul  8, 19:45
+                Jul  8, 21:01 - Jul  8, 21:45
             
             </small>
         </div>
@@ -146,22 +161,7 @@
             <br>
             <small>
             
-                Jul  5, 17:04 - Jul  5, 20:57
-            
-            </small>
-        </div>
-        
-        <div class="box impact-minor">
-            <h2><a href="https://slok.github.io/stactus-test/base/github/ir/8532wfbvwqgr">Disruption with GitHub Docs</a></h2>
-            <p>
-                <p>On July 3, 2024, between 1:34 PM UTC and 4:42 PM UTC the GitHub documentation was degraded and showed a 500 on non-cached pages. On average, the error rate was 2-5% and peaked at 5% of requests to the service. This was due to an observability misconfiguration. We mitigated the incident by updating the observability configuration and redeploying. We are working to reduce our time to detection and mitigation of issues like this one in the future.</p>
-
-            </p>
-
-            <br>
-            <small>
-            
-                Jul  3, 15:24 - Jul  3, 16:40
+                Jul  5, 19:04 - Jul  5, 22:57
             
             </small>
         </div>

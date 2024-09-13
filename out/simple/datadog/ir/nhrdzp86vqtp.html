@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -48,7 +57,7 @@
 <p>We truly appreciate your patience and understanding during this incident.</p>
 
             <footer>
-                <cite>Mar 10, 00:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678425954</cite>
             </footer>
         </blockquote>
         <hr />
@@ -69,7 +78,7 @@
 <p>For other products, we are actively working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 21:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678414214</cite>
             </footer>
         </blockquote>
         <hr />
@@ -85,7 +94,7 @@
 <p>For other products, we are actively working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 18:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678403072</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
 For other products, we are actively working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 15:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678392953</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@ For other products, we are actively working on backfilling data and will provide
             <p>We&rsquo;ve finished monitoring the recovery. All Datadog systems continue to receive, query, and evaluate monitors on live data as normal, while backfill operations continue for historical data.</p>
 
             <footer>
-                <cite>Mar  9, 12:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678381893</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@ For other products, we are actively working on backfilling data and will provide
             <p>During the recovery operations, users might have experienced temporary elevated latency and error rates on the web application between 15:30 and 15:46 UTC , specifically for metric queries and APM. We are monitoring recovery now and we are continuing with the backfilling operations.</p>
 
             <footer>
-                <cite>Mar  9, 10:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678377310</cite>
             </footer>
         </blockquote>
         <hr />
@@ -128,7 +137,7 @@ For other products, we are actively working on backfilling data and will provide
 <p>We are now working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 08:00</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678366856</cite>
             </footer>
         </blockquote>
         <hr />
@@ -142,7 +151,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
 <p>Unless noted otherwise, all Datadog services are now available and able to receive and query live data. Some customers may still observe gaps in historical data for certain products for parts of the last 24 hours. We are now working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 07:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678364766</cite>
             </footer>
         </blockquote>
         <hr />
@@ -155,7 +164,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
 <p>Unless noted otherwise, all Datadog services are now available and able to receive and query live data. Some customers may still observe gaps in historical data for certain products for parts of the last 24 hours. We are now working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 07:08</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678363726</cite>
             </footer>
         </blockquote>
         <hr />
@@ -165,7 +174,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>We are continuing to monitor for any further issues.</p>
 
             <footer>
-                <cite>Mar  9, 05:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678356576</cite>
             </footer>
         </blockquote>
         <hr />
@@ -178,7 +187,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
 <p>Unless noted otherwise, all Datadog services are now available and able to receive and query live data. Some customers may still observe gaps in historical data for certain products for parts of the last 24 hours. We are now working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 04:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678355300</cite>
             </footer>
         </blockquote>
         <hr />
@@ -188,7 +197,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Unless noted otherwise, all Datadog services are now available and able to receive and query live data. Some customers may still observe gaps in historical data for certain products for parts of the last 24 hours. We are now working on backfilling data and will provide updates every 2 - 3 hours until the backfill effort is complete and the incident is fully resolved.</p>
 
             <footer>
-                <cite>Mar  9, 03:58</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678352335</cite>
             </footer>
         </blockquote>
         <hr />
@@ -198,7 +207,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>A subset of customers might experience transient errors while loading Network Performance Monitoring and Logs Management. The underlying data is still being processed and will be available query once queries are fully operational again. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  9, 03:27</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678350473</cite>
             </footer>
         </blockquote>
         <hr />
@@ -208,7 +217,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>SLOs are operational. CI Visibility is operational. Profiling recent data is available for queries. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  9, 02:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678345475</cite>
             </footer>
         </blockquote>
         <hr />
@@ -218,7 +227,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Logs Management is operational, live data and alerting are back to normal. External Archives and Log Forwarding are still delayed. Serverless monitoring is operational. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  9, 01:31</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678343485</cite>
             </footer>
         </blockquote>
         <hr />
@@ -228,7 +237,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>We are continuing to work on a fix for this issue.</p>
 
             <footer>
-                <cite>Mar  9, 01:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678343218</cite>
             </footer>
         </blockquote>
         <hr />
@@ -238,7 +247,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>APM Traces is fully operational. RUM is fully operational. Security Monitoring is fully operational. Database Monitoring is fully operational. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  9, 01:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678341816</cite>
             </footer>
         </blockquote>
         <hr />
@@ -248,7 +257,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Serverless monitoring is fully operational. Synthetic Monitoring is fully operational. Network Device Monitoring is fully operational. Database Monitoring is fully operational. APM Services is fully operational. Metrics from our cloud provider integrations are available, and Metrics generated from Logs are available. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  9, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678339145</cite>
             </footer>
         </blockquote>
         <hr />
@@ -260,7 +269,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
 <p>We&rsquo;re seeing partial recovery for Network Performance Monitoring. Error Tracking is seeing partial availability, and we&rsquo;re investigating. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  8, 23:28</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678336105</cite>
             </footer>
         </blockquote>
         <hr />
@@ -270,7 +279,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>We&rsquo;re seeing partial recovery for the Profiling product, as well as metrics from our cloud provider integrations. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  8, 22:17</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678331861</cite>
             </footer>
         </blockquote>
         <hr />
@@ -280,7 +289,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Live data for Metrics is now available for most customers. Historical search for APM Traces is operational. Monitors for Logs and Service Checks are operational. We will continue to monitor progress towards recovering the remaining services.</p>
 
             <footer>
-                <cite>Mar  8, 21:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678328143</cite>
             </footer>
         </blockquote>
         <hr />
@@ -290,7 +299,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Live data is now available for Logs. We&rsquo;re seeing partial recovery for Security Monitoring. We will continue to monitor progress towards recovering the remaining services. Data ingestion and monitor notifications remain delayed across non-metric data types.</p>
 
             <footer>
-                <cite>Mar  8, 19:54</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678323285</cite>
             </footer>
         </blockquote>
         <hr />
@@ -300,7 +309,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Live Search on last 15 mins for APM Traces, and Live Processes is recovered. We will continue to monitor progress towards recovering the remaining services. Data ingestion and monitor notifications remain delayed across non-metric data types.</p>
 
             <footer>
-                <cite>Mar  8, 18:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678319343</cite>
             </footer>
         </blockquote>
         <hr />
@@ -310,7 +319,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Incident Management is fully operational. We&rsquo;re seeing partial recovery across several products including Serverless and Network Performance Monitoring. These products may have gaps in data and partial limitations based on data available to monitors. We will continue to monitor progress towards recovering the remaining services. Data ingestion and monitor notifications remain delayed across non-metric data types.</p>
 
             <footer>
-                <cite>Mar  8, 18:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678317714</cite>
             </footer>
         </blockquote>
         <hr />
@@ -320,7 +329,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Logs have live data available on US1 for about 33% of customers. We will continue to monitor progress towards recovering the remaining services. Data ingestion and monitor notifications remain delayed across non-metric data types.</p>
 
             <footer>
-                <cite>Mar  8, 18:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678316697</cite>
             </footer>
         </blockquote>
         <hr />
@@ -330,7 +339,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>We&rsquo;re seeing partial recovery across several products including SLOs, Profiling, WatchDog, Logs. These products may have gaps in data and partial limitations based on data available to monitors. We will continue to monitor progress towards recovering the remaining services. Data ingestion and monitor notifications remain delayed across non-metric data types.</p>
 
             <footer>
-                <cite>Mar  8, 17:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678315771</cite>
             </footer>
         </blockquote>
         <hr />
@@ -340,7 +349,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Database Monitoring is operational in US1. There may be gaps in historical data. We continue progress towards recovering the remaining services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 17:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678313197</cite>
             </footer>
         </blockquote>
         <hr />
@@ -350,7 +359,7 @@ Monitors continue to be evaluated correctly since live data has been restored.</
             <p>Processes Monitors are operational in US1. There may be gaps in historical metric data. We continue progress towards recovering the remaining services. Data ingestion and monitor notifications remain delayed across non-metric data types.</p>
 
             <footer>
-                <cite>Mar  8, 16:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678310470</cite>
             </footer>
         </blockquote>
         <hr />
@@ -376,7 +385,7 @@ We will continue to issue regular updates as the situation unfolds</p>
 <p>We understand how critical Datadog is to your business, we sincerely apologize for the inconvenience and we are working hard to resolve this issue.</p>
 
             <footer>
-                <cite>Mar  8, 15:39</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678307951</cite>
             </footer>
         </blockquote>
         <hr />
@@ -386,7 +395,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are continuing to make progress towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 15:12</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678306325</cite>
             </footer>
         </blockquote>
         <hr />
@@ -396,7 +405,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are continuing to make progress towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 14:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678303573</cite>
             </footer>
         </blockquote>
         <hr />
@@ -406,7 +415,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are continuing to make progress towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 13:42</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678300921</cite>
             </footer>
         </blockquote>
         <hr />
@@ -416,7 +425,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are continuing to make progress towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 13:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678299289</cite>
             </footer>
         </blockquote>
         <hr />
@@ -426,7 +435,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We continue progress towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 12:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678296570</cite>
             </footer>
         </blockquote>
         <hr />
@@ -436,7 +445,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We continue progress towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 11:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678294003</cite>
             </footer>
         </blockquote>
         <hr />
@@ -446,7 +455,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We continue progress towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 11:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678291494</cite>
             </footer>
         </blockquote>
         <hr />
@@ -456,7 +465,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are still progressing towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 10:34</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678289677</cite>
             </footer>
         </blockquote>
         <hr />
@@ -466,7 +475,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are still progressing towards recovering all services. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 09:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678286964</cite>
             </footer>
         </blockquote>
         <hr />
@@ -476,7 +485,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>Some products are recovering and we are still progressing towards a complete recovery. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 09:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678284448</cite>
             </footer>
         </blockquote>
         <hr />
@@ -486,7 +495,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>Some products are recovering and we are still progressing towards a complete recovery. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 08:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678282227</cite>
             </footer>
         </blockquote>
         <hr />
@@ -496,7 +505,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are still working on the identified issue and are making continued progress towards recovery. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 07:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678279505</cite>
             </footer>
         </blockquote>
         <hr />
@@ -506,7 +515,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We have identified the issue, and are making continued progress towards recovery. Data ingestion and monitor notifications remain delayed across all data types.</p>
 
             <footer>
-                <cite>Mar  8, 07:08</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678277332</cite>
             </footer>
         </blockquote>
         <hr />
@@ -516,7 +525,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are seeing reduced error rates for the web application. We are continuing to work on mitigating and investigating the issue causing delayed data ingestion across all data types. Monitor notifications are delayed, and you may observe delayed data throughout the app.</p>
 
             <footer>
-                <cite>Mar  8, 06:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678274431</cite>
             </footer>
         </blockquote>
         <hr />
@@ -526,7 +535,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are seeing reduced error rates for the web application. We are continuing to work on mitigating and investigating the issue causing delayed data ingestion across all data types. Monitor notifications are delayed, and you may observe delayed data throughout the app.</p>
 
             <footer>
-                <cite>Mar  8, 05:31</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678271498</cite>
             </footer>
         </blockquote>
         <hr />
@@ -536,7 +545,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are continuing to work on mitigating and investigating the issue causing delayed data ingestion across all data types. Monitor notifications are delayed, and you may observe delayed data throughout the app. Additionally, the web application continues to have elevated error rates.</p>
 
             <footer>
-                <cite>Mar  8, 04:39</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678268378</cite>
             </footer>
         </blockquote>
         <hr />
@@ -546,7 +555,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Mar  8, 03:52</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678265562</cite>
             </footer>
         </blockquote>
         <hr />
@@ -556,7 +565,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are still investigating issues causing delayed data ingestion across all data types. Monitor notifications may be delayed, and you may observe delayed data throughout the web app.</p>
 
             <footer>
-                <cite>Mar  8, 03:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678264817</cite>
             </footer>
         </blockquote>
         <hr />
@@ -566,7 +575,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are still investigating issues causing delayed data ingestion across all data types. Monitor notifications may be delayed, and you may observe delayed data throughout the web app.</p>
 
             <footer>
-                <cite>Mar  8, 03:05</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678262752</cite>
             </footer>
         </blockquote>
         <hr />
@@ -576,7 +585,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are investigating issues causing delayed data ingestion across all data types. As a result monitor notifications may be delayed, and you may observe delayed data throughout the web app.</p>
 
             <footer>
-                <cite>Mar  8, 02:23</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678260225</cite>
             </footer>
         </blockquote>
         <hr />
@@ -586,7 +595,7 @@ We will continue to issue regular updates as the situation unfolds</p>
             <p>We are investigating loading issues on our web application. As a result, some users might be getting errors or increased latency when loading the web application.</p>
 
             <footer>
-                <cite>Mar  8, 01:31</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1678257106</cite>
             </footer>
         </blockquote>
         <hr />

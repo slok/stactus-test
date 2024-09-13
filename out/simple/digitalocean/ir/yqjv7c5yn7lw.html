@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -48,7 +57,7 @@
 <p>We appreciate your patience throughout this process and if you continue to experience problems, please open a ticket with our support team for further review.</p>
 
             <footer>
-                <cite>Jun 15, 02:56</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718420161</cite>
             </footer>
         </blockquote>
         <hr />
@@ -60,7 +69,7 @@
 <p>We are monitoring the situation closely and will post an update as soon as we confirm the issue is fully resolved.</p>
 
             <footer>
-                <cite>Jun 15, 00:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718410315</cite>
             </footer>
         </blockquote>
         <hr />
@@ -72,7 +81,7 @@
 <p>Operations for Mongo clusters remain affected at this time.</p>
 
             <footer>
-                <cite>Jun 14, 22:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718405336</cite>
             </footer>
         </blockquote>
         <hr />
@@ -84,7 +93,7 @@
 <p>We apologize for the continued interruption to the Managed Databases Control Plane and will provide another update as soon as we have more information.</p>
 
             <footer>
-                <cite>Jun 14, 19:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718392973</cite>
             </footer>
         </blockquote>
         <hr />
@@ -100,7 +109,7 @@
 <p>Our team is working to deploy a fix and we will provide another update soon.</p>
 
             <footer>
-                <cite>Jun 14, 17:39</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718386785</cite>
             </footer>
         </blockquote>
         <hr />
@@ -110,7 +119,7 @@
             <p>Our Engineering team is investigating an issue impacting new Managed Database creations. During this time, users may receive failures while creating new Managed Database clusters across all regions. We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Jun 14, 17:27</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718386062</cite>
             </footer>
         </blockquote>
         <hr />

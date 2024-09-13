@@ -9,8 +9,17 @@
     <title>Cloudflare status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/cloudflare/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/cloudflare/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/cloudflare/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/cloudflare/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/cloudflare/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/cloudflare/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Sep  6, 05:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725600312</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>A fix has been implemented and we are monitoring the results.</p>
 
             <footer>
-                <cite>Sep  6, 05:13</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725599622</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>The team has identified the issue and deploying a fix.</p>
 
             <footer>
-                <cite>Sep  6, 04:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725597132</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Sep  6, 04:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725595294</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Sep  6, 03:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725594817</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>Cloudflare is investigating issues with Stream for accounts using it as part of Business/Pro subscription plan allocation. Accounts using Stream with a Stream subscription or on Enterprise subscription plan are not impacted. Further detail will be provided as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 03:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725594273</cite>
             </footer>
         </blockquote>
         <hr />

@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 23, 2024, between 21:40 UTC and 22:00 UTC, Copilot Chat experienced errors and service degradation. During this time, the global error rate peaked at 20% of Chat requests.<br /><br />This was due to a faulty deployment in a service provider that caused server errors from a single region. Traffic was routed away from this region at 22:00 UTC which restored functionality while the upstream service provider rolled back their change. The rollback was completed at 22:38 UTC.<br /><br />We are working to improve our ability to respond more quickly to similar issues through faster regional redirection and working with our upstream provider on improved monitoring.<br /></p>
 
             <footer>
-                <cite>Jul 23, 22:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721774314</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We have mitigated the issue with Copilot Chat returning failures in some regions. Functionality has recovered for all Copilot Chat users.<br /></p>
 
             <footer>
-                <cite>Jul 23, 22:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721773508</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are seeing failures for the Copilot Chat for users in some regions. We are seeing about 20% of Copilot Chat requests fail.</p>
 
             <footer>
-                <cite>Jul 23, 21:52</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721771554</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Jul 23, 21:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721770828</cite>
             </footer>
         </blockquote>
         <hr />

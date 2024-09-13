@@ -9,8 +9,17 @@
     <title>MIT status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mit/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/mit/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/mit/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mit/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Jul 12, 11:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720798896</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>A fix has been implemented and we are monitoring the results.</p>
 
             <footer>
-                <cite>Jul 12, 11:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720797948</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>The issue has been identified and a fix is being implemented.</p>
 
             <footer>
-                <cite>Jul 12, 10:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720794403</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>A login issue is impacting the MIT Sites service (<a href="https://sites.mit.edu" target="_blank">https://sites.mit.edu</a>). IS&amp;T has opened a ticket with the vendor, who is investigating. Public content that does not require touchstone authentication is unaffected.</p>
 
             <footer>
-                <cite>Jul 12, 09:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720791965</cite>
             </footer>
         </blockquote>
         <hr />

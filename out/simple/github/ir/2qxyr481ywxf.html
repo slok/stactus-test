@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On August 13, 2024, between 13:00 UTC and 13:23 UTC the Copilot service and some parts of the GitHub UI were degraded. This impacted about 25% of GitHub.com users. This was due to a partial rollout of a caching layer for Copilot licensing checks. During the rollout, connections to the caching layer were overwhelmed causing the licensing checks to timeout. Many pages were impacted by this failure due to a lack of resiliency to the timeouts.<br /><br />We mitigated the incident by reverting the rollout of the caching layer 11 minutes after initial detection. This immediately restored functionality for affected users.<br /><br />We are working to gracefully degrade experiences during these types of failures and reduce dependencies across services that may cause these types of failures in the future.<br /></p>
 
             <footer>
-                <cite>Aug 13, 13:23</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723555435</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Pull Requests is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 13, 13:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723554976</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Aug 13, 13:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723554716</cite>
             </footer>
         </blockquote>
         <hr />

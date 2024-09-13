@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 5, 2024, between 16:31 UTC and 18:08 UTC, the Webhooks service was degraded, with customer impact of delays to all webhook delivery. On average, delivery delays were 24 minutes, with a maximum of 71 minutes. This was caused by a configuration change to the Webhooks service, which led to unauthenticated requests sent to the background job cluster. The configuration error was repaired and re-deploying the service solved the issue. However, this created a thundering herd effect which overloaded the background job queue cluster which put its API layer at max capacity, resulting in timeouts for other job clients, which presented as increased latency for API calls.<br /><br />Shortly after resolving the authentication misconfiguration, we had a separate issue in the background job processing service where health probes were failing, leading to reduced capacity in the background job API layer which magnified the effects of the thundering herd. From 18:21 UTC to 21:14 UTC, Actions runs on PRs experienced approximately 2 minutes delay and maximum of 12 minutes delay. A deployment of the background job processing service remediated the issue.<br /><br />To reduce our time to detection, we have streamlined our dashboards and added alerting for this specific runtime behavior. Additionally, we are working to reduce the blast radius of background job incidents through better workload isolation.<br /></p>
 
             <footer>
-                <cite>Jul  5, 20:57</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720213053</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are seeing recovery in Actions start times and are observing for any further impact.</p>
 
             <footer>
-                <cite>Jul  5, 20:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720212245</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are still seeing about 5% of Actions runs taking longer than 5 minutes to start. We are scaling and shifting resources to encourage recovery of the problem.</p>
 
             <footer>
-                <cite>Jul  5, 20:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720211541</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are still seeing about 5% of Actions runs taking longer than 5 minutes to start. We are evaluating mitigations to increase capacity to decrease latency.</p>
 
             <footer>
-                <cite>Jul  5, 19:58</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720209504</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are seeing about 5% of Actions runs not starting within 5 minutes. We are continuing investigation.</p>
 
             <footer>
-                <cite>Jul  5, 19:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720207146</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We have seen recovery of Actions run delays. Keeping the incident open to monitor for full recovery.</p>
 
             <footer>
-                <cite>Jul  5, 18:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720204811</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>Webhooks is operating normally.</p>
 
             <footer>
-                <cite>Jul  5, 18:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720203028</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are seeing delays in Actions runs due to the recovery with webhook deliveries. We expect this to resolve with the recovery of webhooks.</p>
 
             <footer>
-                <cite>Jul  5, 18:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720202943</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>Actions is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul  5, 18:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720202826</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>We are seeing recovery as webhooks are being delivered again. We are burning down our queue of events. No events have been lost. New webhook deliveries will be delayed while this process recovers.</p>
 
             <footer>
-                <cite>Jul  5, 17:57</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720202238</cite>
             </footer>
         </blockquote>
         <hr />
@@ -146,7 +155,7 @@
             <p>Webhooks is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul  5, 17:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720202114</cite>
             </footer>
         </blockquote>
         <hr />
@@ -156,7 +165,7 @@
             <p>We are reverting a configuration change that is suspected to contribute to the problem with webhook deliveries.</p>
 
             <footer>
-                <cite>Jul  5, 17:42</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720201341</cite>
             </footer>
         </blockquote>
         <hr />
@@ -166,7 +175,7 @@
             <p>Our telemetry shows that most webhooks are failing to be delivered. We are queueing all undelivered webhooks and are working to remediate the problem.</p>
 
             <footer>
-                <cite>Jul  5, 17:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720200031</cite>
             </footer>
         </blockquote>
         <hr />
@@ -176,7 +185,7 @@
             <p>Webhooks is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul  5, 17:17</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720199870</cite>
             </footer>
         </blockquote>
         <hr />
@@ -186,7 +195,7 @@
             <p>We are investigating reports of degraded performance for Webhooks</p>
 
             <footer>
-                <cite>Jul  5, 17:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720199089</cite>
             </footer>
         </blockquote>
         <hr />

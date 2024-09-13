@@ -9,8 +9,17 @@
     <title>MIT status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mit/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/mit/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/mit/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mit/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Oct 10, 11:31</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696951915</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>All conduit repairs and MIT Telecommunication cabling restoration have been completed as of 1pm today, Wednesday <sup>9</sup>&frasl;<sub>13</sub>. MIT Network and services are back online.</p>
 
             <footer>
-                <cite>Sep 13, 13:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694627951</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Conduit repairs continue to take place and being coordinated between Facilities, IS&amp;T, and site contractors. We expect the repairs to be completed Wednesday enabling the fiber restoration to finish and connectivity to be restored at that time.</p>
 
             <footer>
-                <cite>Sep 12, 16:52</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694551923</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>IS&amp;T has confirmed that the fiber to these buildings has been damaged and is coordinating with a contractor to repair the damaged conduit.</p>
 
             <footer>
-                <cite>Sep 11, 13:34</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694453668</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>IS&amp;T was alerted of an outage to these buildings. Power to the buildings has been verified. We are currently investigating potential damage to the fiber circuits for the buildings.</p>
 
             <footer>
-                <cite>Sep 11, 11:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1694446890</cite>
             </footer>
         </blockquote>
         <hr />

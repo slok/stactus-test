@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MongoDB status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mongodb/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mongodb/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>MongoDB status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/mongodb/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mongodb/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-major">Delayed cluster modifications</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 7h25m41.018s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <h3 id="incident-summary"><strong>Incident Summary</strong></h3>
+
+<p>Between June 3rd 2024, 18:24 UTC and June 4th, 1:21 UTC, MongoDB Atlas customers across all commercial regions experienced degradation of the following functionalities.</p>
+
+<p>Changes to cluster configuration, both in response to API calls and automated triggers (e.g., auto-scaling or node replacement) were executed with delays varying between a few minutes and several hours. Similar delays applied to Alert processing, impacting both the Atlas built-in Alert functionality and integrations such as Datadog and PagerDuty. Part of the daily cost tabulation for compute, storage and data transfer on June 3rd will be delayed to June 6th or June 7th. Lower granularities of cluster metrics were unavailable until up to 1:56 UTC. Finally, the Data Explorer and Realtime Performance Panel UIs were impaired for several hours.</p>
+
+<h3 id="root-cause"><strong>Root Cause</strong></h3>
+
+<p>The root cause of this incident was an unexpected failure during an Atlas internal maintenance activity. A planned migration of metadata for an internal workflow management system that backs the Atlas control plane resulted in unexpected resource congestion on the target database cluster as traffic was redirected to the target. This issue did not occur during pre-production testing. The rollback process required complex reconciliation of data in the source and target databases, delaying recovery.</p>
+
+<h3 id="mongodb-actions"><strong>MongoDB Actions</strong></h3>
+
+<p>The MongoDB Atlas team is designing a new metadata migration strategy for future maintenance activities. This process will allow for rollback within less than 15 minutes of detecting a potential issue. We will not execute similar maintenance activities until this procedure is implemented and thoroughly tested.</p>
+
+<h3 id="recommended-customer-actions">Recommended Customer Actions</h3>
+
+<p>This issue was fully eliminated by the MongoDB Atlas team and does not require customer action.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718131140</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>This incident has been resolved.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717467067</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>Recovery procedures are complete, and we are continuing to monitor closely.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717459798</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We continue to recover. Cluster operations submitted between 18:45 UTC and 21:55 UTC may continue to be delayed or delay subsequent changes. All other cluster operations submitted from this point forward should execute normally. Normal cluster operation is expected to resume within the next hour (by 00:00 UTC). Lower granularities of metrics for recent time periods may continue to be unavailable for the next five hours (until 04:00 UTC).</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717456072</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We are continuing to execute recovery procedures. Data Explorer and Real Time Performance Panel are fully operational. Cluster operations are recovering but still delayed. Lower granularities of metrics for recent time periods may continue to be unavailable. We will post another update in 30 minutes.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717452690</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to investigate this issue.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717451082</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have identified the root cause and have begun the recovery procedure. We will post another update within the next 30 minutes.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717450300</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to investigate and will post another update in 30 minutes.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717448104</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are continuing to investigate and will post another update in 30 minutes</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717446092</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have identified that usages of Data Explorer may be delayed or unresponsive during this time. Additionally, certain operations in the Real-Time Performance Panel may not work. Lower granularities of metrics for recent time periods may also be unavailable.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717442557</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We are currently investigating an issue that is causing delays in all cluster updates across all cloud providers.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717440326</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

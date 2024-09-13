@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On June 5, 2024, between 17:05 UTC and 19:27 UTC, the GitHub Issues service was degraded. During that time, no events related to projects were displayed on issue timelines. These events indicate when an issue was added to or removed from a project and when their status changed within a project. The data couldn’t be loaded due to a misconfiguration of the service backing these events. This happened after a scheduled secret rotation when the wrongly configured service continued using the old secrets which had expired. <br /><br />We mitigated the incident by remediating the service configuration and have started simplifying the configuration to avoid similar misconfigurations in the future.</p>
 
             <footer>
-                <cite>Jun  5, 19:27</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717615641</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Issues is operating normally.</p>
 
             <footer>
-                <cite>Jun  5, 19:27</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717615634</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We continue to troubleshoot the problem with issues timeline.</p>
 
             <footer>
-                <cite>Jun  5, 19:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717615192</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We continue to troubleshoot the problem with issues timeline.</p>
 
             <footer>
-                <cite>Jun  5, 18:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717613227</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We&rsquo;re continuing to investigate the problem.</p>
 
             <footer>
-                <cite>Jun  5, 18:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717610479</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We&rsquo;re seeing issues related to the issues timeline service, we&rsquo;re investigating and we will continue to keep users updated on progress towards mitigation.</p>
 
             <footer>
-                <cite>Jun  5, 17:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717608373</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We are investigating reports of degraded availability for Issues</p>
 
             <footer>
-                <cite>Jun  5, 17:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717608169</cite>
             </footer>
         </blockquote>
         <hr />

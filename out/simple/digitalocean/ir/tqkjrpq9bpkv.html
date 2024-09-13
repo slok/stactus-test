@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -48,7 +57,7 @@
 <p>If you continue to experience problems, please open a ticket with our support team from your Cloud Control Panel. Thank you for your patience and we apologize for any inconvenience.</p>
 
             <footer>
-                <cite>Jun 18, 13:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718716535</cite>
             </footer>
         </blockquote>
         <hr />
@@ -60,7 +69,7 @@
 <p>At this time, all services should now be operating normally. We will monitor this incident for a short period of time to confirm full resolution.</p>
 
             <footer>
-                <cite>Jun 18, 12:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718712216</cite>
             </footer>
         </blockquote>
         <hr />
@@ -72,7 +81,7 @@
 <p>We&rsquo;ll continue to monitor the situation to confirm this incident is fully resolved and will post an update soon.</p>
 
             <footer>
-                <cite>Jun 18, 10:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718706341</cite>
             </footer>
         </blockquote>
         <hr />
@@ -84,7 +93,7 @@
 <p>We regret any inconvenience caused and will post an update as additional information is available.</p>
 
             <footer>
-                <cite>Jun 18, 09:05</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718701559</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
 <p>We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Jun 18, 08:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1718699900</cite>
             </footer>
         </blockquote>
         <hr />

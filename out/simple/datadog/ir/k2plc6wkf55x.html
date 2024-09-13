@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Jul  5, 14:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720203659</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are finalizing our recovery and at this time expect customers should see no further impact. We will continue to monitor for issues.</p>
 
             <footer>
-                <cite>Jul  5, 13:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720199678</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are seeing continuing improvements and recovering as quickly as possible while maintaining system stability. Distribution metrics remain delayed and associated monitors evaluation are currently skipped. Point metrics and associated monitors are fully recovered.</p>
 
             <footer>
-                <cite>Jul  5, 12:57</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720198640</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are seeing continuing improvements. Distribution metrics remain delayed and associated monitors evaluation are currently skipped.</p>
 
             <footer>
-                <cite>Jul  5, 12:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720195887</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are seeing continuing improvements. Distribution metrics remain delayed and associated monitors evaluation are currently skipped.</p>
 
             <footer>
-                <cite>Jul  5, 12:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720195822</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We are seeing improvements on metrics processing. Distribution metrics remain delayed and associated monitors evaluation are currently skipped.</p>
 
             <footer>
-                <cite>Jul  5, 11:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720194414</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We are investigating issues in metrics processing, leading to impact on monitors evaluation, dashboards as well as other products.</p>
 
             <footer>
-                <cite>Jul  5, 11:23</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720193021</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are continuing to investigate this issue.</p>
 
             <footer>
-                <cite>Jul  5, 11:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720192318</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>We are investigating delays in Monitors Notifications, which began at 14:40 UTC.</p>
 
             <footer>
-                <cite>Jul  5, 11:00</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720191634</cite>
             </footer>
         </blockquote>
         <hr />

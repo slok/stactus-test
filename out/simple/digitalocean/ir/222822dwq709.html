@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -35,8 +44,8 @@
         <h1 style="text-align: center;" class="text-minor">Global Impact to Events, Cloud Control Panel, and API</h1>
         <br />
         
-        <article class="incident-ongoing-minor">
-            <i class="ph-bold ph-warning-circle"></i> <strong>Incident ongoing</strong>
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 2h40m51.885s</strong>
         </article>
         
         <br />
@@ -103,7 +112,7 @@
 <p>Multiple teams are also evaluating if our current topology of the internal datastore is appropriate, and if there are any regionalizations or multi-layered approaches DigitalOcean can take to help ensure our internal service discovery remains as available as possible.</p>
 
             <footer>
-                <cite>Aug  8, 13:31</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723123918</cite>
             </footer>
         </blockquote>
         <hr />
@@ -113,7 +122,7 @@
             <p>Our engineering team has resolved the issue impacting the management of multiple services via the Cloud Control Panel and the API, including event processing. All services should now be functioning normally. If you continue to experience problems, please open a ticket with our support team. We apologize for any inconvenience.</p>
 
             <footer>
-                <cite>Aug  5, 19:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722887170</cite>
             </footer>
         </blockquote>
         <hr />
@@ -125,7 +134,7 @@
 <p>Customers may begin to see some management functionality for services return and we will continue to provide updates as we work to return full functionality.</p>
 
             <footer>
-                <cite>Aug  5, 19:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722885647</cite>
             </footer>
         </blockquote>
         <hr />
@@ -139,7 +148,7 @@
 <p>We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Aug  5, 17:39</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722879552</cite>
             </footer>
         </blockquote>
         <hr />
@@ -151,7 +160,7 @@
 <p>We will post another update soon.</p>
 
             <footer>
-                <cite>Aug  5, 17:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722877906</cite>
             </footer>
         </blockquote>
         <hr />
@@ -161,7 +170,7 @@
             <p>As of 16:30 UTC, Our Engineering team is investigating an issue with processing of events in all regions. During this time users may experience failed events on Droplets. We apologize for the inconvenience and will share an update once we have more information.</p>
 
             <footer>
-                <cite>Aug  5, 17:05</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722877519</cite>
             </footer>
         </blockquote>
         <hr />

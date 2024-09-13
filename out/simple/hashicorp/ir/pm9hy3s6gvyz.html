@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>All maintenance was completed successfully. Service has been fully restored.</p>
 
             <footer>
-                <cite>Mar 30, 14:57</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1711810634</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
 <p>During this time, HCP Boundary and all Boundary clusters will be unavailable. Sessions will be dropped and session establishment will fail until the maintenance completes. We will post updates as necessary throughout the maintenance period.</p>
 
             <footer>
-                <cite>Mar 30, 14:00</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1711807209</cite>
             </footer>
         </blockquote>
         <hr />
@@ -70,7 +79,7 @@
 <p>During this time, HCP Boundary and all Boundary clusters will be unavailable. Sessions will be dropped and session establishment will fail until the maintenance completes. We will post updates as necessary throughout the maintenance period.</p>
 
             <footer>
-                <cite>Mar 13, 20:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1710361956</cite>
             </footer>
         </blockquote>
         <hr />

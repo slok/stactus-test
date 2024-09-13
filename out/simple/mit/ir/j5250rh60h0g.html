@@ -9,8 +9,17 @@
     <title>MIT status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mit/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/mit/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/mit/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mit/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Jun 13, 15:24</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1686684291</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
 <p>For the latest updates from Microsoft on this issue, please go to <a href="https://twitter.com/MSFT365Status" target="_blank">https://twitter.com/MSFT365Status</a>.</p>
 
             <footer>
-                <cite>Jun  5, 22:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1686018306</cite>
             </footer>
         </blockquote>
         <hr />
@@ -70,7 +79,7 @@
 <p>For the latest updates from Microsoft on this issue, please go to <a href="https://twitter.com/MSFT365Status" target="_blank">https://twitter.com/MSFT365Status</a>.</p>
 
             <footer>
-                <cite>Jun  5, 16:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1685998102</cite>
             </footer>
         </blockquote>
         <hr />
@@ -82,7 +91,7 @@
 <p>For further updates from Microsoft on this issue, please go to <a href="https://twitter.com/MSFT365Status" target="_blank">https://twitter.com/MSFT365Status</a>.</p>
 
             <footer>
-                <cite>Jun  5, 13:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1685986848</cite>
             </footer>
         </blockquote>
         <hr />
@@ -94,7 +103,7 @@
 <p>For the latest updates from Microsoft on this issue, please go to <a href="https://twitter.com/MSFT365Status" target="_blank">https://twitter.com/MSFT365Status</a>.</p>
 
             <footer>
-                <cite>Jun  5, 12:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1685982972</cite>
             </footer>
         </blockquote>
         <hr />
@@ -104,7 +113,7 @@
             <p>Microsoft is investigating what appears to be a widespread issue with Outlook web access to Office 365. Errors and system slowness are occurring sporadically. Mobile devices and desktop clients appear to still be working at this time. For the latest status on this issue, please go to <a href="https://twitter.com/MSFT365Status" target="_blank">https://twitter.com/MSFT365Status</a>.</p>
 
             <footer>
-                <cite>Jun  5, 11:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1685978063</cite>
             </footer>
         </blockquote>
         <hr />
@@ -114,7 +123,7 @@
             <p>Microsoft is aware of an issue impacting users of outlook.office.com and is currently investigating. <a href="https://twitter.com/MSFT365Status" target="_blank">https://twitter.com/MSFT365Status</a></p>
 
             <footer>
-                <cite>Jun  5, 11:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1685977577</cite>
             </footer>
         </blockquote>
         <hr />

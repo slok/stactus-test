@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Beginning on July 18, 2024 at 22:38 UTC, network issues within an upstream provider led to degraded experiences across Actions, Copilot, and Pages services.<br /><br />Up to 50% of Actions workflow jobs were stuck in the queuing state, including Pages deployments.  Users were also not able to enable Actions or register self-hosted runners. This was caused by an unreachable backend resource in the Central US region. That resource is configured for geo-replication, but the replication configuration prevented resiliency when one region was unavailable. Updating the replication configuration mitigated the impact by allowing successful requests while one region was unavailable. By July 19 00:12 UTC, users saw some improvement in Actions jobs and full recovery of Pages. Standard hosted runners and self-hosted Actions workflows were healthy by 2:10 UTC and large hosted runners fully recovered at 2:38.<br /><br />Copilot requests were also impacted with up to 2% of Copilot Chat requests and 0.5% of Copilot Completions requests resulting in errors. Chat requests were routed to other regions after 20 minutes while Completions requests took 45 minutes to reroute. <br /><br />We have identified improvements to detection to reduce the time to engage all impacted on-call teams and improvements to our replication configuration and failover workflows to be more resilient to unhealthy dependencies and reduce our time to failover and mitigate customer impact.</p>
 
             <footer>
-                <cite>Jul 19, 02:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721356690</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Actions is operating normally.</p>
 
             <footer>
-                <cite>Jul 19, 02:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721356688</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We have continued to apply mitigations to work around the outage. Customers may still experience run start delays for larger runners.</p>
 
             <footer>
-                <cite>Jul 19, 02:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721355956</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We&rsquo;ve applied a mitigation to work around the outage. Customers may still experience run start delays.</p>
 
             <footer>
-                <cite>Jul 19, 01:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721353821</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are making progress failing over to a different region to mitigate an outage.</p>
 
             <footer>
-                <cite>Jul 19, 01:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721351088</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We continue to mitigate an outage by failing over to a different region.</p>
 
             <footer>
-                <cite>Jul 19, 00:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721349051</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>Pages is operating normally.</p>
 
             <footer>
-                <cite>Jul 19, 00:24</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721348660</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are working to mitigate an outage by failing over to a different region.</p>
 
             <footer>
-                <cite>Jul 18, 23:57</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721347028</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>Pages is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 18, 23:23</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721344989</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>Some actions customers may experience delays or failures in their runs. We continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 18, 23:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721344925</cite>
             </footer>
         </blockquote>
         <hr />
@@ -146,7 +155,7 @@
             <p>We are investigating reports of degraded performance for Actions</p>
 
             <footer>
-                <cite>Jul 18, 22:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721342844</cite>
             </footer>
         </blockquote>
         <hr />

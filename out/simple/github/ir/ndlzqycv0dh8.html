@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On August 12, 2024 from 13:39 to 14:28 UTC some users experienced an elevated rate of errors of up to 0.45% from the GitHub API. Less than 5% of webhooks interactions failed and less than 0.5% of Actions runs were delayed.<br /><br />This impact was caused by internal networking instances being insufficiently scaled.<br /><br />We mitigated the incident by provisioning additional instances. We are working to enhance the sizing strategy for the relevant infrastructure to prevent similar issues and to also improve monitoring and processes to reduce our time to detection and mitigation of issues like this one in the future.</p>
 
             <footer>
-                <cite>Aug 12, 14:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723473666</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Webhooks is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 12, 14:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723473665</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Webhooks is operating normally.</p>
 
             <footer>
-                <cite>Aug 12, 14:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723473664</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Some customers may see failures calling the webhooks API or running queries for enterprise or organization audit logs. We have started mitigating the issue and are watching recovery. We will provide an update within the next 30 minutes.</p>
 
             <footer>
-                <cite>Aug 12, 14:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723473125</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are investigating reports of degraded performance for Webhooks</p>
 
             <footer>
-                <cite>Aug 12, 14:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723471756</cite>
             </footer>
         </blockquote>
         <hr />

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyIO status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/base/flyio/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Builders are having issues being created in gru region</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>p8rw3t59nl0r</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jun 18, 16:03</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jun 18, 17:30</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>1h26m6.727s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jun 18, 17:30 </h3>
+            <p> <p>We have deployed a fix to the issue.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 18, 16:51 </h3>
+            <p> <p>We have identified the issue and are actively working on a fix. In the meantime, you may work around by destroying your remote builder app and recreating it in another region nearby, e.g Rio de Janeiro (gig).</p>
+
+<p>Identify the name of your builder app (prefixed with &ldquo;fly-builder-&rdquo;):
+fly apps list</p>
+
+<p>Destroy the builder:
+fly apps destroy <builder-app-name></p>
+
+<p>Redeploy with a builder app in another region:
+FLY_REMOTE_BUILDER_REGION=gig fly deploy</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 18, 16:03 </h3>
+            <p> <p>We are currently investigating this issue</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/base/flyio/">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

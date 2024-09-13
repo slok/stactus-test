@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyIO status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/flyio/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/flyio/static/main.js"></script>
+</head>
+
+
+<body>
+    <body style="width:960px; margin:0 auto;">
+        <header class="container-fluid">
+            
+<nav>
+    <ul>
+        <li>
+            <h2>FlyIO status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/flyio/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/flyio/">Status</a></li>
+    </ul>
+</nav>
+
+        </header>
+        <main class="container-fluid">
+            <br />
+            <h1>Incident History</h1>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/bqm909t1jgbz" class="incident-title-major"> Billing system errors</a></h4>
+                </header>
+                <p>Our billing provider has resolved their incident and our systems confirm we are resolved as well.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1718959465</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1719015329</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/p8rw3t59nl0r" class="incident-title-none"> Builders are having issues being created in gru region</a></h4>
+                </header>
+                <p>We have deployed a fix to the issue.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1718719436</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1718724602</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/b1rw64bgmxjg" class="incident-title-none"> Packet loss, Machines API and deployment errors in Singapore</a></h4>
+                </header>
+                <p>Network metrics in SIN have returned to baseline following routing configuration updates. The issues were caused by network faults experienced by some of our upstream providers.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1718296000</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1718302730</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/vj61rrqgw3dr" class="incident-title-major"> Investigating elevated wg failures</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1718129663</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1718135567</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/qp5254q5cdbj" class="incident-title-none"> Elevated errors for new machines</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1717602654</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1717608366</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/x0tb4m479xkh" class="incident-title-none"> OTP Region Offline</a></h4>
+                </header>
+                <p>Failed hardware has been replaced</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1717321823</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1717331862</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/y0hghbxzzfh9" class="incident-title-none"> Networking issue</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1717175956</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1717180157</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/1nspk5c8hjwd" class="incident-title-minor"> Increased response latency in FRA</a></h4>
+                </header>
+                <p>Network is back to baseline and stable in the region.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1716470402</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1716481604</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/9y98g66pjk5d" class="incident-title-none"> Elevated network latency in DFW</a></h4>
+                </header>
+                <p>This incident has been resolved.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1715949576</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1715955580</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/flyio/ir/xqz0vdp9spzf" class="incident-title-none"> BOG - Network Issue</a></h4>
+                </header>
+                <p>One remaining application host had a broken cable which has now been repaired, and the region is now fully back online.
+Total unavailability was 45 minutes (2024-05-13 21:00 - 21:45 UTC) for several servers in the region, and ~19 hours (2024-05-13 21:00 - 2024-05-14 15:50 UTC) for one application host.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1715635007</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1715702247</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <section>
+                
+                
+                    <span class="move-right">
+                        <a href="https://slok.github.io/stactus-test/simple/flyio/history/3" role="button"> Next ⮞ </a>
+                    </span>
+                
+            </section>
+        </main>
+    </body>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

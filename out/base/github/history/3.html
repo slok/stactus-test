@@ -17,6 +17,21 @@
         <h1>Incident History</h1>
         
         <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/github/ir/8532wfbvwqgr">Disruption with GitHub Docs</a></h2>
+            <p>
+                <p>On July 3, 2024, between 1:34 PM UTC and 4:42 PM UTC the GitHub documentation was degraded and showed a 500 on non-cached pages. On average, the error rate was 2-5% and peaked at 5% of requests to the service. This was due to an observability misconfiguration. We mitigated the incident by updating the observability configuration and redeploying. We are working to reduce our time to detection and mitigation of issues like this one in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul  3, 17:24 - Jul  3, 18:40
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
             <h2><a href="https://slok.github.io/stactus-test/base/github/ir/5dvz23w3gl38">Disruption with GitHub services</a></h2>
             <p>
                 <p>On July 02, 2024, between 18:21 UTC and 19:24 UTC the code search service was degraded and returned elevated 500 HTTP status responses. On average, the error rate was 38% of code search requests. This was due to a bad deployment causing some user&rsquo;s rate limit calculations to error while processing code search requests. This impacted approximately 2,000 users.<br />We mitigated the incident by rolling back the bad deployment along with resetting rate limits for all users.<br />We have identified and implemented updates in the testing of rate limit calculations to prevent this problem from happening again, and clarified deployment processes for verification before a full production rollout to minimize impact in the future.</p>
@@ -26,7 +41,7 @@
             <br>
             <small>
             
-                Jul  2, 18:45 - Jul  2, 19:24
+                Jul  2, 20:45 - Jul  2, 21:24
             
             </small>
         </div>
@@ -41,7 +56,7 @@
             <br>
             <small>
             
-                Jul  1, 22:59 - Jul  2, 01:14
+                Jul  2, 00:59 - Jul  2, 03:14
             
             </small>
         </div>
@@ -56,7 +71,7 @@
             <br>
             <small>
             
-                Jun 28, 17:34 - Jun 28, 22:51
+                Jun 28, 19:34 - Jun 29, 00:51
             
             </small>
         </div>
@@ -71,7 +86,7 @@
             <br>
             <small>
             
-                Jun 27, 23:34 - Jun 27, 23:44
+                Jun 28, 01:34 - Jun 28, 01:44
             
             </small>
         </div>
@@ -86,7 +101,7 @@
             <br>
             <small>
             
-                Jun 27, 21:16 - Jun 27, 21:42
+                Jun 27, 23:16 - Jun 27, 23:42
             
             </small>
         </div>
@@ -101,7 +116,7 @@
             <br>
             <small>
             
-                Jun 19, 11:58 - Jun 19, 12:53
+                Jun 19, 13:58 - Jun 19, 14:53
             
             </small>
         </div>
@@ -116,7 +131,7 @@
             <br>
             <small>
             
-                Jun 18, 17:14 - Jun 18, 18:09
+                Jun 18, 19:14 - Jun 18, 20:09
             
             </small>
         </div>
@@ -131,7 +146,7 @@
             <br>
             <small>
             
-                Jun 11, 20:33 - Jun 11, 21:39
+                Jun 11, 22:33 - Jun 11, 23:39
             
             </small>
         </div>
@@ -146,22 +161,7 @@
             <br>
             <small>
             
-                Jun  6, 04:21 - Jun  6, 04:43
-            
-            </small>
-        </div>
-        
-        <div class="box impact-major">
-            <h2><a href="https://slok.github.io/stactus-test/base/github/ir/9zxft4pnrhbt">Incident with Issues</a></h2>
-            <p>
-                <p>On June 5, 2024, between 17:05 UTC and 19:27 UTC, the GitHub Issues service was degraded. During that time, no events related to projects were displayed on issue timelines. These events indicate when an issue was added to or removed from a project and when their status changed within a project. The data couldn’t be loaded due to a misconfiguration of the service backing these events. This happened after a scheduled secret rotation when the wrongly configured service continued using the old secrets which had expired. <br /><br />We mitigated the incident by remediating the service configuration and have started simplifying the configuration to avoid similar misconfigurations in the future.</p>
-
-            </p>
-
-            <br>
-            <small>
-            
-                Jun  5, 17:22 - Jun  5, 19:27
+                Jun  6, 06:21 - Jun  6, 06:43
             
             </small>
         </div>

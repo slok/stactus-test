@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On May 14, 2024 between 18:00 UTC and 20:10 UTC, GitHub Actions performance was degraded and larger hosted runners using <code>linux-x64</code> images (Ubuntu20, Ubuntu22, Ubuntu24-beta) experienced longer than normal job start up times. Approximately 25% of all runs targeting larger hosted runners queued during this time were slow to start, with a median wait time of 1 minute, 55 seconds.<br /><br />The issue was caused by a downstream dependency overloading, which impacted our machine setup process. Each larger hosted runner job is run on a fresh VM, and one of the setup steps is installing the Actions agent. Up to the point of this incident, we would pull the latest agent version from the GitHub release and install it on the VM. However, during this incident the speciific GitHub release for the Linux x64 Actions agent became overloaded, and our agent downloads were severely throttled. This throttling led to timeouts during the download, and caused our hosted runner system to conclude the VMs were failing to start. We need the Actions agent online to start serving jobs, and with the download timing out, our service assumed the runner wasn&rsquo;t starting up successfully. This failure to start up led to those VMs being reset again and again instead of serving jobs. We mitigated the issue by falling back to a cached version of the Actions agent present on our image.<br /><br />We have further refined the fallback system to automatically use the cached agent binaries, and added new functionality to allow for easier agent downloading from other locations. Both of these measures should eliminate future impacts from similar downstream impact.</p>
 
             <footer>
-                <cite>May 14, 21:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715720689</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are seeing recovery for queue times on Actions Larger Runners and are continuing to monitor full recovery.</p>
 
             <footer>
-                <cite>May 14, 20:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715719653</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We&rsquo;ve applied a mitigation to fix the issues with queuing and running Actions jobs. We are seeing improvements in telemetry and are monitoring for full recovery.</p>
 
             <footer>
-                <cite>May 14, 20:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715717348</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are continuing to investigate long queue times for Actions Larger Runners</p>
 
             <footer>
-                <cite>May 14, 19:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715714161</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are investigating long queue times for Actions Larger Runners</p>
 
             <footer>
-                <cite>May 14, 18:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715712033</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>May 14, 18:37</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715711842</cite>
             </footer>
         </blockquote>
         <hr />

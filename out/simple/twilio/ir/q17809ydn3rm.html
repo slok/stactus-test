@@ -9,8 +9,17 @@
     <title>Twilio status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/twilio/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/twilio/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/twilio/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/twilio/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>We are no longer observing SMS delivery failures to and from multiple networks in Mexico via Subset of Domestic Longcodes. The incident has been resolved.</p>
 
             <footer>
-                <cite>Sep  5, 04:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725536810</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are observing successful SMS delivery failures to and from multiple networks in Mexico via Subset of Domestic Longcodes. We will continue to monitor to ensure full service recovery. We expect to provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 02:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725529712</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are still experiencing SMS delivery failures to and from multiple networks in Mexico via Subset of Domestic Longcodes. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 01:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725523797</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are experiencing SMS delivery failures to and from multiple networks in Mexico via Subset of Domestic Longcodes. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 1 hour or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 00:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725520223</cite>
             </footer>
         </blockquote>
         <hr />

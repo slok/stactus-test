@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Incident Report: May 13, 2024 (lasting approximately 4 hours)<br /><br />On May 13 at 10:40 AM UTC, GitHub Copilot Chat began returning error responses to 6% of users. The problem was identified, and a status update was provided shortly after. A mitigation strategy was implemented by 14:30 UTC, which mitigated the impact.<br /><br />The root cause of the incident was a combination of issues in the request handling process. Specifically, some requests were malformed, which resulted in being incorrectly routed to the wrong deployment. That deployment wasn’t resilient to the malformed requests and resulted in errors.<br /><br />To mitigate the immediate impact, requests were routed away from the failing deployment. This temporarily reduced the number of errors while the underlying issue was investigated and resolved.<br /><br />To prevent similar incidents in the future, we have enhanced validation checks for incoming requests to ensure proper handling and routing. In addition, we upgraded backend systems to provide more robust error handling and observability.<br /></p>
 
             <footer>
-                <cite>May 13, 15:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715615076</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are applying configuration changes to mitigate impact to Copilot Chat users.</p>
 
             <footer>
-                <cite>May 13, 14:56</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715612170</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We continue to investigate the root cause of elevated errors in Copilot Chat.</p>
 
             <footer>
-                <cite>May 13, 14:13</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715609596</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Copilot is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>May 13, 13:27</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715606841</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are investigating an increase in exceptions impacting Copilot Chat usage from IDEs.</p>
 
             <footer>
-                <cite>May 13, 13:24</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715606671</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>May 13, 13:23</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715606625</cite>
             </footer>
         </blockquote>
         <hr />

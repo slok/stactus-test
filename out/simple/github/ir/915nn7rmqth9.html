@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Between May 19th 3:40AM UTC and May 20th 5:40PM UTC the service responsible for rendering Jupyter notebooks was degraded. During this time customers were unable to render Jupyter Notebooks.<br /><br />This occurred due to an issue with a Redis dependency which was mitigated by restarting. An issue with our monitoring led to a delay in our response. We are working to improve the quality and accuracy of our monitors to reduce the time to detection.</p>
 
             <footer>
-                <cite>May 20, 17:05</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716224748</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are beginning to see recovery rendering Jupyter notebooks and are continuing to monitor.</p>
 
             <footer>
-                <cite>May 20, 17:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716224461</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Customers may experience errors viewing rendered Jupyter notebooks from PR diff pages or the files tab</p>
 
             <footer>
-                <cite>May 20, 16:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716223834</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>May 20, 16:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716223630</cite>
             </footer>
         </blockquote>
         <hr />

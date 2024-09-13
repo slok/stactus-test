@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -52,7 +61,7 @@
 <p>These systems should be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p>
 
             <footer>
-                <cite>Aug 14, 21:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723671681</cite>
             </footer>
         </blockquote>
         <hr />
@@ -64,7 +73,7 @@
 <p>We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p>
 
             <footer>
-                <cite>Aug  2, 18:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722623798</cite>
             </footer>
         </blockquote>
         <hr />
@@ -74,7 +83,7 @@
             <p>We&rsquo;re currently addressing an issue where some customers have not been receiving payment receipts. It appears that certain emails are being filtered as spam by Gmail. We&rsquo;re working on a solution to ensure that all emails are delivered properly. For any immediate assistance with payment receipts, please reach out to our support team.</p>
 
             <footer>
-                <cite>Jul 22, 18:56</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721674605</cite>
             </footer>
         </blockquote>
         <hr />

@@ -9,8 +9,17 @@
     <title>Grafana status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/grafana/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/grafana/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/grafana/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/grafana/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>May 22, 22:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716415413</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are continuing to monitor for any further issues.</p>
 
             <footer>
-                <cite>May 22, 22:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716415376</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>A fix has been implemented, and all services are expected to be fully restored. We are continuing to monitor the situation to prevent any further disruption.</p>
 
             <footer>
-                <cite>May 22, 22:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716415373</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>A fix has been implemented, and we are currently monitoring the results. Instances on prod-us-central-3 may still experience issues as the full remediation takes effect. We will continue to provide updates as the situation progresses.</p>
 
             <footer>
-                <cite>May 22, 17:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716400540</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>Our team has identified the issue and is actively working to resolve it. During this time, there was a brief interruption to instance access. Access has been restored and we are currently working to resolve the root cause. We will provide further updates as soon as they become available.</p>
 
             <footer>
-                <cite>May 22, 15:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716391760</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>At approximately 14:40 UTC May 22, 2024, our team noticed an issue with the Hosted Grafana API. We are currently investigating; this may cause issues with new and restarting instances. We will provide further information once available.</p>
 
             <footer>
-                <cite>May 22, 14:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1716389957</cite>
             </footer>
         </blockquote>
         <hr />

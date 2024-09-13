@@ -9,8 +9,17 @@
     <title>Grafana status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/grafana/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/grafana/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/grafana/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/grafana/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/grafana/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>We continue to observe a continued period of recovery. At this time, we are considering this issue resolved.</p>
 
             <footer>
-                <cite>Jun 25, 19:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719344759</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are continuing to monitor for any further issues.</p>
 
             <footer>
-                <cite>Jun 25, 18:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719341638</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Engineering has released a fix and as of 18:42 UTC, customers should no longer experience issues related to this incident. We will continue to monitor for recurrence and provide updates accordingly.</p>
 
             <footer>
-                <cite>Jun 25, 18:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719341437</cite>
             </footer>
         </blockquote>
         <hr />
@@ -78,7 +87,7 @@
 <p>We will continue to provide updates as more information is shared.</p>
 
             <footer>
-                <cite>Jun 25, 18:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719341122</cite>
             </footer>
         </blockquote>
         <hr />

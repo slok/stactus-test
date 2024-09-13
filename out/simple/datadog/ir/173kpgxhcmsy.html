@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -47,7 +56,7 @@
 This incident has been resolved.</p>
 
             <footer>
-                <cite>Apr 17, 09:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681739748</cite>
             </footer>
         </blockquote>
         <hr />
@@ -59,7 +68,7 @@ This incident has been resolved.</p>
 <p>We have started to backfill Synthetics tests results and will provide another update once the backfills are finished.</p>
 
             <footer>
-                <cite>Apr 17, 08:34</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681734899</cite>
             </footer>
         </blockquote>
         <hr />
@@ -72,7 +81,7 @@ It is important to note that no data has been lost, and it will be backfilled an
 <p>We will provide another update once the issue is fully resolved.</p>
 
             <footer>
-                <cite>Apr 17, 06:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681727127</cite>
             </footer>
         </blockquote>
         <hr />
@@ -83,7 +92,7 @@ It is important to note that no data has been lost, and it will be backfilled an
 As a result of this issue, some users may see delays with test results and in notifications based on this test data.</p>
 
             <footer>
-                <cite>Apr 17, 06:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681725841</cite>
             </footer>
         </blockquote>
         <hr />

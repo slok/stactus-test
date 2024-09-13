@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -48,7 +57,7 @@
 <p>Customers may note that some VCS connected resources (Workspaces, Policy Sets, Registry Modules) have failed to ingest into Terraform Cloud, and may need to be retried now that the incident has passed.</p>
 
             <footer>
-                <cite>Mar  8, 17:39</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1709919590</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
             <p>We&rsquo;ve identified the issue: a routine database migration caused elevated application errors. It has completed, and Terraform Cloud appears to have recovered. We&rsquo;re monitoring the situation.</p>
 
             <footer>
-                <cite>Mar  8, 17:23</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1709918612</cite>
             </footer>
         </blockquote>
         <hr />
@@ -72,7 +81,7 @@
 <p>We will share another update in 30 minutes.</p>
 
             <footer>
-                <cite>Mar  8, 17:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1709917383</cite>
             </footer>
         </blockquote>
         <hr />

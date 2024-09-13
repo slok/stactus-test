@@ -9,8 +9,17 @@
     <title>Discord status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/discord/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/discord/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/discord/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/discord/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/discord/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/discord/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>The infrastructure is now operating as expected, if you continue to have any issues a client restart should correct your presence.</p>
 
             <footer>
-                <cite>Aug 29, 12:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724958079</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Fix has been applied to the infrastructure and we are monitoring recovery.</p>
 
             <footer>
-                <cite>Aug 29, 11:28</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724956128</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>The issue has been identified and oncall engineering is working to correct the defect.</p>
 
             <footer>
-                <cite>Aug 29, 10:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724954106</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are currently investigating an issue with our presence infrastructure.  Some users may not be able to update their profiles and may show the wrong presence (online, idle, offline) until this issue is resolved.</p>
 
             <footer>
-                <cite>Aug 29, 10:33</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1724952826</cite>
             </footer>
         </blockquote>
         <hr />

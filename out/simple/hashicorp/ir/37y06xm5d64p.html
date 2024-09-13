@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>We are seeing the return to system health, the incident has been resolved.</p>
 
             <footer>
-                <cite>Feb 24, 21:43</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1708811013</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are seeing the return of health to the nodes impacted by this issue. Our engineers will continue to monitor the health of the system.</p>
 
             <footer>
-                <cite>Feb 24, 20:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1708807664</cite>
             </footer>
         </blockquote>
         <hr />
@@ -67,7 +76,7 @@
 We will provide updates when more information is available.</p>
 
             <footer>
-                <cite>Feb 24, 14:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1708783875</cite>
             </footer>
         </blockquote>
         <hr />
@@ -78,7 +87,7 @@ We will provide updates when more information is available.</p>
 Updates will be posted when more information is available.</p>
 
             <footer>
-                <cite>Feb 24, 09:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1708766971</cite>
             </footer>
         </blockquote>
         <hr />
@@ -91,7 +100,7 @@ These issues can result in some or all nodes of your HCP Vault clusters becoming
 <p>Our engineering team is investigating this issue and will provide updates when more information is available.</p>
 
             <footer>
-                <cite>Feb 24, 07:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1708761044</cite>
             </footer>
         </blockquote>
         <hr />

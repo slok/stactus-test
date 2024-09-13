@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 31, 2024, between 07:05 UTC and 09:01 UTC the Actions service experienced degradation, preventing it from processing API requests and executing jobs, in particular Pages builds. On average, 2% of jobs run during the incident window were affected. This was due to some nodes in one of our partner services experiencing connectivity issues in the East US2 region. We mitigated the incident by failing over the impacted service and re-routing the service’s traffic out of that region.<br /><br />We are working to improve monitoring and processes of failover to reduce our time to detection and mitigation of issues like this one in the future.</p>
 
             <footer>
-                <cite>Jul 31, 09:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722417609</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Actions is operating normally.</p>
 
             <footer>
-                <cite>Jul 31, 09:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722417609</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are continuing to see improvements in queuing and running Actions jobs and are monitoring for full recovery.</p>
 
             <footer>
-                <cite>Jul 31, 09:13</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722417227</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We&rsquo;ve applied a mitigation to fix the issues with queuing and running Actions jobs. We are seeing improvements in telemetry and are monitoring for full recovery.</p>
 
             <footer>
-                <cite>Jul 31, 08:28</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722414515</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>Actions is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 31, 08:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722413269</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We are investigating reports of degraded performance in some Redis clusters.</p>
 
             <footer>
-                <cite>Jul 31, 08:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722412954</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Jul 31, 07:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722412788</cite>
             </footer>
         </blockquote>
         <hr />

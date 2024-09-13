@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>All three phases of HCP Platform Maintenance have been completed successfully. All systems are operational and affected services have been fully restored.</p>
 
             <footer>
-                <cite>Mar 16, 16:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1710605935</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
 <p>We anticipate that all work will be complete within 3 hours. We will post another update once the maintenance has been completed.</p>
 
             <footer>
-                <cite>Mar 16, 14:58</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1710601097</cite>
             </footer>
         </blockquote>
         <hr />
@@ -72,7 +81,7 @@
 <p>The work on March 16 is expected to complete within 3 hours.</p>
 
             <footer>
-                <cite>Mar  9, 16:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1710000545</cite>
             </footer>
         </blockquote>
         <hr />
@@ -84,7 +93,7 @@
 <p>We anticipate all work will be complete within 3 hours. We will post another update once the maintenance is complete.</p>
 
             <footer>
-                <cite>Mar  9, 15:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1709996586</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
 <p>The second phase of this maintenance will take place on March 9 at 15:00 UTC. During that time, HCP platform users may be unable to log into the portal. The work on March 9 is expected to complete within 3 hours.</p>
 
             <footer>
-                <cite>Feb 24, 16:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1708792144</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>The first phase maintenance is now beginning. We anticipate all work will be complete within 3 hours. During this time, expect interruption to operations that would create, modify, or delete HCP resources. We will post an update once the maintenance is complete.</p>
 
             <footer>
-                <cite>Feb 24, 15:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1708787459</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>The HCP Platform will undergo planned maintenance in three phases. Maintenance will take place at 15:00 UTC on February 24, March 9, and March 16. We expect maintenance to complete within 3 hours during each window. During maintenance, operations that create, modify, or delete HCP clusters may be unavailable. We will post updates throughout each phase.</p>
 
             <footer>
-                <cite>Feb  9, 19:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1707505773</cite>
             </footer>
         </blockquote>
         <hr />

@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 30th, 2024, between 12:15 UTC and 14:22 UTC the Codespaces service was degraded in the UK South and West Europe regions. During this time, approximately 75% of attempts to create or resume Codespaces in these regions were failing.<br /><br />We mitigated the incident by resolving networking stability issues in these regions.<br /><br />We are working to improve network resiliency to reduce our time to detection and mitigation of issues like this one in the future.</p>
 
             <footer>
-                <cite>Jul 30, 14:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722349335</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are starting to see recovery for this issue and are monitoring things closely. We will keep this incident open for now until we are fully confident on complete recovery.</p>
 
             <footer>
-                <cite>Jul 30, 14:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722348996</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We have correlated the impact on Codespaces to an outage with a third party service. We are continuing to investigate ways to reduce impact on our customers while we wait for that outage to be resolved.</p>
 
             <footer>
-                <cite>Jul 30, 14:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722348596</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are seeing increased failure rates for creation and resumption of Codespaces in the UK South and West Europe regions.<br /><br />We are working to resolve this issue and will update again soon.</p>
 
             <footer>
-                <cite>Jul 30, 13:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722347251</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are investigating reports of degraded performance for Codespaces</p>
 
             <footer>
-                <cite>Jul 30, 13:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1722346612</cite>
             </footer>
         </blockquote>
         <hr />

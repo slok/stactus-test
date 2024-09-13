@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 17, 2024, between 16:15:31 UTC and 17:06:53 UTC, various GitHub services were degraded including Login, the GraphQL API, Issues, Pages and Packages. On average, the error rate was 0.3% for requests to github.com and the API, and 3.0% of requests for Packages. This incident was triggered by two unrelated events:<br /><br />- A planned testing event of an internal feature caused heavy loads on our databases, disrupting services across GitHub.<br />- A network configuration change deployed to support capacity expansion in a GitHub data center. <br /><br />We partially resolved the incident by aborting the testing event at 16:17 UTC and fully resolved the incident by rolling back the network configuration changes at 16:49 UTC. <br /><br />We have paused all planned capacity expansion activity within GitHub data centers until we have stabilized the root cause of this incident. In addition, we are reexamining our load testing practices so they can be done in a safer environment and making architectural changes to the feature that caused issues.<br /></p>
 
             <footer>
-                <cite>Jul 17, 17:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721236015</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Git Operations is operating normally.</p>
 
             <footer>
-                <cite>Jul 17, 17:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721236008</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Pages is operating normally.</p>
 
             <footer>
-                <cite>Jul 17, 17:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721236004</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Packages is operating normally.</p>
 
             <footer>
-                <cite>Jul 17, 17:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721236000</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We&rsquo;re continuing to investigate reports of issues with multiple services. We will continue to keep users updated on progress.</p>
 
             <footer>
-                <cite>Jul 17, 16:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721234841</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>Packages is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 17, 16:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721234837</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>Issues is operating normally.</p>
 
             <footer>
-                <cite>Jul 17, 16:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721234778</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>Pages is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 17, 16:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721233816</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>Issues is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 17, 16:28</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721233706</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>We are investigating reports of issues with service(s): Git, Actions, Rules and Permissions, SSH authentication, and Authorization.. We will continue to keep users updated on progress towards mitigation.</p>
 
             <footer>
-                <cite>Jul 17, 16:24</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721233492</cite>
             </footer>
         </blockquote>
         <hr />
@@ -146,7 +155,7 @@
             <p>We are investigating reports of degraded performance for Git Operations</p>
 
             <footer>
-                <cite>Jul 17, 16:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721233287</cite>
             </footer>
         </blockquote>
         <hr />

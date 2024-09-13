@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -48,7 +57,7 @@
 <p>During the incident customers may have noticed Terraform Runs failing due to the increased latency: those can now be retried.</p>
 
             <footer>
-                <cite>Jul 17, 16:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721233344</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@
             <p>Engineers have rolled back the problematic change, and have observed signs of recovery. We are currently monitoring the application to ensure a return to normal operation.</p>
 
             <footer>
-                <cite>Jul 17, 15:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721230683</cite>
             </footer>
         </blockquote>
         <hr />
@@ -68,7 +77,7 @@
             <p>Our Engineering team has identified and is currently attempting to mitigate a change that has increased latency on HCP Terraform. Customers are likely experiencing large increases in latency across Workspace and Run api endpoints.</p>
 
             <footer>
-                <cite>Jul 17, 14:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721228100</cite>
             </footer>
         </blockquote>
         <hr />

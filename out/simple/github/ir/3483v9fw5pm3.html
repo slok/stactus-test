@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On July 13, 2024 between 00:01 and 19:27 UTC the Copilot service was degraded. During this time period, Copilot code completions error rate peaked at 1.16% and Copilot Chat error rate peaked at 63%. Between 01:00 and 02:00 UTC we were able to reroute traffic for Chat to bring error rates below 6%. During the time of impact customers would have seen delayed responses, errors, or timeouts during requests. GitHub code scanning autofix jobs were also delayed during this incident. <br /><br />A resource cleanup job was scheduled by <a href="https://azure.status.microsoft/en-us/status/history?trackingid=4L44-3F0">Azure OpenAI (AOAI) service early July 13th</a> targeting a resource group thought to only contain unused resources. This resource group unintentionally contained critical, still in use, resources that were then removed. The cleanup job was halted before removing all resources in the resource group. Enough resources remained that GitHub was able to mitigate while resources were reconstructed.<br /><br />We are working with AOAI to ensure mitigation is in place to prevent future impact. In addition, we will improve traffic rerouting processes to reduce time to mitigate in the future.</p>
 
             <footer>
-                <cite>Jul 13, 19:27</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720898823</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Copilot is operating normally.</p>
 
             <footer>
-                <cite>Jul 13, 19:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720898814</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Our upstream provider continues to recover and we expect services to return to normal as more progress is made. We will provide another update by 20:00 UTC.</p>
 
             <footer>
-                <cite>Jul 13, 18:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720893705</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Our upstream provider is making good progress recovering and we are validating that services are nearing normal operations. We will provide another update by 18:00 UTC.</p>
 
             <footer>
-                <cite>Jul 13, 16:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720886980</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>Our upstream provider is gradually recovering the service. We will provide another update at 23:00 UTC.</p>
 
             <footer>
-                <cite>Jul 13, 11:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720869529</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We are continuing to wait on our upstream provider to see full recovery. We will provide another update at 11:00 UTC</p>
 
             <footer>
-                <cite>Jul 13, 03:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720842603</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>The error rate for Copilot chat requests remains steady at less than 10%. We are continuing to investigate with our upstream provider.</p>
 
             <footer>
-                <cite>Jul 13, 03:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720840837</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>Copilot is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 13, 02:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720837210</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>We have applied several mitigations to Copilot chat, reducing errors to less than 10% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p>
 
             <footer>
-                <cite>Jul 13, 02:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720837180</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>Copilot chat is experiencing degraded performance, impacting up to 60% of all chat requests. We are continuing to investigate the issue with our upstream provider.</p>
 
             <footer>
-                <cite>Jul 13, 01:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720834320</cite>
             </footer>
         </blockquote>
         <hr />
@@ -146,7 +155,7 @@
             <p>Copilot chat is currently experiencing degraded performance, impacting up to 60% of all chat requests. We are investigating the issue.</p>
 
             <footer>
-                <cite>Jul 13, 00:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720831791</cite>
             </footer>
         </blockquote>
         <hr />
@@ -156,7 +165,7 @@
             <p>Copilot is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jul 13, 00:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720830570</cite>
             </footer>
         </blockquote>
         <hr />
@@ -166,7 +175,7 @@
             <p>Copilot API chat experiencing significant failures to backend services</p>
 
             <footer>
-                <cite>Jul 13, 00:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720829909</cite>
             </footer>
         </blockquote>
         <hr />
@@ -176,7 +185,7 @@
             <p>We are investigating reports of degraded performance for Copilot</p>
 
             <footer>
-                <cite>Jul 13, 00:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1720829903</cite>
             </footer>
         </blockquote>
         <hr />

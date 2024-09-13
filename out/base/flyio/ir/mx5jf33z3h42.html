@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyIO status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/base/flyio/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Elevated 502 Errors</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>mx5jf33z3h42</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Jun 27, 19:09</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Jun 27, 23:22</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>4h13m31.543s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Jun 27, 23:22 </h3>
+            <p> <p>This incident has been resolved.</p>
+
+<p>Some of our edges received incorrect state data for a small number of apps that used the bluegreen deploy strategy. This resulted in 502 errors when attempting to reach those apps. We identified approximately 36 apps that were impacted, including the Fly.io homepage and dashboard.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 27, 21:50 </h3>
+            <p> <p>A small number of customer apps may still be seeing 502 errors due to stale state information. We are working to address this. For any apps still experiencing the error, re-deploying with <code>fly deploy</code> will correct the state information and resolve the errors.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 27, 20:06 </h3>
+            <p> <p>A full fix has been implemented and we continue to monitor platform status. Impacted customer apps should be operational shortly, if they are not already.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 27, 19:46 </h3>
+            <p> <p>A fix has been deployed and The Fly.io homepage, dashboard, API and metrics pages are back online and operational. A small number of customer apps may still be seeing elevated 502 errors. We are working to address this currently.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Jun 27, 19:41 </h3>
+            <p> <p>We have identified the cause of the issue and are working on a fix.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Investigating - Jun 27, 19:09 </h3>
+            <p> <p>We are currently investigating elevated rates of 502 errors when accessing applications hosted on Fly.io, including the Fly.io homepage, dashboard, and fly-metrics pages.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/base/flyio/">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

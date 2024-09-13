@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -52,7 +61,7 @@
 <p>These systems should now be operating normally. If you continue to experience any problems, please open a ticket with our support team.</p>
 
             <footer>
-                <cite>May  6, 22:01</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715032868</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
 <p>We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p>
 
             <footer>
-                <cite>May  6, 20:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715028477</cite>
             </footer>
         </blockquote>
         <hr />
@@ -80,7 +89,7 @@
 <p>We are actively working on a fix. Once we have additional information, we will share another update.</p>
 
             <footer>
-                <cite>May  6, 19:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715024696</cite>
             </footer>
         </blockquote>
         <hr />
@@ -94,7 +103,7 @@
 <p>We are monitoring the situation closely and will post an update as soon as the issue is fully resolved.</p>
 
             <footer>
-                <cite>May  6, 18:35</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715020527</cite>
             </footer>
         </blockquote>
         <hr />
@@ -108,7 +117,7 @@
 <p>We are actively working on a fix. Once we have additional information, we will share another update.</p>
 
             <footer>
-                <cite>May  6, 17:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715015955</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
 <p>We will share another update as soon as we have more information.</p>
 
             <footer>
-                <cite>May  6, 17:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1715014982</cite>
             </footer>
         </blockquote>
         <hr />

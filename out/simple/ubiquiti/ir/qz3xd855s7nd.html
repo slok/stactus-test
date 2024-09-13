@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubiquiti status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/ubiquiti/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/ubiquiti/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Ubiquiti status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/ubiquiti/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/ubiquiti/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container">
+        <br />
+        <h1 style="text-align: center;" class="text-major">UniFi Talk Cloud Partial Outage</h1>
+        <br />
+        
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 4h22m10.652s</strong>
+        </article>
+        
+        <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>This incident has been resolved.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1639776480</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Update </h4>
+            <p>We have restored service and will continue to monitor and provide updates.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1639772028</cite>
+            </footer>
+        </blockquote>
+        <hr />
+        
+        <blockquote>
+            <h4> Investigating </h4>
+            <p>We have identified an issue with a third party service that may prevent some users from making or receiving calls. Some pages of the Talk application may also be inaccessible. We are working diligently to restore service.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1639760750</cite>
+            </footer>
+        </blockquote>
+        <hr />
+         
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

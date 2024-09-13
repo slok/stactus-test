@@ -9,8 +9,17 @@
     <title>Twilio status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/twilio/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/twilio/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/twilio/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/twilio/">Status</a></li>
     </ul>
 </nav>
 
@@ -37,14 +46,14 @@
         <section>
             <h3>Ongoing Incidents</h3>
             
-                <article class="box-impact-major">
-                    <header class="header-impact-major">
-                        <h4><a href="https://slok.github.io/stactus-test/simple/twilio/ir/8gpwby3v7szk" class="incident-title"> SMS Delivery Failures to Evolve Cellular Network in the US</a></h4>
+                <article class="box-impact-minor">
+                    <header class="header-impact-minor">
+                        <h4><a href="https://slok.github.io/stactus-test/simple/twilio/ir/dn27314vvhpw" class="incident-title"> SMS Delivery Failures to Orange Network in Tunisia</a></h4>
                     </header>
-                    <p>We continue to experience SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
+                    <p>We are observing successful SMS delivery to Orange Network in Tunisia. We will continue to monitor to ensure full service recovery. We expect to provide another update in 2 hours or as soon as more information becomes available.</p>
 
                     <footer>
-                        <small>Latest update at Sep 11, 21:39</small>
+                        <small>Latest update at <span x-init="renderTSUnixPrettyNoYear($el)">1726235977</span></small>
                     </footer>
                 </article>
             
@@ -327,13 +336,13 @@
 
                     <span class="move-right">
                         
-                        <i style="font-size: 150%;" class="ph-fill ph-warning-circle text-major"></i>
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
                         
                     </span>
 
                     <div>
                         
-                        <small> Degraded </small>
+                        <small> Normal </small>
                         
                     </div>
                 </article>
@@ -447,13 +456,13 @@
 
                     <span class="move-right">
                         
-                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        <i style="font-size: 150%;" class="ph-fill ph-warning-circle text-minor"></i>
                         
                     </span>
 
                     <div>
                         
-                        <small> Normal </small>
+                        <small> Degraded </small>
                         
                     </div>
                 </article>

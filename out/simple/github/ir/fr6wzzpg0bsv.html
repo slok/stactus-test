@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On June 6, 2024 between 03:29 and 04:19 UTC, the service responsible for the Maven package registry was degraded. This affected GitHub customers who were trying to upload packages to the Maven package registry.<br /><br />We observed increased database pressure due to bulk operations in progress, and at 04:19 UTC, the Maven upload issues resolved when those bulk operations finished. We&rsquo;re continuing to assess any additional compounding factors.<br /><br />We are working on improving our thresholds for existing alerts to reduce our time to detection and mitigation of issues like this one in the future.<br /></p>
 
             <footer>
-                <cite>Jun  6, 04:43</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717649032</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We were alerted to problems in maven uploads. These have now improved, and we&rsquo;re continuing to monitor and investigate.</p>
 
             <footer>
-                <cite>Jun  6, 04:38</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717648724</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are investigating reports of issues with Packages. We will continue to keep users updated on progress towards mitigation.</p>
 
             <footer>
-                <cite>Jun  6, 04:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717647699</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are investigating reports of degraded performance for Packages</p>
 
             <footer>
-                <cite>Jun  6, 04:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1717647668</cite>
             </footer>
         </blockquote>
         <hr />

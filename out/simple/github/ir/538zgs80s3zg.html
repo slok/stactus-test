@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Between June 27th, 2024 at 20:39 UTC and 21:37 UTC the Migrations service was unable to process migrations. This was due to a invalid infrastructure credential. <br /><br />We mitigated the issue by updating the credential and deploying the service. <br /><br />Mechanisms and automation will be implemented to detect and prevent this issue again in the future.</p>
 
             <footer>
-                <cite>Jun 27, 21:42</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719524534</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Some GitHub Enterprise Importer migrations are failing. We have identified a root cause and are rolling out a fix.</p>
 
             <footer>
-                <cite>Jun 27, 21:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719523223</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Jun 27, 21:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719522968</cite>
             </footer>
         </blockquote>
         <hr />

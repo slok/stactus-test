@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -26,7 +35,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -37,6 +46,22 @@
             
             <article>
                 <header>
+                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/9zxft4pnrhbt" class="incident-title-major"> Incident with Issues</a></h4>
+                </header>
+                <p>On June 5, 2024, between 17:05 UTC and 19:27 UTC, the GitHub Issues service was degraded. During that time, no events related to projects were displayed on issue timelines. These events indicate when an issue was added to or removed from a project and when their status changed within a project. The data couldn’t be loaded due to a misconfiguration of the service backing these events. This happened after a scheduled secret rotation when the wrongly configured service continued using the old secrets which had expired. <br /><br />We mitigated the incident by remediating the service configuration and have started simplifying the configuration to avoid similar misconfigurations in the future.</p>
+
+                <footer>
+                    <small>
+                        
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1717608169</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1717615641</span>
+                            <mark class="resolved">Resolved</mark>
+                        
+                    </small>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
                     <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/g8g6c6s72836" class="incident-title-minor"> Incident with Copilot</a></h4>
                 </header>
                 <p>On May 30th, 2024, between 03:37 PM UTC and 05:14 PM UTC Copilot chat conversations on github.com saw degraded availability, where chat requests referencing files from a repository failed. This was due to an expired security certificate, which required communication to an internal service. Overall, the error rate was 40% on average. Other Copilot chat experiences were unaffected during this time.<br /><br />The incident was mitigated by rotating the certificate in question.<br /><br />To prevent future incidents, we are working to reduce our time to detect and have removed certificate-based dependencies between these internal systems in the process.<br /></p>
@@ -44,7 +69,8 @@
                 <footer>
                     <small>
                         
-                            May 30, 17:14 - May 30, 17:22 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1717089245</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1717089775</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -59,7 +85,8 @@
                 <footer>
                     <small>
                         
-                            May 28, 20:17 - May 28, 21:24 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1716927452</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1716931474</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -74,7 +101,8 @@
                 <footer>
                     <small>
                         
-                            May 23, 15:31 - May 23, 16:02 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1716478309</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1716480168</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -89,7 +117,8 @@
                 <footer>
                     <small>
                         
-                            May 21, 12:45 - May 21, 19:06 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1716295517</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1716318365</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -104,7 +133,8 @@
                 <footer>
                     <small>
                         
-                            May 20, 16:47 - May 20, 17:05 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1716223630</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1716224748</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -119,7 +149,8 @@
                 <footer>
                     <small>
                         
-                            May 16, 04:43 - May 16, 05:15 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1715834622</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1715836535</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -134,7 +165,8 @@
                 <footer>
                     <small>
                         
-                            May 14, 18:37 - May 14, 21:04 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1715711842</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1715720689</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -149,7 +181,8 @@
                 <footer>
                     <small>
                         
-                            May 13, 19:51 - May 13, 20:10 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1715629891</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1715631042</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -164,22 +197,8 @@
                 <footer>
                     <small>
                         
-                            May 13, 13:23 - May 13, 15:44 <mark class="resolved">Resolved</mark>
-                        
-                    </small>
-                </footer>
-            </article>
-            
-            <article>
-                <header>
-                    <h4><a href="https://slok.github.io/stactus-test/simple/github/ir/tsrh60nkbchl" class="incident-title-minor"> Incident with Issues, API Requests and Pull Requests</a></h4>
-                </header>
-                <p>Starting on May 7th, 2024 at 14:00 UTC, our elasticsearch cluster that powers Issues and Pull Requests became unresponsive correlating to a spike in usage.  This affected GitHub customers who were trying to search issues and pull requests.<br /><br />We mitigated this incident by adding additional cluster members which increased the resources available to the cluster.  We are working to add additional safeguards to our endpoints.  We are also continuing to investigate the root cause of the instability and if the index needs to be re-sharded for future risk mitigation.</p>
-
-                <footer>
-                    <small>
-                        
-                            May  7, 14:23 - May  7, 15:55 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1715606625</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1715615076</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>

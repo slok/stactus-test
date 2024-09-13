@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Between August 27, 2024, 15:52 UTC and September 5, 2024, 17:26 UTC the GitHub Connect service was degraded. This specifically impacted GHES customers who were enabling GitHub Connect for the first time on a GHES instance. Previously enabled GitHub Connect GHES instances were not impacted by this issue.<br /><br />Customers experiencing this issue would have received a 404 response during GitHub Connect enablement and subsequent messages about a failure to connect. This was due to a recent change in configuration to GitHub Connect which has since been rolled back. <br /><br />Subsequent enablement failures on re-attempts were caused by data corruption which has been remediated. Customers should now be able to enable GitHub Connect successfully.<br /><br />To reduce our time to detection and mitigation of such issues in the future, we are working to improve observability of GitHub Connect failures. We are also making efforts to prevent future misconfiguration of GitHub Connect.</p>
 
             <footer>
-                <cite>Sep  5, 17:24</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725557048</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We continue to work on making GitHub Connect setup available for customers that experienced errors since Sept 2.  We will share another update as we make progress.</p>
 
             <footer>
-                <cite>Sep  5, 16:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725554993</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We&rsquo;ve reverted a related change and customers can now setup GitHub Connect again. However, customers who attempted to setup GitHub Connect after September 2nd that saw a 404 will see continued failures until we complete an additional repair step. We will provide additional updates as this work progresses.</p>
 
             <footer>
-                <cite>Sep  5, 16:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725552908</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Enterprise administrators are seeing failures in the form of 404s when attempting to setup GitHub Connect for the first time. Existing Connect setups are not impacted. We are working on a fix for this issue.</p>
 
             <footer>
-                <cite>Sep  5, 15:56</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725551784</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We are currently investigating this issue.</p>
 
             <footer>
-                <cite>Sep  5, 15:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725551734</cite>
             </footer>
         </blockquote>
         <hr />

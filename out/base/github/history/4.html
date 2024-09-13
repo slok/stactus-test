@@ -16,6 +16,21 @@
     <div class="wrapper">
         <h1>Incident History</h1>
         
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/base/github/ir/9zxft4pnrhbt">Incident with Issues</a></h2>
+            <p>
+                <p>On June 5, 2024, between 17:05 UTC and 19:27 UTC, the GitHub Issues service was degraded. During that time, no events related to projects were displayed on issue timelines. These events indicate when an issue was added to or removed from a project and when their status changed within a project. The data couldn’t be loaded due to a misconfiguration of the service backing these events. This happened after a scheduled secret rotation when the wrongly configured service continued using the old secrets which had expired. <br /><br />We mitigated the incident by remediating the service configuration and have started simplifying the configuration to avoid similar misconfigurations in the future.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun  5, 19:22 - Jun  5, 21:27
+            
+            </small>
+        </div>
+        
         <div class="box impact-minor">
             <h2><a href="https://slok.github.io/stactus-test/base/github/ir/g8g6c6s72836">Incident with Copilot</a></h2>
             <p>
@@ -26,7 +41,7 @@
             <br>
             <small>
             
-                May 30, 17:14 - May 30, 17:22
+                May 30, 19:14 - May 30, 19:22
             
             </small>
         </div>
@@ -41,7 +56,7 @@
             <br>
             <small>
             
-                May 28, 20:17 - May 28, 21:24
+                May 28, 22:17 - May 28, 23:24
             
             </small>
         </div>
@@ -56,7 +71,7 @@
             <br>
             <small>
             
-                May 23, 15:31 - May 23, 16:02
+                May 23, 17:31 - May 23, 18:02
             
             </small>
         </div>
@@ -71,7 +86,7 @@
             <br>
             <small>
             
-                May 21, 12:45 - May 21, 19:06
+                May 21, 14:45 - May 21, 21:06
             
             </small>
         </div>
@@ -86,7 +101,7 @@
             <br>
             <small>
             
-                May 20, 16:47 - May 20, 17:05
+                May 20, 18:47 - May 20, 19:05
             
             </small>
         </div>
@@ -101,7 +116,7 @@
             <br>
             <small>
             
-                May 16, 04:43 - May 16, 05:15
+                May 16, 06:43 - May 16, 07:15
             
             </small>
         </div>
@@ -116,7 +131,7 @@
             <br>
             <small>
             
-                May 14, 18:37 - May 14, 21:04
+                May 14, 20:37 - May 14, 23:04
             
             </small>
         </div>
@@ -131,7 +146,7 @@
             <br>
             <small>
             
-                May 13, 19:51 - May 13, 20:10
+                May 13, 21:51 - May 13, 22:10
             
             </small>
         </div>
@@ -146,22 +161,7 @@
             <br>
             <small>
             
-                May 13, 13:23 - May 13, 15:44
-            
-            </small>
-        </div>
-        
-        <div class="box impact-minor">
-            <h2><a href="https://slok.github.io/stactus-test/base/github/ir/tsrh60nkbchl">Incident with Issues, API Requests and Pull Requests</a></h2>
-            <p>
-                <p>Starting on May 7th, 2024 at 14:00 UTC, our elasticsearch cluster that powers Issues and Pull Requests became unresponsive correlating to a spike in usage.  This affected GitHub customers who were trying to search issues and pull requests.<br /><br />We mitigated this incident by adding additional cluster members which increased the resources available to the cluster.  We are working to add additional safeguards to our endpoints.  We are also continuing to investigate the root cause of the instability and if the index needs to be re-sharded for future risk mitigation.</p>
-
-            </p>
-
-            <br>
-            <small>
-            
-                May  7, 14:23 - May  7, 15:55
+                May 13, 15:23 - May 13, 17:44
             
             </small>
         </div>

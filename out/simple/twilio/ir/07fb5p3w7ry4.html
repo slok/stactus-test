@@ -9,8 +9,17 @@
     <title>Twilio status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/twilio/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/twilio/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/twilio/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/twilio/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>The issue with duplicate SENT status callbacks has been resolved and the WhatsApp channel is operating normally at this time.</p>
 
             <footer>
-                <cite>Sep 11, 04:58</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726055906</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Our engineers have deployed a fix and WhatsApp channel status callbacks are now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 30 minutes or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep 11, 04:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726055087</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Our engineers have deployed a fix and WhatsApp channel status callbacks are now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 30 minutes or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep 11, 04:14</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726053257</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Our engineers have deployed a fix and WhatsApp channel status callbacks are now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 30 minutes or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep 11, 03:43</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726051439</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We continue to experience the issue for WhatsApp channel, where customers may receive duplicate SENT status callbacks. Our engineers are working to deploy a fix. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep 10, 05:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725971777</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We continue to experience the issue for WhatsApp channel, where customers may receive duplicate SENT status callbacks. Our engineers are working to deploy a fix. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  9, 05:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725885385</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We continue to experience the issue for WhatsApp channel, where customers may receive duplicate SENT status callbacks. Our engineers are working to deploy a fix. We expect to provide another update in 12 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  8, 17:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725842756</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We continue to experience the issue for WhatsApp channel, where customers may receive duplicate SENT status callbacks. Our engineers are working to deploy a fix. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  7, 17:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725756426</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>We continue to experience the issue for WhatsApp channel, where customers may receive duplicate SENT status callbacks. Our engineers are working to deploy a fix. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  7, 09:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725727674</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>We continue to experience the issue for Whatsapp channel, where customers may receive duplicate SENT status callbacks. Our engineers are working to deploy a fix. We expect to provide another update in 16 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 17:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725670093</cite>
             </footer>
         </blockquote>
         <hr />
@@ -146,7 +155,7 @@
             <p>We continue to experience the issue for Whatsapp channel, where customers may receive duplicate SENT status callbacks. Our engineers are working to deploy a fix. We expect to provide another update in 8 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 09:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725641144</cite>
             </footer>
         </blockquote>
         <hr />
@@ -156,7 +165,7 @@
             <p>We continue to experience the issue for Whatsapp channel, where customers may receive duplicate SENT status callbacks.  Our engineers are working to deploy a fix. We expect to provide another update in 4 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 05:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725626426</cite>
             </footer>
         </blockquote>
         <hr />
@@ -166,7 +175,7 @@
             <p>We continue to experience the issue for Whatsapp channel, where customers may receive duplicate SENT status callbacks.  Our engineers are working to deploy a fix. We expect to provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 03:55</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725620135</cite>
             </footer>
         </blockquote>
         <hr />
@@ -176,7 +185,7 @@
             <p>We continue to experience the issue for Whatsapp channel, where customers may receive duplicate SENT status callbacks.  Our engineers are working to deploy a fix. We expect to provide another update in 1 hour or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 02:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725616400</cite>
             </footer>
         </blockquote>
         <hr />
@@ -186,7 +195,7 @@
             <p>We continue to experience the issue for Whatsapp channel, where customers may receive duplicate SENT status callbacks.  Our engineers are working to deploy a fix. We expect to provide another update in 1 hour or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 02:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725616386</cite>
             </footer>
         </blockquote>
         <hr />
@@ -196,7 +205,7 @@
             <p>The Whatsapp Channel is now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 12 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 14:48</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725572930</cite>
             </footer>
         </blockquote>
         <hr />
@@ -206,7 +215,7 @@
             <p>The Whatsapp Channel is now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 12:51</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725565875</cite>
             </footer>
         </blockquote>
         <hr />
@@ -216,7 +225,7 @@
             <p>The Whatsapp Channel is now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 09:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725554491</cite>
             </footer>
         </blockquote>
         <hr />
@@ -226,7 +235,7 @@
             <p>The Whatsapp Channel is now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 06:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725542312</cite>
             </footer>
         </blockquote>
         <hr />
@@ -236,7 +245,7 @@
             <p>Our engineers have identified the issue for whatsapp channel where customers may receive duplicate SENT status callbacks and are working to deploy a fix. We expect to provide another update in 1 day or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  4, 06:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725455931</cite>
             </footer>
         </blockquote>
         <hr />

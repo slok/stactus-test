@@ -1,0 +1,1065 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyIO status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/flyio/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/flyio/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container-fluid">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>FlyIO status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/flyio/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/flyio/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container-fluid">
+        <br />
+        <!-- Status -->
+        
+        <section class="grid">
+            <div></div>
+            <article class="operational-box">
+                <i class="ph-bold ph-check"></i> <strong>All systems operational</strong>
+            </article>
+            <div></div>
+        </section>
+        
+
+        <br />
+        <section>
+            <h3>Current status</h3>
+            <!-- Make 2 columns -->
+            
+            <div class="grid">
+                
+                <article>
+                    Billing / Stripe API Connection
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Billing / Usage Metrics API
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Corrosion
+
+                    
+                        <span data-tooltip="Disseminates state of creation and changes of resources on our platform (e.g apps, Machines, IP addresses)"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Customer Applications
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    DNS / *.fly.dev Nameservers
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    DNS / *.flyio.net Nameservers
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    DNS / Fly Machine .internal DNS
+
+                    
+                        <span data-tooltip="DNS service discovery for application VMs and 6PN."><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    DNS / Fly Machine External DNS
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Dashboard
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Deployments
+
+                    
+                        <span data-tooltip="flyctl and GitHub Action app deployments"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Extensions / Upstash for Redis
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Fly Machine Image Registry 1
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Fly Machine Image Registry 2
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Logs
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Machines API
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Metrics
+
+                    
+                        <span data-tooltip="Customer metrics"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Persistent Storage (Volumes)
+
+                    
+                        <span data-tooltip="Fly volumes and apps that use them"><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / AMS - Amsterdam, Netherlands
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / ARN - Stockholm, Sweden
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / ATL - Atlanta, Georgia (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / BOG - Bogotá, Colombia
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / BOM - Mumbai, India
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / CDG - Paris, France
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / DEN - Denver, Colorado (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / DFW - Dallas, Texas (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / EZE - Ezeiza, Argentina
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / FRA - Frankfurt, Germany
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / GRU - Sao Paulo, Brazil
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / HKG - Hong Kong
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / IAD - Ashburn, Virginia (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / JNB - Johannesburg, South Africa
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / LAX - Los Angeles, California (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / LHR - London, United Kingdom
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / MAD - Madrid, Spain
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / MEL - Melbourne, Australia
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / MIA - Miami, Florida (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / NRT - Tokyo, Japan
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / ORD - Chicago, Illinois (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / OTP - Bucharest, Romania
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / QRO - Querétaro, Mexico
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / SCL - Santiago, Chile
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / SEA - Seattle, Washington (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / SIN - Singapore
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / SJC - San Jose, California (US)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Regional Availability / SYD - Sydney, Australia
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Regional Availability / YYZ - Toronto, Canada
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Remote Builds
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    SSL/TLS Certificate Provisioning
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    UDP Anycast
+
+                    
+                        <span data-tooltip="Anycast UDP services for Fly apps."><i class="ph-thin ph-question"></i></span>
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

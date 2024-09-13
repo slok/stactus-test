@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyIO status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/base/flyio/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Elevated error rate with API</h1>
+        <h2> Details </h2>
+        <div>
+            <table>
+                <tr>
+                    <td><strong>ID</strong></td>
+                    <td>3r9h27tfc1bq</td>
+                </tr>
+                <tr>
+                    <td><strong>Severity</strong></td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td><strong>Started</strong></td>
+                    <td>Aug 21, 01:14</td>
+                </tr>
+                <tr>
+                    <td><strong>End</strong></td>
+                    
+                    <td>Aug 21, 12:27</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>11h13m26.588s</td>
+                </tr>
+                
+            </table>
+        </div>
+        <h2> Timeline </h2>
+         
+        <div class="box detail">
+            <h3> Resolved - Aug 21, 12:27 </h3>
+            <p> <p>This incident has been resolved.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Aug 21, 01:17 </h3>
+            <p> <p>A fix is being deployed slowly across the fleet. While a fix is being deployed to a host server, API operations on the Fly Machines on that server may fail. Fly Machines themselves will continue to function normally.</p>
+ </p>
+        </div>
+         
+        <div class="box detail">
+            <h3> Update - Aug 21, 01:14 </h3>
+            <p> <p>Users may see higher rates of 504 and 408 HTTP errors when accessing the Fly Platform API. These may occur particularly with the deploy, scale, and destroy commands. These errors will only occur in relation to specific Fly Machines. Recommended work arounds include ignoring affected Machines during a deploy with &ndash;exclude-machines, or destroying an affected Machine with fly m destroy. The problem only involves API operations; Fly Machines themselves function normally.</p>
+ </p>
+        </div>
+        
+
+        <section>
+            <a href="https://slok.github.io/stactus-test/base/flyio/">Status</a>
+        </section>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

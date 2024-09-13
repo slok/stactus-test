@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MongoDB status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/base/mongodb/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident History</h1>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/w8y68b1x0vcb">Delayed Autoscaling on Sharded Clusters</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 10, 19:36 - Jul 10, 21:15
+            
+            </small>
+        </div>
+        
+        <div class="box impact-none">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/y7zm723rcj6t">MongoDB Cloud: PayPal charges may fail</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul  2, 17:57 - Jul  5, 17:30
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/zrypgcqnkby9">MongoDB Atlas: Capacity constraints in Azure US East</a></h2>
+            <p>
+                <p>This incident post has been resolved. However, Azure remains constrained in East US and Central US, which can affect cluster creation, modification, and certain healing operations. Please check your own personalized Azure status page for updates. Clusters will spin up faster in other regions.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun 19, 10:01 - Jun 21, 22:48
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/glscmk7cty68">Microsoft Azure Incident: Delayed Cluster Operations</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun 15, 00:02 - Jun 15, 06:25
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/vrdrl7knftnz">Delayed Cluster Operations in Azure</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun 13, 22:17 - Jun 14, 01:52
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/jjz0lscjyqmb">MongoDB Atlas App Services: App listing slow to load</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun 11, 23:07 - Jun 12, 00:51
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/8lrmwh5yd8j9">MongoDB Cloud: Slow page loads</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun 11, 18:52 - Jun 11, 19:08
+            
+            </small>
+        </div>
+        
+        <div class="box impact-none">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/04lqlrw6c3pw">MongoDB Atlas Online Archive: Users may not be able to access Online Archive data</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun  4, 18:42 - Jun  4, 20:33
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/ds8dq4vkp6f9">Delayed cluster modifications</a></h2>
+            <p>
+                <h3 id="incident-summary"><strong>Incident Summary</strong></h3>
+
+<p>Between June 3rd 2024, 18:24 UTC and June 4th, 1:21 UTC, MongoDB Atlas customers across all commercial regions experienced degradation of the following functionalities.</p>
+
+<p>Changes to cluster configuration, both in response to API calls and automated triggers (e.g., auto-scaling or node replacement) were executed with delays varying between a few minutes and several hours. Similar delays applied to Alert processing, impacting both the Atlas built-in Alert functionality and integrations such as Datadog and PagerDuty. Part of the daily cost tabulation for compute, storage and data transfer on June 3rd will be delayed to June 6th or June 7th. Lower granularities of cluster metrics were unavailable until up to 1:56 UTC. Finally, the Data Explorer and Realtime Performance Panel UIs were impaired for several hours.</p>
+
+<h3 id="root-cause"><strong>Root Cause</strong></h3>
+
+<p>The root cause of this incident was an unexpected failure during an Atlas internal maintenance activity. A planned migration of metadata for an internal workflow management system that backs the Atlas control plane resulted in unexpected resource congestion on the target database cluster as traffic was redirected to the target. This issue did not occur during pre-production testing. The rollback process required complex reconciliation of data in the source and target databases, delaying recovery.</p>
+
+<h3 id="mongodb-actions"><strong>MongoDB Actions</strong></h3>
+
+<p>The MongoDB Atlas team is designing a new metadata migration strategy for future maintenance activities. This process will allow for rollback within less than 15 minutes of detecting a potential issue. We will not execute similar maintenance activities until this procedure is implemented and thoroughly tested.</p>
+
+<h3 id="recommended-customer-actions">Recommended Customer Actions</h3>
+
+<p>This issue was fully eliminated by the MongoDB Atlas team and does not require customer action.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jun  3, 20:45 - Jun  4, 04:11
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/kqkc19cytx5r">MongoDB Cloud: Occasional page load errors</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                May 23, 23:26 - May 23, 23:39
+            
+            </small>
+        </div>
+        
+        <div class="row">
+            
+                <div class="block">
+                    <a href="https://slok.github.io/stactus-test/base/mongodb/history/2"> ⮜ Previous </a>
+                </div>
+            
+            
+                <div class="block">
+                    <a href="https://slok.github.io/stactus-test/base/mongodb/history/0"> Next ⮞ </a>
+                </div>
+            
+        </div>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

@@ -9,8 +9,17 @@
     <title>Hashicorp status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/hashicorp/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/hashicorp/static/main.js"></script>
 </head>
 
 
@@ -26,7 +35,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/hashicorp/">Status</a></li>
     </ul>
 </nav>
 
@@ -45,7 +54,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Sep 10, 19:14 - Sep 10, 22:03 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1725995653</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1726005818</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -60,7 +70,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Sep  5, 20:41 <mark class="unresolved">Ongoing</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1725568911</span>
+                            <mark class="unresolved">Ongoing</mark>
                         
                     </small>
                 </footer>
@@ -75,7 +86,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Sep  4, 22:36 - Sep  4, 23:33 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1725489393</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1725492832</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -90,7 +102,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Sep  3, 14:30 - Sep  5, 08:52 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1725373808</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1725526354</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -105,7 +118,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Sep  2, 12:58 - Sep  3, 06:03 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1725281904</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1725343382</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -120,7 +134,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Aug 21, 10:12 - Aug 21, 11:17 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1724235160</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1724239078</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -135,7 +150,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Aug 19, 22:05 - Aug 19, 23:07 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1724105104</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1724108834</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -150,7 +166,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Aug 19, 02:21 - Sep  5, 00:00 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1724034070</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1725494424</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -165,7 +182,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Aug 15, 17:46 - Aug 15, 22:20 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1723743974</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1723760436</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>
@@ -180,7 +198,8 @@ If you continue to experience any problems, please open a ticket with our suppor
                 <footer>
                     <small>
                         
-                            Jul 31, 00:21 - Jul 31, 14:35 <mark class="resolved">Resolved</mark>
+                            <span x-init="renderTSUnixPrettyNoYear($el)">1722385262</span> - <span x-init="renderTSUnixPrettyNoYear($el)">1722436534</span>
+                            <mark class="resolved">Resolved</mark>
                         
                     </small>
                 </footer>

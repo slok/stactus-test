@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MongoDB status</title>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/base/mongodb/css/main.css" />
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Incident History</h1>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/dtrx7v0x3zhb">MongoDB Cloud: Pages are slow to load</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Sep  9, 17:59 - Sep  9, 18:45
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/sjm3p6vmyq2m">MongoDB Cloud: Login error "Too many attempts, please try again later"</a></h2>
+            <p>
+                <h2 id="incident-summary">Incident Summary</h2>
+
+<p>On September 2, 2024 between 8:30 UTC to 10:15 UTC, some MongoDB customers were unable to log in to MongoDB Atlas Management UI.</p>
+
+<p>During that time, MongoDB experienced an abnormally high volume of traffic on our login page that caused us to hit our rate limiting thresholds which caused some customers to see their authentication requests to the MongoDB Atlas Management UI rejected.</p>
+
+<p>Once login volume subsided, login availability was restored.</p>
+
+<p>Note: This incident had no impact on customer Atlas Clusters. UI authentication is independent of Atlas Cluster authentication.</p>
+
+<h2 id="root-cause">Root Cause</h2>
+
+<p>Our authentication services were not able to scale quickly enough to react to the sudden increase in logins.</p>
+
+<h2 id="mongodb-actions">MongoDB Actions</h2>
+
+<p>We are updating our login page to provide clearer and more actionable error messaging. We are also adding additional support to  scale better during traffic spikes.</p>
+
+<h2 id="recommended-customer-actions">Recommended Customer Actions</h2>
+
+<p>No further customer action required</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Sep  2, 12:13 - Sep  2, 16:28
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/0lywfvrls1xn">Atlas Cluster Operations Delayed</a></h2>
+            <p>
+                <p>This issue has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Aug 29, 12:21 - Aug 29, 12:56
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/j4smpmgrlln3">MongoDB Atlas Triggers: Delayed Processing of Events</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Aug 23, 23:54 - Aug 27, 17:53
+            
+            </small>
+        </div>
+        
+        <div class="box impact-major">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/08mx6b08pnj2">MongoDB Atlas Triggers: Increased failure rate</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Aug 16, 19:54 - Aug 21, 22:54
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/4t6t0ld11tz8">MongoDB Atlas: Cluster creation and certain healing operations delayed</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 30, 23:56 - Jul 31, 02:31
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/rjbxbppzlmm4">Microsoft Azure Incident: Degraded Cluster Health - Several Regions Impacted (UAE North Most Impacted)</a></h2>
+            <p>
+                <p>This incident has largely been resolved, however some nodes remain affected. Your logged-in Azure Portal may have more details on resolution.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 30, 19:10 - Jul 31, 02:06
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/sxnwbq6cgzph">MongoDB Atlas & Cloud Manager: PagerDuty alerts not being delivered</a></h2>
+            <p>
+                <p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 26, 16:59 - Jul 26, 23:10
+            
+            </small>
+        </div>
+        
+        <div class="box impact-minor">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/7q9mvr469jp3">Microsoft Azure Incident: Degraded Cluster Health - Azure Central US</a></h2>
+            <p>
+                <p>Microsoft Azure has updated their status history (<a href="https://azure.status.microsoft/en-us/status/history/" target="_blank">https://azure.status.microsoft/en-us/status/history/</a>) and indicated that impacted services have returned to their expected availability levels.</p>
+
+<p>This incident has been resolved.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 19, 01:02 - Jul 19, 17:11
+            
+            </small>
+        </div>
+        
+        <div class="box impact-none">
+            <h2><a href="https://slok.github.io/stactus-test/base/mongodb/ir/y0jndgfxzk0k">Microsoft Azure Incident: Degraded performance for Atlas Device Sync</a></h2>
+            <p>
+                <p>An Azure outage impacted Sync users, causing very delayed syncing during the outage and the system auto-recovered once the outage was resolved.</p>
+
+<p>Updates from Azure can be tracked at <a href="https://azure.status.microsoft/en-us/status" target="_blank">https://azure.status.microsoft/en-us/status</a> and in the Service Health Dashboard in your Microsoft Azure Portal.</p>
+
+            </p>
+
+            <br>
+            <small>
+            
+                Jul 19, 00:00 - Jul 19, 00:00
+            
+            </small>
+        </div>
+        
+        <div class="row">
+            
+                <div class="block">
+                    <a href="https://slok.github.io/stactus-test/base/mongodb/history/1"> ⮜ Previous </a>
+                </div>
+            
+            
+        </div>
+    </div>
+    
+<footer></footer>
+
+</body>
+
+</html>

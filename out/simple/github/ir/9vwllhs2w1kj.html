@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On June 28th, 2024, at 16:06 UTC, a backend update by GitHub triggered a significant number of long-running Organization membership update jobs in our job processing system. The job queue depth rose as these update jobs consumed most of our job worker capacity. This resulted in delays for other jobs across services such as Pull Requests and PR-related Actions workflows. We mitigated the impact to Pull Requests and Actions at 19:32 UTC by pausing all Organization membership update jobs. We deployed a code change at 22:30 UTC to skip over the jobs queued by the backend change and re-enabled Organization membership update jobs. We restored the Organization membership update functionality at 22:52 UTC, including all membership changes queued during the incident.<br /><br />During the incident, about 15% of Action workflow runs experienced a delay of more than five minutes. In addition, Pull Requests had delays in determining merge eligibility and starting associated Action workflows for the duration of the incident. Organization membership updates saw delays for upwards of five hours.<br /><br />To prevent a similar event in the future from impacting our users, we are working to: improve our job management system to better manage our job worker capacity; add more precise monitoring for job delays; and strengthen our testing practices to prevent future recurrences.</p>
 
             <footer>
-                <cite>Jun 28, 22:51</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719615100</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We are continuing to work to mitigate delays in organization membership changes.</p>
 
             <footer>
-                <cite>Jun 28, 22:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719613086</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>We are still actively working to mitigate delays in organization membership changes.</p>
 
             <footer>
-                <cite>Jun 28, 21:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719611137</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>We are actively working to mitigate delays in organization membership changes. Actions and Pull Requests are both functioning normally now.</p>
 
             <footer>
-                <cite>Jun 28, 20:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719607562</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>Actions is operating normally.</p>
 
             <footer>
-                <cite>Jun 28, 20:00</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719604821</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>Pull Requests is operating normally.</p>
 
             <footer>
-                <cite>Jun 28, 19:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719604799</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We are continuing to apply mitigations and are seeing improvement in creating pull request merge commits and Actions runs for pull request events. Applying changes to organization members remains delayed.</p>
 
             <footer>
-                <cite>Jun 28, 19:51</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719604303</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We are continuing to work on mitigating delays creating pull request merge commits, Actions runs for pull request events, and changes to organization members.</p>
 
             <footer>
-                <cite>Jun 28, 19:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719601384</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>Actions runs triggered by pull requests are experiencing start delays. We have engaged the appropriate teams and are investigating the issue.</p>
 
             <footer>
-                <cite>Jun 28, 17:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719597559</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>Pull Requests is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Jun 28, 17:58</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719597507</cite>
             </footer>
         </blockquote>
         <hr />
@@ -146,7 +155,7 @@
             <p>We are investigating reports of degraded performance for Actions</p>
 
             <footer>
-                <cite>Jun 28, 17:34</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1719596047</cite>
             </footer>
         </blockquote>
         <hr />

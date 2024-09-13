@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>This incident has been resolved.</p>
 
             <footer>
-                <cite>Oct  4, 11:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696434296</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Fix rollout has now been completed.</p>
 
             <footer>
-                <cite>Oct  4, 11:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696434268</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>The fix rollout is currently ongoing. Once completed we will confirm resolution.</p>
 
             <footer>
-                <cite>Oct  4, 10:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696431058</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>The fix rollout is currently ongoing. Once completed we will confirm resolution.</p>
 
             <footer>
-                <cite>Oct  4, 09:54</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696427683</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>We have successfully tested a fix for this issue and are currently deploying it to resolve this incident.</p>
 
             <footer>
-                <cite>Oct  4, 09:04</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696424679</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>We&rsquo;re still working on a fix for historical data impacted by this incident.</p>
 
             <footer>
-                <cite>Oct  4, 08:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696421920</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>We&rsquo;re still working on a fix for historical data impacted by this incident.</p>
 
             <footer>
-                <cite>Oct  4, 07:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696419707</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>We&rsquo;re still working on a fix for historical data impacted by this incident.</p>
 
             <footer>
-                <cite>Oct  4, 07:07</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696417621</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>We&rsquo;re still working on a fix for historical data impacted by this incident.</p>
 
             <footer>
-                <cite>Oct  4, 06:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696415206</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>We&rsquo;re still working on a fix for historical data impacted by this incident.</p>
 
             <footer>
-                <cite>Oct  4, 05:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696411151</cite>
             </footer>
         </blockquote>
         <hr />
@@ -150,7 +159,7 @@
 <p>Queries targeting logs between 2023-10-02 11:40 UTC and 2023-10-03 20:40 UTC may return erroneous data.  We are evaluating a fix that will restore query correctness for this time-window.</p>
 
             <footer>
-                <cite>Oct  3, 16:47</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696366064</cite>
             </footer>
         </blockquote>
         <hr />
@@ -160,7 +169,7 @@
             <p>We have identified the underlying issue and are working on a fix.</p>
 
             <footer>
-                <cite>Oct  3, 15:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696361553</cite>
             </footer>
         </blockquote>
         <hr />
@@ -170,7 +179,7 @@
             <p>We are continuing to investigate these issues, and will provide an update as soon as possible.</p>
 
             <footer>
-                <cite>Oct  3, 14:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696358995</cite>
             </footer>
         </blockquote>
         <hr />
@@ -181,7 +190,7 @@
 As a result of this issue, some users may experience issues querying logs on the web application or API, and with Logs based Monitors and Log-Based Metrics.</p>
 
             <footer>
-                <cite>Oct  3, 13:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1696354248</cite>
             </footer>
         </blockquote>
         <hr />

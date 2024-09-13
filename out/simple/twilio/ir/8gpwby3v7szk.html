@@ -9,8 +9,17 @@
     <title>Twilio status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/twilio/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/twilio/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/twilio/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/twilio/">Status</a></li>
     </ul>
 </nav>
 
@@ -35,18 +44,28 @@
         <h1 style="text-align: center;" class="text-major">SMS Delivery Failures to Evolve Cellular Network in the US</h1>
         <br />
         
-        <article class="incident-ongoing-major">
-            <i class="ph-bold ph-warning-circle"></i> <strong>Incident ongoing</strong>
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 142h57m59.512s</strong>
         </article>
         
         <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>We&rsquo;re still experiencing SMS delivery failures to Evolve Cellular network in the US. We are closing this incident and will reach out to the impacted customers individually for further follow-ups.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726173529</cite>
+            </footer>
+        </blockquote>
+        <hr />
         
         <blockquote>
             <h4> Investigating </h4>
             <p>We continue to experience SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep 11, 21:39</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726115992</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +75,7 @@
             <p>We are still experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep 10, 21:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726028442</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +85,7 @@
             <p>We are still experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  9, 21:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725942125</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +95,7 @@
             <p>We are still experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  8, 21:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725856336</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +105,7 @@
             <p>We are still experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 24 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  7, 21:44</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725770653</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +115,7 @@
             <p>We are still experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 16 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  7, 05:42</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725712961</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +125,7 @@
             <p>We are still experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 8 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 21:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725684548</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +135,7 @@
             <p>We are experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 4 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 17:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725670182</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +145,7 @@
             <p>We are experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 15:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725663186</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +155,7 @@
             <p>We are experiencing SMS delivery failures to Evolve Cellular Network in the US. Our engineers are working with our carrier partner to resolve the issue. We expect to provide another update in 1 hour or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  6, 14:40</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725658849</cite>
             </footer>
         </blockquote>
         <hr />

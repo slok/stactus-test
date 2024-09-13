@@ -9,8 +9,17 @@
     <title>Datadog status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/datadog/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/datadog/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/datadog/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/datadog/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/datadog/">Status</a></li>
     </ul>
 </nav>
 
@@ -47,7 +56,7 @@
 This incident has been resolved.</p>
 
             <footer>
-                <cite>Apr 17, 10:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681741196</cite>
             </footer>
         </blockquote>
         <hr />
@@ -58,7 +67,7 @@ This incident has been resolved.</p>
 Backfilling is in progress. We will provide another update once the backfill is fully done.</p>
 
             <footer>
-                <cite>Apr 17, 06:53</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681728796</cite>
             </footer>
         </blockquote>
         <hr />
@@ -69,7 +78,7 @@ Backfilling is in progress. We will provide another update once the backfill is 
 We will provide another update once the backfill is fully done.</p>
 
             <footer>
-                <cite>Apr 17, 06:41</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681728111</cite>
             </footer>
         </blockquote>
         <hr />
@@ -79,7 +88,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 17, 04:06</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681718764</cite>
             </footer>
         </blockquote>
         <hr />
@@ -89,7 +98,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 17, 02:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681712218</cite>
             </footer>
         </blockquote>
         <hr />
@@ -99,7 +108,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 17, 00:03</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681704223</cite>
             </footer>
         </blockquote>
         <hr />
@@ -109,7 +118,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 16, 22:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681697402</cite>
             </footer>
         </blockquote>
         <hr />
@@ -119,7 +128,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 16, 20:08</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681690137</cite>
             </footer>
         </blockquote>
         <hr />
@@ -129,7 +138,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 16, 18:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681683389</cite>
             </footer>
         </blockquote>
         <hr />
@@ -139,7 +148,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 16, 16:36</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681677383</cite>
             </footer>
         </blockquote>
         <hr />
@@ -149,7 +158,7 @@ We will provide another update once the backfill is fully done.</p>
             <p>Muted monitors state is stale in search pages and new monitor suggestions are unavailable. All monitors are fully operational while we continue working on the remaining issues.</p>
 
             <footer>
-                <cite>Apr 16, 15:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681672830</cite>
             </footer>
         </blockquote>
         <hr />
@@ -161,7 +170,7 @@ We will provide another update once the backfill is fully done.</p>
 <p>Muted monitors state will remain out-of-date in search pages without that affecting their operation while backfilling is in progress. New monitor suggestions remain unavailable. We will continue to provide regular updates while resolving these remaining issues.</p>
 
             <footer>
-                <cite>Apr 16, 13:42</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681666972</cite>
             </footer>
         </blockquote>
         <hr />
@@ -172,7 +181,7 @@ We will provide another update once the backfill is fully done.</p>
 We continue to backfill the Monitor groups state and expect this activity to complete within the next one hour. Muted monitors state will remain out-of-date in search pages without that affecting their operation while backfilling is in progress. New monitor suggestions remain unavailable.</p>
 
             <footer>
-                <cite>Apr 16, 12:59</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681664341</cite>
             </footer>
         </blockquote>
         <hr />
@@ -182,7 +191,7 @@ We continue to backfill the Monitor groups state and expect this activity to com
             <p>The fix for the Monitors and Synthetics UIs is now deployed and we are in the process of re-enabling the search pages functionality. Monitor groups are being backfilled with a completion ETA of 90 minutes. Muted monitor state and monitor suggestions will remain out-of-date in search pages. This only affects the status reported in the UI.</p>
 
             <footer>
-                <cite>Apr 16, 12:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681661916</cite>
             </footer>
         </blockquote>
         <hr />
@@ -193,7 +202,7 @@ We continue to backfill the Monitor groups state and expect this activity to com
 Monitor and Synthetic test states are reported accurately via the individual monitors and synthetic test status pages.</p>
 
             <footer>
-                <cite>Apr 16, 11:17</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681658246</cite>
             </footer>
         </blockquote>
         <hr />
@@ -204,7 +213,7 @@ Monitor and Synthetic test states are reported accurately via the individual mon
 Monitor and Synthetic test states are reported accurately via the individual monitors and synthetic test status pages.</p>
 
             <footer>
-                <cite>Apr 16, 10:32</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681655528</cite>
             </footer>
         </blockquote>
         <hr />
@@ -215,7 +224,7 @@ Monitor and Synthetic test states are reported accurately via the individual mon
 Monitor and synthetics creation, updates, evaluation and alerting are operating normally.</p>
 
             <footer>
-                <cite>Apr 16, 09:15</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681650911</cite>
             </footer>
         </blockquote>
         <hr />
@@ -226,7 +235,7 @@ Monitor and synthetics creation, updates, evaluation and alerting are operating 
 Monitor evaluation, creation, updates and alerting are unaffected.</p>
 
             <footer>
-                <cite>Apr 16, 08:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681649147</cite>
             </footer>
         </blockquote>
         <hr />
@@ -236,7 +245,7 @@ Monitor evaluation, creation, updates and alerting are unaffected.</p>
             <p>Monitor search functionality has been restored. Fixes for updating monitor state and monitor groups are still in progress.</p>
 
             <footer>
-                <cite>Apr 16, 08:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681646573</cite>
             </footer>
         </blockquote>
         <hr />
@@ -246,7 +255,7 @@ Monitor evaluation, creation, updates and alerting are unaffected.</p>
             <p>The issue has been identified and a fix is being implemented.</p>
 
             <footer>
-                <cite>Apr 16, 06:17</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681640251</cite>
             </footer>
         </blockquote>
         <hr />
@@ -256,7 +265,7 @@ Monitor evaluation, creation, updates and alerting are unaffected.</p>
             <p>We are investigating issues with creating and updating monitors in the Monitoring UI, which began at 5:10 UTC.</p>
 
             <footer>
-                <cite>Apr 16, 03:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1681629018</cite>
             </footer>
         </blockquote>
         <hr />

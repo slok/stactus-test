@@ -9,8 +9,17 @@
     <title>Twilio status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/twilio/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/twilio/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/twilio/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/twilio/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/twilio/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>Port out requests cancelled du to an internal action has been resolved and Phone numbers alerts are now operating normally.</p>
 
             <footer>
-                <cite>Sep  5, 12:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725565540</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>Phone numbers in canceling alerts are now operating normally. We will continue to monitor for system stability. We&rsquo;ll provide another update in 30 minutes or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 12:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725564096</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Port out requests were cancelled due to an internal action. We are still working on the cancellation alert notifications. Our ops and engineers have identified the issue and are working to deploy a fix. We expect to provide another update in 8 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 07:05</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725545144</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Port out requests were cancelled due to an internal action. We are still working on the cancellation alert notifications. Our ops and engineers have identified the issue and are working to deploy a fix. We expect to provide another update in 4 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 03:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725531363</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>Port out requests were cancelled due to an internal action. We are working on the cancellation alert notifications. Our ops and engineers have identified the issue and are working to deploy a fix. We expect to provide another update in 2 hours or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 01:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725524214</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>Port out requests were cancelled due to an internal action. We are working on the cancellation alert notifications. Our ops and engineers have identified the issue and are working to deploy a fix. We expect to provide another update in 1 hour or as soon as more information becomes available.</p>
 
             <footer>
-                <cite>Sep  5, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725520746</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>Our monitoring systems have detected a potential issue on number porting. Our engineering team has been alerted and is actively investigating. We will update as soon as we have more information.</p>
 
             <footer>
-                <cite>Sep  5, 00:02</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1725519728</cite>
             </footer>
         </blockquote>
         <hr />

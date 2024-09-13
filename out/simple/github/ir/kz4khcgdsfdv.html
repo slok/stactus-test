@@ -9,8 +9,17 @@
     <title>Github status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/github/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/github/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/github/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/github/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/github/">Status</a></li>
     </ul>
 </nav>
 
@@ -46,7 +55,7 @@
             <p>On August 14, 2024 between 23:02 UTC and 23:38 UTC, all GitHub services on GitHub.com were inaccessible for all users.<br /> <br />This was due to a configuration change that impacted traffic routing within our database infrastructure, resulting in critical services unexpectedly losing database connectivity. There was no data loss or corruption during this incident.<br /> <br />At 22:59 UTC an erroneous configuration change rolled out to all GitHub.com databases that impacted the ability of the database to respond to health check pings from the routing service. As a result, the routing service could not detect healthy databases to route application traffic to. This led to widespread impact on GitHub.com starting at 23:02 UTC.<br /> <br />We mitigated the incident by reverting the change and confirming restored connectivity to our databases. At 23:38 UTC, traffic resumed and all services recovered to full health. Out of an abundance of caution, we continued to monitor before resolving the incident at 00:30 UTC on August 15th, 2024.<br /> <br />To prevent recurrence we are implementing additional guardrails in our database change management process. We are also prioritizing several repair items such as faster rollback functionality and more resilience to dependency failures.<br /> <br />Given the severity of this incident, follow-up items are the highest priority work for teams at this time.</p>
 
             <footer>
-                <cite>Aug 15, 00:30</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681814</cite>
             </footer>
         </blockquote>
         <hr />
@@ -56,7 +65,7 @@
             <p>We have fully rolled-back the changes to database infrastructure and mitigated the impact. All services are now fully operational.</p>
 
             <footer>
-                <cite>Aug 15, 00:26</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681597</cite>
             </footer>
         </blockquote>
         <hr />
@@ -66,7 +75,7 @@
             <p>Git Operations is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681550</cite>
             </footer>
         </blockquote>
         <hr />
@@ -76,7 +85,7 @@
             <p>Copilot is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:21</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681267</cite>
             </footer>
         </blockquote>
         <hr />
@@ -86,7 +95,7 @@
             <p>Codespaces, Packages and Pages are operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681238</cite>
             </footer>
         </blockquote>
         <hr />
@@ -96,7 +105,7 @@
             <p>Webhooks is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681173</cite>
             </footer>
         </blockquote>
         <hr />
@@ -106,7 +115,7 @@
             <p>Actions is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681162</cite>
             </footer>
         </blockquote>
         <hr />
@@ -116,7 +125,7 @@
             <p>Actions is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681162</cite>
             </footer>
         </blockquote>
         <hr />
@@ -126,7 +135,7 @@
             <p>Actions is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681159</cite>
             </footer>
         </blockquote>
         <hr />
@@ -136,7 +145,7 @@
             <p>Actions is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681159</cite>
             </footer>
         </blockquote>
         <hr />
@@ -146,7 +155,7 @@
             <p>Pull Requests is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681147</cite>
             </footer>
         </blockquote>
         <hr />
@@ -156,7 +165,7 @@
             <p>Issues is operating normally.</p>
 
             <footer>
-                <cite>Aug 15, 00:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723681126</cite>
             </footer>
         </blockquote>
         <hr />
@@ -166,7 +175,7 @@
             <p>Copilot is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:12</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680769</cite>
             </footer>
         </blockquote>
         <hr />
@@ -176,7 +185,7 @@
             <p>Git Operations is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680668</cite>
             </footer>
         </blockquote>
         <hr />
@@ -186,7 +195,7 @@
             <p>Codespaces is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680650</cite>
             </footer>
         </blockquote>
         <hr />
@@ -196,7 +205,7 @@
             <p>Webhooks is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680635</cite>
             </footer>
         </blockquote>
         <hr />
@@ -206,7 +215,7 @@
             <p>Actions is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:10</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680613</cite>
             </footer>
         </blockquote>
         <hr />
@@ -216,7 +225,7 @@
             <p>Pages is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680586</cite>
             </footer>
         </blockquote>
         <hr />
@@ -226,7 +235,7 @@
             <p>Service health continues to improve, and we are working to stabilize all services. Some services may experience delays in updates and notifications as we work through a backlog of events.</p>
 
             <footer>
-                <cite>Aug 15, 00:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680582</cite>
             </footer>
         </blockquote>
         <hr />
@@ -236,7 +245,7 @@
             <p>Packages is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680561</cite>
             </footer>
         </blockquote>
         <hr />
@@ -246,7 +255,7 @@
             <p>Issues is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 15, 00:09</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723680543</cite>
             </footer>
         </blockquote>
         <hr />
@@ -256,7 +265,7 @@
             <p>Pull Requests is experiencing degraded performance. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:50</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723679447</cite>
             </footer>
         </blockquote>
         <hr />
@@ -266,7 +275,7 @@
             <p>The database infrastructure change is being rolled back. We are seeing improvements in service health and are monitoring for full recovery.</p>
 
             <footer>
-                <cite>Aug 14, 23:45</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723679105</cite>
             </footer>
         </blockquote>
         <hr />
@@ -276,7 +285,7 @@
             <p>We are experiencing interruptions in multiple public GitHub services. We suspect the impact is due to a database infrastructure related change that we are working on rolling back.</p>
 
             <footer>
-                <cite>Aug 14, 23:29</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723678144</cite>
             </footer>
         </blockquote>
         <hr />
@@ -286,7 +295,7 @@
             <p>Codespaces is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:22</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677744</cite>
             </footer>
         </blockquote>
         <hr />
@@ -296,7 +305,7 @@
             <p>Webhooks is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677649</cite>
             </footer>
         </blockquote>
         <hr />
@@ -306,7 +315,7 @@
             <p>Issues is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677574</cite>
             </footer>
         </blockquote>
         <hr />
@@ -316,7 +325,7 @@
             <p>Git Operations is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:19</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677560</cite>
             </footer>
         </blockquote>
         <hr />
@@ -326,7 +335,7 @@
             <p>Packages is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:18</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677486</cite>
             </footer>
         </blockquote>
         <hr />
@@ -336,7 +345,7 @@
             <p>We are investigating reports of issues with GitHub.com and GitHub API. We will continue to keep users updated on progress towards mitigation.</p>
 
             <footer>
-                <cite>Aug 14, 23:16</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677364</cite>
             </footer>
         </blockquote>
         <hr />
@@ -346,7 +355,7 @@
             <p>Copilot is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:13</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677201</cite>
             </footer>
         </blockquote>
         <hr />
@@ -356,7 +365,7 @@
             <p>Pages is experiencing degraded availability. We are continuing to investigate.</p>
 
             <footer>
-                <cite>Aug 14, 23:12</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677138</cite>
             </footer>
         </blockquote>
         <hr />
@@ -366,7 +375,7 @@
             <p>We are investigating reports of degraded availability for Actions, Pages and Pull Requests</p>
 
             <footer>
-                <cite>Aug 14, 23:11</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1723677103</cite>
             </footer>
         </blockquote>
         <hr />

@@ -1,0 +1,1284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1Password status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/onepassword/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/onepassword/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container-fluid">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>1Password status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/onepassword/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/onepassword/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container-fluid">
+        <br />
+        <!-- Status -->
+        
+        <section>
+            <h3>Ongoing Incidents</h3>
+            
+                <article class="box-impact-none">
+                    <header class="header-impact-none">
+                        <h4><a href="https://slok.github.io/stactus-test/simple/onepassword/ir/1xhs9spwfbhz" class="incident-title"> Error launching desktop app on nightly version 8.10.46-21 and higher</a></h4>
+                    </header>
+                    <p>There is an issue when upgrading from nightly versions 8.10.46-14 through 8.10.46-20 to 8.10.46-21 and higher, leaving the application unable to open and resulting in a &ldquo;the database is newer version&rdquo; error. To resolve, make sure you can access all your 1Password data on another device or on 1Password.com before you follow the steps under &ldquo;To remove your 1Password data&rdquo;:</p>
+
+<p>Mac: <a href="https://support.1password.com/uninstall-1password/#to-remove-your-1password-data-mac" target="_blank">https://support.1password.com/uninstall-1password/#to-remove-your-1password-data-mac</a>
+Windows: <a href="https://support.1password.com/uninstall-1password/#to-remove-your-1password-data-windows" target="_blank">https://support.1password.com/uninstall-1password/#to-remove-your-1password-data-windows</a></p>
+
+<p>Please reach out to support@1Password.com if you do not have another trusted device where you are signed in.</p>
+
+                    <footer>
+                        <small>Latest update at <span x-init="renderTSUnixPrettyNoYear($el)">1726088330</span></small>
+                    </footer>
+                </article>
+            
+        </section>
+        
+
+        <br />
+        <section>
+            <h3>Current status</h3>
+            <!-- Make 2 columns -->
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / 1Password Connect
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Canada / 1Password.com website
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / Access to passwords and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Canada / Admin console
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / Billing
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Canada / Command Line Interface (CLI)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / Events API and Reporting
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Canada / Multi-factor Authentication (MFA)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / Partnership API
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Canada / SSO (Single Sign On)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / Saving password and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Canada / Service Accounts
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / Sign in
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Canada / Sign up
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Canada / Syncing items between your devices
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / 1Password Connect
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Enterprise / 1Password.com website
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / Access to passwords and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Enterprise / Admin console
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / Billing
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Enterprise / Command Line Interface (CLI)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / Events API and Reporting
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Enterprise / Multi-factor Authentication (MFA)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / Partnership API
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Enterprise / SSO (Single Sign On)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / Saving password and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Enterprise / Service Accounts
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / Sign in
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Enterprise / Sign up
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Enterprise / Syncing items between your devices
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / 1Password Connect
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Europe / 1Password.com website
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / Access to passwords and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Europe / Admin console
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / Billing
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Europe / Command Line Interface (CLI)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / Events API and Reporting
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Europe / Multi-factor Authentication (MFA)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / Partnership API
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Europe / SSO (Single Sign On)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / Saving password and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Europe / Service Accounts
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / Sign in
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Europe / Sign up
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    Europe / Syncing items between your devices
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / 1Password Connect
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    USA/Global / 1Password.com website
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / Access to passwords and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    USA/Global / Admin console
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / Billing
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    USA/Global / Command Line Interface (CLI)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / Events API and Reporting
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    USA/Global / Multi-factor Authentication (MFA)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / Partnership API
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    USA/Global / SSO (Single Sign On)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / Saving password and other items
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    USA/Global / Service Accounts
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / Sign in
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="grid">
+                
+                <article>
+                    USA/Global / Sign up
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    USA/Global / Syncing items between your devices
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

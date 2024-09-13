@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber status</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/uber/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/uber/static/main.js"></script>
+</head>
+
+
+<body style="width:960px; margin:0 auto;">
+    <header class="container-fluid">
+        
+<nav>
+    <ul>
+        <li>
+            <h2>Uber status </h2>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://slok.github.io/stactus-test/simple/uber/history/0">History</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/uber/">Status</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <main class="container-fluid">
+        <br />
+        <!-- Status -->
+        
+        <section class="grid">
+            <div></div>
+            <article class="operational-box">
+                <i class="ph-bold ph-check"></i> <strong>All systems operational</strong>
+            </article>
+            <div></div>
+        </section>
+        
+
+        <br />
+        <section>
+            <h3>Current status</h3>
+            <!-- Make 2 columns -->
+            
+            <div class="grid">
+                
+                <article>
+                    API (example)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+                <article>
+                    Management Portal (example)
+
+                    
+
+                    <span class="move-right">
+                        
+                        <i style="font-size: 150%;" class="ph-fill ph-check-circle text-ok"></i>
+                        
+                    </span>
+
+                    <div>
+                        
+                        <small> Normal </small>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+<footer>
+    <div class="container">
+        Powered by <a href="https://github.com/slok/stactus">Stactus</a>.
+    </div>
+</footer>
+
+</body>
+
+</html>

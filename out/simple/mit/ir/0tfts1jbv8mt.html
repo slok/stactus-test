@@ -9,8 +9,17 @@
     <title>MIT status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/mit/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/mit/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/mit/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/mit/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/mit/">Status</a></li>
     </ul>
 </nav>
 
@@ -35,11 +44,21 @@
         <h1 style="text-align: center;" class="text-major">Microsoft 365 services unavailable</h1>
         <br />
         
-        <article class="incident-ongoing-major">
-            <i class="ph-bold ph-warning-circle"></i> <strong>Incident ongoing</strong>
+        <article class="incident-resolved">
+            <i class="ph-bold ph-check"></i> <strong>Incident resolved in 6h42m6.472s</strong>
         </article>
         
         <br />
+        
+        <blockquote>
+            <h4> Resolved </h4>
+            <p>This incident has been resolved.</p>
+
+            <footer>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726171368</cite>
+            </footer>
+        </blockquote>
+        <hr />
         
         <blockquote>
             <h4> Update </h4>
@@ -48,7 +67,7 @@
 <p>&ldquo;We&rsquo;ve worked with the third-party Internet Service Provider (ISP) and confirmed that a change within their managed-environment resulted in impact. The ISP has reverted the change and we&rsquo;re now seeing signs of recovery. We&rsquo;re continuing to monitor network telemetry data to ensure a full recovery.&rdquo;</p>
 
             <footer>
-                <cite>Sep 12, 10:25</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726151126</cite>
             </footer>
         </blockquote>
         <hr />
@@ -62,7 +81,7 @@
 <p>IS&amp;T is monitoring the situation and will provide updates as they become available.</p>
 
             <footer>
-                <cite>Sep 12, 09:20</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1726147241</cite>
             </footer>
         </blockquote>
         <hr />

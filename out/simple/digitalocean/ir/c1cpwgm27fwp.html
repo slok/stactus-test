@@ -9,8 +9,17 @@
     <title>Digital Ocean status</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script> <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script> <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script> <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+    <link rel="stylesheet" href="https://slok.github.io/stactus-test/simple/digitalocean/static/main.css" />
+    <script src="https://slok.github.io/stactus-test/simple/digitalocean/static/main.js"></script>
 </head>
 
 
@@ -25,7 +34,7 @@
     </ul>
     <ul>
         <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/history/0">History</a></li>
-        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/index">Status</a></li>
+        <li><a href="https://slok.github.io/stactus-test/simple/digitalocean/">Status</a></li>
     </ul>
 </nav>
 
@@ -48,7 +57,7 @@
 <p>If you continue to see errors please open a ticket with our Support team and we will be glad to assist you further.</p>
 
             <footer>
-                <cite>Jul 17, 18:49</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721242195</cite>
             </footer>
         </blockquote>
         <hr />
@@ -60,7 +69,7 @@
 <p>We are monitoring the situation and will post an update once we can fully confirm resolution.</p>
 
             <footer>
-                <cite>Jul 17, 17:46</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721238392</cite>
             </footer>
         </blockquote>
         <hr />
@@ -74,7 +83,7 @@
 <p>We apologize for the disruption and will post an update once the fix has finished rolling out.</p>
 
             <footer>
-                <cite>Jul 17, 17:24</cite>
+                <cite x-init="renderTSUnixPrettyNoYear($el)">1721237050</cite>
             </footer>
         </blockquote>
         <hr />
